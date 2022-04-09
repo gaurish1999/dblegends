@@ -1,0 +1,21 @@
+<!--
+  {{store.aboutPage}}
+-->
+<div align="center" style="margin-top:10px;">
+  <h2>About Us</h2>
+</div>
+<div class="container">
+  <div ng-if="store.aboutPage"> 
+    <p ng-bind-html="store.aboutPage"></p>
+  </div>
+  <div ng-if="!store.aboutPage">
+    <hr>
+    <h2>{{store.storename}}</h2>
+    <p>{{store.locationPage}}</p>
+    <hr>
+    <h5>Call Us @ {{store.phone}}</h5>
+    <h5>Email Us @ {{store.emailaddress}}</h5>
+    <h5>WhatsApp @ {{store.whatsappnumber}}</h5>
+    <hr><br><br>
+  </div>
+</div>

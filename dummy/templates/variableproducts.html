@@ -1,0 +1,124 @@
+<!-- ========================= SECTION CONTENT START // ========================= -->
+<div ng-if="showPlaceholder">
+    <center>
+        <img src="./images/icons/preloader.gif" style="width:50px; height: 50px;">
+        <br>
+        <h6 class="title text-truncate">loading...</h6>
+        <br>
+    </center>
+</div>
+<section class="section-content padding-y " ng-if="!showPlaceholder" ng-repeat="product in ctlgCtrl.variableProductDetails">
+    <div class="container">
+        <div class="card">
+            <div class="row no-gutters">
+                <aside class="col-sm-6  border-right" style="overflow: hidden;">
+                    <article class="gallery-wrap">
+                        <div ng-if="variable_comingsoon" style="transform:translateX(-25px);z-index: 11;">
+                            <p class="coming_soon">Coming Soon</p>
+                        </div>
+                        <div ng-if="!variable_comingsoon">
+                            <div ng-if="!variable_Prebook" style="transform:translateX(-10px);z-index: 11;">
+                                <p ng-if="variable_productqty==0" class="sold_out">Sold Out</p>
+                            </div>
+                            <div ng-if="variable_Prebook" style="transform:translateX(-25px);z-index: 11;">
+                                <p class="pre_book">Prebook Now</p>
+                            </div>
+                        </div>
+
+                        <div class="img-big-wrap">
+                            <img
+                            style="width:100%; height:auto;"
+                            class="img-fluid mx-auto d-block"
+                            ng-src="{{makeImageUrl(variableProductImage,'height','588')}}"
+                            alt="{{variableProductName}}"
+                            >
+                        </div>
+                    </article>
+                </aside>
+                <main class="col-sm-6">
+                    <article class="content-body">
+                        <h2 class="title">{{variableProductName}}</h2>
+                        <div class="row mt-3 align-items-center">
+                            <div class="col" ng-if="showVariablePrice">
+                                <span class="price h4">{{product.minprice  | currency:QoACurrencySymbol :0 }} - {{product.maxprice | currency:QoACurrencySymbol :0 }}</span>
+                            </div>
+                            <div class="col" ng-if="!showVariablePrice">
+                                <div ng-if="variableProductMrp>variableProductPrice">
+                                    <del style="color: black;">{{variableProductMrp*(1+product.taxrate/100) | currency:QoACurrencySymbol:0}}</del> {{variableProductPrice*(1+product.taxrate/100) | currency:QoACurrencySymbol:0}}
+                                    <span style="background-image: url(images/product-offer-bg.png); font-size: 15px; font-style: italic; color: #504c4a; padding: 8px; background-size: cover; border-radius: 5px;">Save {{ (variableProductMrp*(1+product.taxrate/100))-(variableProductPrice*(1+product.taxrate/100)) | currency:QoACurrencySymbol:0 }} ({{((variableProductMrp*(1+product.taxrate/100))-(variableProductPrice*(1+product.taxrate/100)))/(variableProductMrp*(1+product.taxrate/100))*100 | number:0}}%)</span>
+                                    <small class="label-rating text-success"> {{variableSKU}} </small>
+                                </div>
+                                <div ng-if="variableProductMrp!='' && variableProductPrice!='' && variableProductMrp<=variableProductPrice">
+                                    <span class="price h4">{{variableProductPrice*(1+product.taxrate/100) | currency:QoACurrencySymbol :0 }}</span><br>
+                                    <small class="label-rating text-success"> {{variableSKU}} </small>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <p class="mb-4" ng-bind-html="variableShortDescription"></p>
+                        <form name="myform">
+                            <div class="item-option-select" ng-repeat="attribute in attributes track by $index">
+                                <h6>{{attribute.name}}</h6>
+                                <!-- <div class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons"> -->
+                                <div class="radio-button">
+                                    <label style="white-space: nowrap;" class="btn btn-sm btn-light " ng-repeat="attributeoptions in attribute.attributeoptions">
+                                        <input class="radio" ng-click="validateForCart(value,$parent.$index,product.attributes)"  ng-model="value"  value="{{attributeoptions.id}}" type="radio" name="selectedattr{{$parent.$index}}" required > {{attributeoptions.name}}
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div><button type="button" ng-click="clearOptions()" style="display:none;margin: 0;padding: 0;text-decoration: none; " id="clear" class="btn btn-link "><i style="font-size: .7em;" class="fas fa-sync-alt"></i> clear </button></div>
+
+                            <div class="row mt-3 align-items-center">
+                                <!-- col.// -->
+                                <div class="col" ng-if="!variable_Prebook">
+                                    <!-- <button type="submit" class="btn  btn-primary"> <span class="text">Add to cart</span> <i class="icon fas fa-shopping-cart"></i> </button> -->
+                                    <button ng-if="productSoldOut" class="btn  btn-outline-dark"> <span class="text">Sold out</span> </a>
+                                    <button ng-if="productInCart" class="btn  btn-outline-primary" ng-click="ctlgCtrl.v2_CartManager(variableSKU, 'ADD');"><i class="fas fa-shopping-cart mr-10"></i><span class="text">Add to cart</span></button>
+                                    <button ng-if="productInCart" class="btn  btn-primary" ng-click="ctlgCtrl.v2_CartManager_send2cart(variableSKU, 'ADD');"><i class="d-icon-arrow-right"></i>Buy Now</button>
+
+                                </div>
+                                <div class="col" ng-if="variable_Prebook && !PrebookToken">
+                                    <form class="form-group" ngSubmit="PrebookCheckpoint(variableProductID, variableProductName, variableProductImage, customer_prebook_name, customer_prebook_number, customer_prebook_email)">
+                                        <div class="form-group">
+                                            <label for='customername'>Your Name</label>
+                                            <input id='customername' type="text" ng-model="customer_prebook_name" placeholder="Your Name" class="form-control" autocomplete="name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for='customernumber'>Your Mobile Number</label>
+                                            <input id='customername' type="number" min="6000000000" max="9999999999" ng-model="customer_prebook_number" placeholder="Your 10 Digit Phone Number" class="form-control" autocomplete="mobile" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for='customeremail'>Your Email Address</label>
+                                            <input id='customeremail' type="email" ng-model="customer_prebook_email" placeholder="Your Email Address" class="form-control" autocomplete="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" ng-click="PrebookCheckpoint(variableProductID, variableProductName, variableProductImage, customer_prebook_name, customer_prebook_number, customer_prebook_email)" class="btn btn-primary form-control" value="Prebook Now">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col" ng-if="PrebookToken">
+                                    Prebooking Confirmed : #{{PrebookToken}}
+                                </div>
+                                <!-- col.// -->
+                            </div>
+                        </form>
+                        <!-- row.// -->
+                    </article>
+                    <!-- product-info-aside .// -->
+                </main>
+                <!-- col.// -->
+            </div>
+            <!-- row.// -->
+        </div>
+        <div ng-if="variableDescription">
+            <hr>
+            <h3 class="text-center">Know More About The Product</h3>
+            <hr>
+            <div class="container productContainer">
+                <div ng-bind-html="variableDescription"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================= SECTION CONTENT END // ========================= -->

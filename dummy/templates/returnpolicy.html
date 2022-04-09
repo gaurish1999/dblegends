@@ -1,0 +1,46 @@
+<!--
+  1. {{store.termsofuse}}
+  2. {{store.returnpolicy}}
+  3. {{store.privacypolicy}}
+-->
+<div align="center" style="margin-top:10px;">
+  <h2>Return & Refund Policy</h2>
+</div>
+<div class="container">
+  <div ng-if="store.returnpolicy">
+    <p ng-bind-html="store.returnpolicy"></p>
+  <!-- Use if there is an input from store's end -->
+  </div>
+  <div ng-if="!store.returnpolicy">
+    <p><pre style="white-space: pre-wrap;">
+      Cancellation Policy
+      {{store.storename}} believes in helping its customers as far as possible, and has therefore a liberal cancellation policy. Under this policy, Cancellations will be considered only if the shipping is not yet made for the order. The customer may however track the status of the order online.
+
+      Return & Refund Policy
+      {{store.storename}} takes care to procure, store and sell products of the best quality, in the best of conditions. We have partnered with leading logistics company in India, to ensure that all products reach you in the best of conditions.
+
+      However, in the rare event where you might have received a product which is slightly damaged (either functional or cosmetic or any damage incurred during transit) or a product which has a manufacturing defect, {{store.storename}} and/or it’s Logistics Partners will look into the matter on a case by case basis.
+
+      In such circumstances, before using the product, please get in touch with our Customer Service Team within 24 hours of receiving the product. Our customer service team will guide you on the process for the same. You may have to visit your nearest {{store.storename}} Store to get such cases addressed.
+
+      {{store.storename}} does not accept Returns for any other reasons apart from the scenarios mentioned above. The return process of the product can be restricted depending on the nature and category of the product and is subject to the following conditions.
+
+      The customer should notify us of receipt of a Damaged / Defective product within maximum 48 hours of delivery.
+      Products should be returned in their original packaging along with the original price tags, labels and invoices.
+      Refunds
+      Refunds are only possible in the following cases:
+
+      Cancellation of an Order before being shipped
+      Cases where:
+      Customer refused to collect the delivery
+      Customer wasn’t available during stipulated delivery attempts made by our logistics partner
+      The delivery address was wrong / unreachable
+      For case 2, we will process the refund after receipt of the product by {{store.storename}}. All Refunds will be processed based on the mode of payment used by the customer while placing the order.
+
+      Orders paid by credit/ debit card will be refunded by credit back to the credit/ debit card within 7 working days and the refund will reflect in the next statement.
+      Orders paid by net banking accounts will be credited back to bank account.
+    </pre> </p>
+  </div>
+  <!-- else use default template -->
+
+</div>

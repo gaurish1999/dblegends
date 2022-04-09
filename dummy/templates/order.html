@@ -1,0 +1,119 @@
+<div ng-if="showPlaceholder">
+    <center>
+        <img src="./images/icons/preloader.gif" style="width:50px; height: 50px;">
+        <br>
+        <h6 class="title text-truncate">loading...</h6>
+        <br>
+    </center>
+</div>
+<section ng-if="!showPlaceholder">
+    <div class="container" style="padding: 0;">
+        <div class="order-message" ng-bind-html='ctlgCtrl.status_message | trust'>
+        </div>
+
+        <div class="col-md-12">
+            <article class="card">
+                <header class="card-header">
+                    <strong class="d-inline-block mr-3">Order ID:  {{ctlgCtrl.order.orderid}}</strong>
+                    <br>
+                    <span>Order Date: {{ctlgCtrl.order.orderdate}}</span>
+                </header>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <br>
+                            <h6 class="text-muted">Delivery to</h6>
+                            <p>{{ctlgCtrl.customer.consumername}} <br> Phone {{ctlgCtrl.customer.consumermobile}}, Email: {{ctlgCtrl.customer.consumeremail}} <br> Location: {{ctlgCtrl.customer.consumeraddress}}
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <br>
+                            <h6 class="text-muted">Payment</h6>
+                            Transaction ID:
+                            <span class="text-success">
+                            {{ctlgCtrl.order.txnid}}
+                        </span>
+                            <p>
+                                <span class="b">Order amount: {{QoACurrencySymbol+ctlgCtrl.order.totalprice}} </span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- row.// -->
+                </div>
+                <!-- card-body .// -->
+                <br>
+            </article>
+            <br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="table-responsive">
+
+                            <table class="table table-borderless table-shopping-cart">
+                                <thead class="text-muted">
+                                    <tr class="small text-uppercase">
+                                        <th scope="col">Product</th>
+                                        <th scope="col" style="white-space: nowrap;">Price per unit</th>
+                                        <th scope="col" width="150">Quantity</th>
+                                        <th scope="col" width="150">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="product in ctlgCtrl.product">
+                                        <td>
+                                            <figure class="itemside align-items-center">
+                                                <div class="aside img-sm"><img style="width: 100%;height: 100%;" ng-src="{{makeImageUrl(product.product_image,'height','400')}}"></div>
+                                                <figcaption class="info">
+                                                    <a href="#" class="title text-dark">{{product.productname}}</a>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td>
+                                            {{ QoACurrencySymbol+product.priceperpiece }}
+                                        </td>
+                                        <td>
+                                            x{{product.quantity}}
+                                        </td>
+                                        <td>
+                                            <div class="price-wrap">
+                                                <var class="price">{{QoACurrencySymbol+product.totalprice}}</var>
+                                                <span><small class="text-muted">{{product.taxrate}}% gst included</small></span>
+                                            </div>
+                                            <!-- price-wrap .// -->
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <!-- table-responsive.// -->
+                        <article class="card-body border-top">
+
+                            <dl class="row">
+                                <dt class="col-sm-10">Total: <span class="float-right text-muted">{{ctlgCtrl.order_len}} item(s)</span></dt>
+                                <dd class="col-sm-2 text-right"><strong>{{QoACurrencySymbol+ctlgCtrl.order.totalprice}}</strong></dd>
+
+                                <dt class="col-sm-10">Amount paid :</dt>
+                                <dd class="col-sm-2 text-right text-success"><strong class="h5 text-dark">{{QoACurrencySymbol+ctlgCtrl.payment.paid_amount}}</strong></dd>
+
+                                <dt class="col-sm-10">Amount remaining: </dt>
+                                <dd class="col-sm-2 text-danger text-right"><strong>{{QoACurrencySymbol+ctlgCtrl.payment.balance_amount}}</strong></dd>
+
+                            </dl>
+
+                        </article>
+                    </div>
+                    <!-- card.// -->
+                </div>
+            </div>
+            <!-- row.// -->
+        </div>
+        <!-- col .// -->
+    </div>
+    <br><br>
+
+    <div class="container text-center" style="padding-bottom: 50px;">
+        <a class="btn btn-primary" style="width: 50%;" href="#/"><span class="text">Continue Shopping</span> </a>
+    </div>
+
+</section>

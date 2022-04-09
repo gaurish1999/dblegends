@@ -1,0 +1,33 @@
+<!-- ========================= SECTION CONTENT START // ========================= -->
+<section class="section-content padding-y">
+    <div class="container">
+        <!-- <div ng-if="showPlaceholder">
+            <center>
+                <img src="./images/icons/preloader.gif" style="width:50px; height: 50px;">
+                <br>
+                <h6 class="title text-truncate">loading...</h6>
+                <br>
+            </center>
+        </div> -->
+        <div>
+            <h2 style="text-align: center;">Prebooking Menu</h2>
+            <hr style="width:20%; height:3px; border-radius:10px; background:var(--customUIcolor);">
+            <br>
+            <div class="row">
+                <div class="col-sm-6 col-lg-6 col-md-6 col-xs-6 p-2" ng-repeat="category in ctlgCtrl.prebookcategories track by $index">
+                    <figure class="card card-product-grid mb-0">
+                      <a class="img-wrap" href="#/prebook-sort/{{category.id}}" style="padding: 10px">
+                        <img ng-src="{{makeImageUrl(category.image,'height','400')}}"/>
+                      </a>
+                      <figcaption class="info-wrap text-center">
+                        <h6 class="title text-truncate">
+                          <a href="#/prebook-sort/{{category.id}}">{{category.name}}</a>
+                        </h6>
+                      </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ========================= SECTION CONTENT END // ========================= -->

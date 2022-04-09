@@ -1,0 +1,7 @@
+:root {
+  --customUIcolor: #cf3e97;
+}
+body {
+    background-color: #fff !important;
+    color: #000 !important;
+}

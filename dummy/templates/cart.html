@@ -1,0 +1,147 @@
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content padding-y">
+    <div class="container" ng-show="cart_v2_item_count>0">
+        <center>
+            <h2>Your Cart</h2>
+            <hr style="width:20%; height:3px; border-radius:10px; background:var(--customUIcolor);">
+        </center>
+        <div class="row">
+            <aside class="col-lg-9">
+                <div class="card">
+                    <div class="table-responsive">
+                        <table class="table table-borderless table-shopping-cart">
+                            <thead class="text-muted">
+                                <tr class="small text-uppercase">
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in cart_v2_info.Items">
+                                    <td>
+                                        <figure class="itemside align-items-center">
+                                            <div class="aside">
+                                                <img ng-src="{{makeImageUrl(item.display_data.itemPhoto,'height','200')}}" class="img-sm" alt="item.display_data.itemName">
+                                            </div>
+                                            <figcaption class="info"> <a href="#/product/{{item.id}}" class="title text-dark">{{item.display_data.itemName}}</a></figcaption>
+                                        </figure>
+                                    </td>
+                                    <td>
+                                        <div class="form-group col-md flex-grow-0">
+                                            <div class="input-group input-spinner">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-light" ng-click="ctlgCtrl.v2_CartManager(item.UPC, 'ADD', 0);" type="button" id="button-plus"> + </button>
+                                                </div>
+                                                <input type="text" class="form-control" value="{{item.quantity}}" disabled>
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-light" ng-click="ctlgCtrl.v2_CartManager(item.UPC, 'SUBSTRACT', 0);" type="button" id="button-minus"> − </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price-wrap">
+                                            <var class="price">{{item.total_amount | currency:QoACurrencySymbol:0}} (inc GST)</var>
+                                            <small class="text-muted"> {{ item.rate | currency:QoACurrencySymbol:0}} (inc GST)</small>
+                                        </div>
+                                        <!-- price-wrap .// -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- table-responsive.// -->
+                    <div class="card-body border-top">
+                        <p class="icontext"><i class="icon text-success fa fa-truck"></i>Free PAN India Delivery</p>
+                    </div>
+                    <!-- card-body.// -->
+                </div>
+                <!-- card.// -->
+            </aside>
+            <!-- col.// -->
+            <aside class="col-lg-3">
+                <div class="card mb-3" ng-show="(store.coupounsenabled==1 && userPhone)">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label>Have coupon?</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" ng-if="!CouponApplied" name="coupon_code"  ng-change="coupon_code_change(userCartCouponCode)" ng-blur="coupon_code_change(userCartCouponCode)" ng-model="userCartCouponCode" placeholder="Coupon Code">
+                                    <span class="input-group-append">
+                                        <button type="submit" ng-if="!CouponApplied" class="btn btn-primary" ng-click="ctlgCtrl.v2_ApplyCoupon(userCartCouponCode)">Apply</button>
+                                    </span>
+                                    <!-- show if CouponApplied -->
+                                    <span class="product-subtotal amount" ng-if="CouponApplied">{{cart_v2_info.Coupon.coupouncode}} Applied <br> <a ng-click="ctlgCtrl.v2_RemoveCoupon()">[Remove]</a> </span>
+                                    <span class="product-subtotal amount" ng-if="CouponApplied">{{cart_v2_info.Coupon.message}}</span>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- card-body.// -->
+                </div>
+                <!-- card.// -->
+                <div class="card">
+                    <div class="card-body">
+                        <dl class="dlist-align"> <dt>Total:</dt>
+                            <dd class="text-right">{{cart_v2_info.TotalValue | currency:QoACurrencySymbol:0}}</dd>
+                        </dl>
+                        <hr>
+                        <p class="text-center mb-3">
+                            <img src="images/payments.png" height="26">
+                        </p>
+                        <a href="#/checkout" class="btn btn-primary btn-block">Checkout</a>
+                        <a href="#/home" class="btn btn-light btn-block">Continue Shopping</a>
+                    </div>
+                    <!-- card-body.// -->
+                </div>
+                <!-- card.// -->
+            </aside>
+            <!-- col.// -->
+        </div>
+        <!-- row.// -->
+        <br>
+        <br>
+        <article class="card card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <figure> <span class="text-primary"><i class="fa fa-2x fa-truck"></i></span>
+                        <figcaption class="pt-3">
+                            <h5 class="title">Fast delivery</h5>
+                        </figcaption>
+                    </figure>
+                    <!-- iconbox // -->
+                </div>
+                <!-- col // -->
+                <div class="col-md-4">
+                    <figure> <span class="text-primary"><i class="fa fa-2x fa-landmark"></i></span>
+                        <figcaption class="pt-3">
+                            <h5 class="title">Creative Strategy</h5>
+                        </figcaption>
+                    </figure>
+                    <!-- iconbox // -->
+                </div>
+                <!-- col // -->
+                <div class="col-md-4">
+                    <figure> <span class="text-primary"><i class="fa fa-2x fa-lock"></i></span>
+                        <figcaption class="pt-3">
+                            <h5 class="title">High secured </h5>
+                        </figcaption>
+                    </figure>
+                    <!-- iconbox // -->
+                </div>
+                <!-- col // -->
+            </div>
+        </article>
+        <!-- card.// -->
+    </div>
+    <div class="container" ng-show="cart_v2_item_count<=0">
+        <center>
+            <h2>No Items in Your Cart</h2>
+            <hr style="width:20%; height:3px; border-radius:10px; background:var(--customUIcolor);">
+            <a href="#/home" class="btn btn-primary btn-block">Countinue Shopping</a>
+        </center>
+    </div>
+</section>
+<!-- ========================= SECTION CONTENT END // ========================= -->

@@ -1,6 +1,6 @@
 <?php
 require 'config.php';
-function makefile_fromurl($filepath, $api_url) {
+function makefile_fromtemplate($filepath, $template_url, $api_url) {
   $data = file_get_contents($api_url);
   makefile($filepath, $data);
 }

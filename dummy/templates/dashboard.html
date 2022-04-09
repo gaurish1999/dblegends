@@ -1,0 +1,55 @@
+<main class="main account">
+    <div class="section-content bg">
+        <div class="container pt-1">
+            <div class="personal-info padding-y">
+                <h2 class="title title-underline"><span>Personal Information</span></h2>
+                <form class="form">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label>Name </label>
+                            <input class="form-control" ng-model="userName" type="text" name="name" disabled>
+                        </div>
+                        <div class="col-sm-4">
+                            <label>Phone number</label>
+                            <input class="form-control" ng-model="userPhone" type="number" name="mobile" disabled>
+                        </div>
+                        <!-- <div class="col-sm-4">
+                        <label>Email Address</label>
+                        <input class="form-control " ng-model="userEmail" type="email" name="email" disabled>
+                    </div> -->
+                    </div>
+                </form>
+            </div>
+            <div class="order-info" style="padding-top:5rem;">
+                <h2 class="title title-underline"><span>Recent Orders</span></h2>
+                <div class="table-reposonsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th><span>Order date</span></th>
+                                <th><span>Product</span></th>
+                                <th><span>Order status</span></th>
+                                <th><span></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in ctlgCtrl.myPastOrderDetails ">
+                                <td> {{item.ordertimestamp}}</td>
+                                <td class="product-name ">
+                                    <div class="product-name-section" ng-repeat="items in item.items track by $index">
+                                        <a href="#/product/{{item.href}} ">{{$index+1}}. {{items.name}} </a>
+                                        <!-- <span class="amount ">{{items.price | currency:QoACurrencySymbol}}</span> -->
+                                    </div>
+                                </td>
+                                <td>{{item.orderStatus}}</td>
+                                <td width="250"><a href="#/order/{{item.key}}" class="btn btn-light">View order details</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>

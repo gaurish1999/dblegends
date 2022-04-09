@@ -1,0 +1,136 @@
+<section class="section-content padding-y bg">
+	<div class="container">
+		<article class="card mb-4" ng-if="!userAutheticated">
+			<div class="card-body">
+				<h4 class="card-title mb-4">Contact info</h4>
+				<form onsubmit="confirm()">
+					<div class="row">
+						<div class="form-group col-sm-6">
+							<label>Phone</label>
+							<input type="text" ng-change="phoneChange(userPhone)" ng-blur="phoneChange(userPhone)" ng-model="userPhone" class="form-control mb-4" placeholder="Enter Phone Number">
+							<button type="button" class="btn btn-primary" ng-click="sendOTP();" ng-show="showPhoneNumberScreen">Send OTP</button>
+						</div>
+					</div> <!-- row.// -->
+					<div class="row" ng-show="showProcessOTPScreen">
+						<div class="form-group col-sm-6">
+							<label>Enter OTP </label>
+							<input type="text" class="form-control" ng-model="userOTP" ng-change="OTPrecived(userOTP)" ng-blur="OTPrecived(userOTP)" placeholder="Enter OTP" required="" />
+							<button class="btn" ng-click="sendOTP();" type="button">Resend OTP</button>
+							<button type="submit" class="btn btn-primary">Verify</button>
+						</div>
+					</div>
+				</form>
+			</div> <!-- card-body.// -->
+		</article> <!-- card.// -->
+		<form ng-if="userAutheticated" ng-submit="PaymentCheckpoint(method);">
+			<div class="row">
+				<main class="col-md-8">
+					<article class="card mb-4">
+						<div class="card-body">
+							<h4 class="card-title mb-4">Review cart</h4>
+							<div class="row">
+								<div class="col-lg-6" ng-repeat="item in cart_v2_info.Items">
+									<figure class="itemside  mb-4">
+										<div class="aside"><img src="{{makeImageUrl(item.display_data.itemPhoto,'height','200')}}" class="border img-sm"></div>
+										<figcaption class="info">
+											<p>{{item.display_data.itemName}}</p>
+											<span class="text-muted">x{{item.quantity}} =  {{item.total_amount | currency:QoACurrencySymbol:0}} (inc GST) </span>
+										</figcaption>
+									</figure>
+								</div> <!-- col.// -->
+							</div> <!-- row.// -->
+						</div> <!-- card-body.// -->
+					</article> <!-- card.// -->
+
+					<article class="card mb-4">
+						<div class="card-body">
+								<h4 class="card-title mb-4">Billing Details</h4>
+								<div class="row">
+										<div class="form-group col-sm-6">
+											<label>Full name</label>
+											<input type="text" ng-model="userName" ng-change="nameChange(userName)" ng-blur="nameChange(userName)" class="form-control" name="full-name" required="" />
+										</div>
+										<div class="form-group col-sm-6">
+											<label>Phone *</label>
+											<input type="text" class="form-control" ng-model="userPhone" name="phone" required="" disabled />
+										</div>
+										<div class="form-group col-sm-12">
+											<label>Email Address *</label>
+											<input type="email" ng-model="userEmail" ng-change="emailChange(userEmail)" ng-blur="emailChange(userEmail)" class="form-control" name="phone" required="" />
+										</div>
+										<div class="form-group col-sm-12">
+											<label>Address </label>
+											<input type="text" ng-model="userAddress" ng-change="addressChange(userAddress)" ng-blur="addressChange(userAddress)"
+											class="form-control" name="address1" required="" placeholder="Enter delivery address"/>
+										</div>
+										<div class="form-group col-sm-12">
+											<input type="text" placeholder="Enter landmark and pin code" ng-model="userAddress2" ng-change="addressChange2(userAddress2)" ng-blur="addressChange2(userAddress2)"
+											class="form-control" name="address2" />
+										</div>
+										<div class="form-group col-sm-4">
+											<label>State</label>
+											<input ng-model="userState" ng-change="stateChange(userState)" ng-blur="stateChange(userState)" type="text" placeholder="Type here" class="form-control" >
+										</div>
+										<div class="form-group col-sm-4">
+											<label>City</label>
+											<input ng-model="userCity" ng-change="cityChange(userCity)" ng-blur="cityChange(userCity)" type="text" placeholder="Type here" class="form-control">
+										</div>
+										<div class="form-group col-sm-4">
+											<label>Postal code/Zip</label>
+											<input ng-model="userZip" ng-change="zipChange(userZip)" ng-blur="zipChange(userZip)" type="text" placeholder="Type here" class="form-control">
+										</div>
+								</div> <!-- row.// -->
+						</div> <!-- card-body.// -->
+					</article> <!-- card.// -->
+
+
+
+					<!-- accordion end.// -->
+				</main> <!-- col.// -->
+				<aside class="col-md-4">
+					<div class="card shadow">
+						<div class="card-body">
+							<h4 class="card-title mb-4">Pay with</h4>
+							<label class="custom-control custom-radio" ng-if="store.pinelabs" >
+								<input class="custom-control-input" type="radio" value="2" ng-click="setMethod(2)" id="payonline" name="paymentmethod" required>
+								<h6 class="custom-control-label">
+									Pay Online
+								</h6>
+							</label>
+							<label class="custom-control custom-radio" ng-if="store.edge" >
+								<input class="custom-control-input" type="radio" value="2" ng-click="setMethod(101)" id="payonline" name="paymentmethod" required>
+								<h6 class="custom-control-label">
+									Pay Online
+								</h6>
+							</label>
+							<label class="custom-control custom-radio" ng-if="store.iharvest" >
+								<input class="custom-control-input" type="radio" value="2" ng-click="setMethod(44)" id="payonline" name="paymentmethod" required>
+								<h6 class="custom-control-label">
+									Pay Online (via iHarvest)
+								</h6>
+							</label>
+							<label class="custom-control custom-radio" ng-if="store.razorpayenable">
+								<input class="custom-control-input" type="radio" value="4" ng-click="setMethod(4)" name="paymentmethod" id="razorpay">
+								<h6 class="custom-control-label"> RazorPay  </h6>
+							</label>
+							<label class="custom-control custom-radio" ng-if="store.CashOnDelivery">
+								<input class="custom-control-input" type="radio" value="1" ng-click="setMethod(1)" name="paymentmethod" id="cod">
+								<h6 class="custom-control-label"> Pay and Pick At Store </h6>
+							</label>
+							<hr>
+							<dl class="dlist-align">
+							<dt>Total:</dt>
+							<dd class="h5">{{cart_v2_info.TotalValue | currency:QoACurrencySymbol:0}}</dd>
+							</dl>
+							<hr>
+							<p class="small mb-3 text-muted">Your personal data will used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.						</p>
+							<button type="submit" name="v2_cart_place_order" class="btn btn-primary btn-block">Place Order</button>
+
+						</div> <!-- card-body.// -->
+					</div> <!-- card.// -->
+				</aside> <!-- col.// -->
+			</div>
+		</form>
+
+	</div> <!-- container .//  -->
+</section>

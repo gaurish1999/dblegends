@@ -1,0 +1,22 @@
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content padding-y">
+  <div class="container" ng-if="cartQty>0"><!-- ng-if="cartQty>0 && askPayment" -->
+    <center>
+      <h2>Select a Payment Method</h2>
+      <hr style="width:20%; height:3px; border-radius:10px; background:var(--customUIcolor);">
+      <a href="#/payment" class="btn btn-primary btn-block" ng-if="store.CashOnDelivery" ng-disabled="cartQty<1" ng-click="PaymentCheckpoint(1)">Cash on Delivery</a><br ng-if="store.CashOnDelivery">
+      <a href="#/payment" class="btn btn-primary btn-block" ng-if="store.pinelabs" ng-disabled="cartQty<1" ng-click="PaymentCheckpoint(2)">Pay Online</a><br ng-if="store.pinelabs">
+      <a href="#/payment" class="btn btn-primary btn-block" ng-if="store.edge" ng-disabled="cartQty<1" ng-click="PaymentCheckpoint(101)">Pay Online</a><br ng-if="store.edge">
+      <a href="#/payment" class="btn btn-primary btn-block" ng-if="store.iharvest" ng-disabled="cartQty<1" ng-click="PaymentCheckpoint(44)">Pay Online (iHarvest)</a><br ng-if="store.edge">
+      <button class="btn btn-primary btn-block" ng-if="store.razorpayenable" ng-disabled="cartQty<1" ng-click="razorpayPayNow(1)">Pay Online (Razorpay)</button>
+    </center>
+  </div>
+  <div class="container" ng-show="cartQty<=0">
+    <center>
+      <h2>No Items in Your Cart to Process Payment</h2>
+      <hr style="width:20%; height:3px; border-radius:10px; background:var(--customUIcolor);">
+      <a href="#/home" class="btn btn-primary btn-block">Countinue Shopping</a>
+    </center>
+  </div>
+</section>
+<!-- ========================= SECTION CONTENT END // ========================= -->
