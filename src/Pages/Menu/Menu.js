@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import Back from '../../Component/Back/Back'
 
 export default function Menu() {
-    const goback = useNavigate();
+
+    // used to go back one page
+    // const goback = useNavigate();
   return (
     <>
         <h1>This is Menu</h1>
@@ -27,7 +30,8 @@ export default function Menu() {
         <Link to='/summon'>Summon</Link><br />
         <Link to='/characters'>Characters</Link><br />
         <Link to='/home'>Home</Link><br />
-        <Link to='#' onClick={() => goback(-1)}>Back</Link>
+        <Back />
+        {/* <Link to='#' onClick={() => goback(-1)}>Back</Link> */}
     </>
   )
 }
