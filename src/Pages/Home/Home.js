@@ -30,10 +30,10 @@ export default function Home() {
           <br />
           <div className='both-link'>
             <div className='links'>
-              <Link to='/story' className='story-link'>Story</Link>
-              <Link to='/event' className='event-link'>Events</Link>
-              <Link to='/top' className='top-link'>T. O. P</Link>
-              <Link to='/pvp' className='pvp-link'>PvP</Link><br />
+              <Link to='/story' className='story-link link-hover'>Story</Link>
+              <Link to='/event' className='event-link link-hover'>Events</Link>
+              <Link to='/top' className='top-link link-hover'>T. O. P</Link>
+              <Link to='/pvp' className='pvp-link link-hover'>PvP</Link><br />
             </div>
 
             <div className='common-links'>
