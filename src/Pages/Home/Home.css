@@ -75,16 +75,26 @@
     position: absolute;
     left: 10px;
     bottom: 10px;
+    padding: 10px; 
+    background: #1865D8;
+    text-decoration: none;
+    color: #DCF4F8;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transform: rotate(-5deg);
 }
 
 .story-link, .top-link{
     margin-top: 10px;
     transform: rotate(2deg);
+    z-index: 10;
 }
 
 .event-link, .pvp-link{
     margin-top: -10px;
     transform: rotate(-2deg);
+    z-index: 10;
 }
 
 .story-link, .event-link, .top-link, .pvp-link{
@@ -92,7 +102,7 @@
     display: flex;
     align-items: center;
     background: rgb(236, 235, 235);
-    border: 15px solid brown;
+    border: 10px solid brown;
     text-decoration: none;
     color: orange;
     text-shadow: 1px 1px 2px black;
@@ -106,8 +116,8 @@
     justify-content: center;
 }
 
-.link-hover:hover, .menu-link:hover{
+.link-hover:hover, .menu-link:hover, .titlescreen-link:hover{
     transition-duration: 0.4s;
     transform: scale(1.1);
-    box-shadow: 5px 5px 5px grey;
+    /* box-shadow: 5px 5px 5px grey; */
 }
