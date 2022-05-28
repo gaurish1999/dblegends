@@ -32,7 +32,7 @@ export default function Home() {
             <div className='links'>
               <Link to='/story' className='story-link link-hover'>Story</Link>
               <Link to='/event' className='event-link link-hover'>Events</Link>
-              <Link to='/top' className='top-link link-hover'>T. O. P</Link>
+              <Link to='/top' className='top-link link-hover'>TOP</Link>
               <Link to='/pvp' className='pvp-link link-hover'>PvP</Link><br />
             </div>
 
