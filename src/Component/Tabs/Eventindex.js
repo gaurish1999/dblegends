@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Tabs from './Tabs';
-import { tabLabels } from './constant';
+import EventTabs from './EventTabs';
+import { tabLabels } from './Eventconstant';
 
-export default function TabComponent() {
+export default function EventIndex() {
 
     const [activeTab, setActiveTab] = useState(tabLabels.RECOMMENDED);
 
@@ -11,7 +11,7 @@ export default function TabComponent() {
     };
   return (
     <div>
-        <Tabs activeTabName={activeTab} 
+        <EventTabs activeTabName={activeTab} 
         onClickTab={onClickTab}/>
     </div>
   )

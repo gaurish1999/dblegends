@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Back from '../../Component/Back/Back'
-import TabComponent from '../../Component/Tabs'
-import Coop from '../Coop/Coop'
-import Mission from '../Mission/Mission'
+import EventIndex from '../../Component/Tabs/Eventindex'
 import './Event.css';
 
 export default function Event() {
@@ -13,9 +10,12 @@ export default function Event() {
         {/* <hr /> */}
         <Link to='/coop'><img src='https://i.imgur.com/E5UQioW.png' className='coop-banner'/></Link>
         <hr />
-        <TabComponent />
-        <Mission />
-        <Back />
+        <EventIndex />
+        
+        <Link to='/home'>Home</Link> 
+        <Link to='/mission'>Missions</Link>
+        <Link to='/menu'>Menu</Link>
+        
     </>
   )
 }

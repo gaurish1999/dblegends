@@ -1,20 +1,42 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Back from '../../Component/Back/Back'
 import './Home.css';
+import gogeta from '../../Media/Voicelines/ss4-gogeta.mp3';
 
 export default function Home() {
+
+  function play() {
+    const voice = new Audio(gogeta);
+    voice.play();
+  }
+
   return (
     <>
         {/* <h1>Home</h1> */}
-        <img src='https://i.imgur.com/qdiYFlU.png' alt='fav-char' className='fav-char'/><br />
+        <div className='container'>
 
-        <Link to='/story'>Story</Link><br />
-        <Link to='/event'>Events</Link><br />
-        <Link to='/top'>Tournament of Power</Link><br />
-        <Link to='/pvp'>PvP</Link><br />
-        <Link to='/menu'>Menu</Link><br />
-        <Back />
+          <div className='sound-effect'>
+              <audio id='audio'/>
+              <img 
+              src='https://i.imgur.com/Bj2Ikdx.png' 
+              alt='favorite-character' 
+              className='fav-char'
+              onClick={play}
+              />
+            {/* </audio> */}
+            
+          </div>
+
+          <br />
+
+          <Link to='/story' className='story-link'>Story</Link>
+          <Link to='/event' className='event-link'>Events</Link>
+          <Link to='/top' className='top-link'>Tournament of Power</Link>
+          <Link to='/pvp' className='pvp-link'>PvP</Link><br />
+
+          <Link to='/' className='titlescreen-link'>Go to Title Screen</Link>
+          <Link to='/menu' className='menu-link'>Menu</Link><br />
+        </div>
     </>
   )
 }

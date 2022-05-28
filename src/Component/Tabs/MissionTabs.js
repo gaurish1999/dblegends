@@ -1,10 +1,10 @@
 import React from 'react';
-import {tabLabels} from "./constant";
-import {Link} from "react-router-dom";
-import "./Tabs.css";
+import {tabLabels} from "./Missionconstant";
+// import {Link} from "react-router-dom";
+import "./EventTabs.css";
 
-const Tabs = ({activeTabName, onClickTab}) => {
-    const {RECOMMENDED, ORIGINAL_SERIES, UPGRADE, SPECIAL} = tabLabels;
+const MissionTabs = ({activeTabName, onClickTab}) => {
+    const {DAILY, EVENTS, SPECIAL} = tabLabels;
     
     const renderTabTitle = (tabTitle, isActive, icon, id) => (
 
@@ -23,21 +23,15 @@ const Tabs = ({activeTabName, onClickTab}) => {
      <section className="tabs">
       <div className="container">
           {renderTabTitle(
-              RECOMMENDED, 
-              activeTabName===RECOMMENDED,
+              DAILY, 
+              activeTabName===DAILY,
                 "fas fa-door-open fa-3x", 
                 "tab-1"
                 )}
                 {renderTabTitle(
-              UPGRADE,
-              activeTabName===UPGRADE,
+              EVENTS,
+              activeTabName===EVENTS,
                 "fas fa-tablet-alt fa-3x", 
-                "tab-2"
-                )}
-                {renderTabTitle(
-              ORIGINAL_SERIES,
-              activeTabName===ORIGINAL_SERIES,
-                "fas fa-tags fa-3x", 
                 "tab-2"
                 )}
                 {renderTabTitle(
@@ -49,53 +43,39 @@ const Tabs = ({activeTabName, onClickTab}) => {
       </div>
      </section>
 
-    {activeTabName === RECOMMENDED && (
+    {activeTabName === DAILY && (
       <section className="tab-content">
 
         <div className="container">
           <div id="tab-1-content" 
             className={`tab-content-item ${
-            activeTabName === RECOMMENDED && "show"
+            activeTabName === DAILY && "show"
             }`}
             >
-              <h1>This is Recommended Tab</h1>
+              <h1>This is DAILY Tab</h1>
           </div>
         </div>
 
       </section> 
     )}
 
-    {activeTabName === UPGRADE && (
+    {activeTabName === EVENTS && (
       <section className="tab-content">
 
           <div className="container">
             <div
               id="tab-2-content" 
               className={`tab-content-item ${
-              activeTabName === UPGRADE && "show"
+              activeTabName === EVENTS && "show"
                 }`}
                 >
-                  <h1>This is Upgrade Tab</h1>
+                  <h1>This is EVENTS Tab</h1>
               </div>
           </div>
 
       </section>
     )}
 
-    {activeTabName === ORIGINAL_SERIES && (
-      <section className="tab-content">
-        <div className="container">
-          <div
-            id="tab-3-content" 
-            className={`tab-content-item ${
-            activeTabName === ORIGINAL_SERIES && "show"
-              }`}
-            >
-              <h1>This is Originals Tab</h1>
-          </div>
-        </div>
-      </section>
-    )}
     {activeTabName === SPECIAL && (
       <section className="tab-content">
 
@@ -106,7 +86,7 @@ const Tabs = ({activeTabName, onClickTab}) => {
             activeTabName === SPECIAL && "show"
               }`}
             >
-              <h1>This is Specials Tab</h1>
+              <h1>This is SPECIAL Tab</h1>
           </div>
         </div>
 
@@ -116,4 +96,4 @@ const Tabs = ({activeTabName, onClickTab}) => {
   );
 };
 
-export default Tabs;
+export default MissionTabs;
