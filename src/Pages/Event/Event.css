@@ -1,4 +1,65 @@
 .coop-banner{
     width: 100%;
     max-width: 700px;
+    transition-duration: 0.2s;
+}
+
+.coop-banner:hover, .z:hover{
+    transform: scale(1.05);
+}
+
+.bottom-links{
+    /* background-color: #1865D8; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    /* margin-top: 260px; */
+}
+
+.menu-link-btn{
+    /* position: absolute;
+    right: 10px;
+    bottom: 10px; */
+    padding: 10px; 
+    background: #1865D8;
+    text-decoration: none;
+    color: #DCF4F8;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transform: rotate(-5deg);
+}
+
+.home-link-btn{
+    /* position: absolute;
+    left: 10px;
+    bottom: 10px; */
+    padding: 10px; 
+    background: #1865D8;
+    text-decoration: none;
+    color: #DCF4F8;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transform: rotate(5deg);
+}
+
+.mission-link-btn{
+    padding: 10px; 
+    background: rgb(149, 98, 2);
+    text-decoration: none;
+    color: #DCF4F8;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    /* transform: rotate(5deg); */
+}
+
+.z{
+    color:#453C32;
+}
+
+.home-link-btn:hover, .mission-link-btn:hover, .menu-link-btn:hover{
+    transition-duration: 0.2s;
+    transform: scale(1.1);
 }

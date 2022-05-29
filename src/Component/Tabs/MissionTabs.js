@@ -21,7 +21,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
   return (
     <>
      <section className="tabs">
-      <div className="container">
+      <div className="">
           {renderTabTitle(
               DAILY, 
               activeTabName===DAILY,
@@ -46,7 +46,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
     {activeTabName === DAILY && (
       <section className="tab-content">
 
-        <div className="container">
+        <div className="">
           <div id="tab-1-content" 
             className={`tab-content-item ${
             activeTabName === DAILY && "show"
@@ -62,7 +62,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
     {activeTabName === EVENTS && (
       <section className="tab-content">
 
-          <div className="container">
+          <div className="">
             <div
               id="tab-2-content" 
               className={`tab-content-item ${
@@ -79,7 +79,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
     {activeTabName === SPECIAL && (
       <section className="tab-content">
 
-        <div className="container">
+        <div className="">
           <div
             id="tab-4-content" 
             className={`tab-content-item ${

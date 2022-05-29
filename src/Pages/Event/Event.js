@@ -8,14 +8,18 @@ export default function Event() {
     <>
         {/* <h1>Events</h1> */}
         {/* <hr /> */}
-        <Link to='/coop'><img src='https://i.imgur.com/E5UQioW.png' className='coop-banner'/></Link>
-        <hr />
-        <EventIndex />
-        
-        <Link to='/home'>Home</Link> 
-        <Link to='/mission'>Missions</Link>
-        <Link to='/menu'>Menu</Link>
-        
+        <div className='container'>
+          <Link to='/coop'><img src='https://i.imgur.com/E5UQioW.png' className='coop-banner'/></Link>
+          <hr />
+          
+          <EventIndex />
+          
+          <div className='bottom-links'>
+            <Link to='/home' className='home-link-btn'>Home</Link> 
+            <Link to='/mission' className='mission-link-btn'><span className='z'>Z</span> Mission</Link>
+            <Link to='/menu' className='menu-link-btn'>Menu</Link>
+          </div>
+        </div>
     </>
   )
 }

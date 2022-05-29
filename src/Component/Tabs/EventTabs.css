@@ -1,0 +1,43 @@
+.tab-item{
+    display: flex;
+    justify-content: center;
+    background: rgb(98, 98, 98);
+    transition-duration: 0.2s;
+}
+.tab-item:hover{
+    /* background: rgb(81, 81, 81); */
+    cursor: pointer;
+    /* color: white; */
+}
+
+.tab-border{
+    border: 1px solid red;
+    background-color: brown;
+    font-weight: 700;
+}
+
+.scroll-box{
+    height: 33vh;
+    overflow-y: scroll;
+}
+
+.tab-content-item{
+    margin: 0.1rem;
+    padding: 0.1rem;
+    /* background-color: aqua; */
+}
+.tab-content-div{
+    /* background: red; */
+    margin-top: 0.3rem;
+    font-size: 2rem;
+}
+
+.tab-content-item img{
+    width: 90%;
+    transition-duration: 0.2s;
+}
+
+.tab-content-item img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
