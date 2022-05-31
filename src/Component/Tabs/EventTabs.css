@@ -56,11 +56,11 @@
 }
 .tab-content-div{
     /* background: red; */
-    width: 95%;
+    width: 100%;
     background-color: #E2E4D7;
     overflow: hidden;
     margin-top: 0.6rem;
-    margin-left: 1.1rem;
+    /* margin-left: 1.1rem; */
     font-size: 2rem;
     transition-duration: 0.2s;
 }
