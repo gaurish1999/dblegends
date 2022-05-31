@@ -10,16 +10,39 @@
     /* color: white; */
 }
 
+.tabs .tab-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .tab-border{
     border: 1px solid red;
     background-color: brown;
     font-weight: 700;
 }
 
+
 .scroll-box{
-    height: 33vh;
+    height: 55vh;
     overflow-y: scroll;
+
 }
+
+@media (max-width: 391px){
+    .scroll-box{
+        height: 73vh;
+        overflow-y: scroll;
+    }
+    .tabs .tab-container{
+        font-size: 0.8rem;
+    }
+}
+
+
 
 .tab-content-item{
     margin: 0.1rem;

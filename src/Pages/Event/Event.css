@@ -10,9 +10,13 @@
 
 .bottom-links{
     /* background-color: #1865D8; */
+    width: 100%;
+    max-width: 800px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    bottom: 15px;
     /* margin-top: 260px; */
 }
 

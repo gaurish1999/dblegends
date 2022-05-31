@@ -21,29 +21,30 @@ const EventTabs = ({activeTabName, onClickTab}) => {
   return (
     <>
      <section className="tabs">
-      <div className="">
+      <div className="tab-container">
           {renderTabTitle(
           RECOMMENDED, 
           activeTabName===RECOMMENDED,
-            "fas fa-door-open fa-3x", 
+            "", 
             "tab-1"
-            )}
-            {renderTabTitle(
-          UPGRADE,
-          activeTabName===UPGRADE,
-            "fas fa-tablet-alt fa-3x", 
-            "tab-2"
             )}
             {renderTabTitle(
           ORIGINAL_SERIES,
           activeTabName===ORIGINAL_SERIES,
-            "fas fa-tags fa-3x", 
+            "og-series", 
             "tab-2"
             )}
             {renderTabTitle(
+          UPGRADE,
+          activeTabName===UPGRADE,
+            "", 
+            "tab-2"
+            )}
+            
+            {renderTabTitle(
           SPECIAL,
           activeTabName===SPECIAL,
-            "fas fa-tags fa-3x", 
+            "", 
             "tab-2"
             )}
       </div>
@@ -83,6 +84,41 @@ const EventTabs = ({activeTabName, onClickTab}) => {
           </section> 
         )}
 
+        {activeTabName === ORIGINAL_SERIES && (
+          <section className="tab-content">
+            <div className="">
+              <div
+                id="tab-3-content" 
+                className={`tab-content-item ${
+                activeTabName === ORIGINAL_SERIES && "show"
+                  }`}
+                >
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/h3P5xYh.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/MgwTVJu.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/8RF3gAH.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/rPXVhsU.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/2JmlFeI.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/xgsTM5g.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/9BRFPT1.png' />
+                  </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {activeTabName === UPGRADE && (
           <section className="tab-content">
 
@@ -93,27 +129,43 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                   activeTabName === UPGRADE && "show"
                     }`}
                     >
-                      <h1>This is Upgrade Tab</h1>
+                      <div className='tab-content-div'>
+                        <img src='https://i.imgur.com/9265xNU.png' />
+                      </div>
+                      <div className='tab-content-div'>
+                        <img src='https://i.imgur.com/uxYM431.png' />
+                      </div>
+                      <div className='tab-content-div'>
+                        <img src='https://i.imgur.com/h6iv7aI.png' />
+                      </div>
+                      <div className='tab-content-div'>
+                        <img src='https://i.imgur.com/Ce14KFY.png' />
+                      </div>
+                      <div className='tab-content-div'>
+                        <img src='https://i.imgur.com/7ifDb6y.png' />
+                      </div>
+                      <div className='tab-content-div'>
+                        <img src='https://i.imgur.com/2Jlr2nn.png' />
+                      </div>
+                      <div className='tab-content-div'>
+                        <img src='https://i.imgur.com/aVCVs6N.png' />
+                      </div>
+                      <div className='tab-content-div'>
+                        <img src='https://i.imgur.com/chzkvfi.png' />
+                      </div>
+                      <div className='tab-content-div'>
+                        <img src='https://i.imgur.com/1AhdMKE.png' />
+                      </div>
+                      <div className='tab-content-div'>
+                        <img src='https://i.imgur.com/3qBeq1v.png' />
+                      </div>
                   </div>
               </div>
 
           </section>
         )}
 
-        {activeTabName === ORIGINAL_SERIES && (
-          <section className="tab-content">
-            <div className="">
-              <div
-                id="tab-3-content" 
-                className={`tab-content-item ${
-                activeTabName === ORIGINAL_SERIES && "show"
-                  }`}
-                >
-                  <h1>This is Originals Tab</h1>
-              </div>
-            </div>
-          </section>
-        )}
+        
         {activeTabName === SPECIAL && (
           <section className="tab-content">
 
@@ -124,7 +176,39 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                 activeTabName === SPECIAL && "show"
                   }`}
                 >
-                  <h1>This is Specials Tab</h1>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/c1AKeJK.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/pRBYipr.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/Fiq6xBc.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/2URMLY1.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/B2XjP7d.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/XOE6X0q.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/6uHzOVh.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/fkwheM9.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/58Metb4.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/adxZ5H2.png' />
+                  </div>
+                  <div className='tab-content-div'>
+                    <img src='https://i.imgur.com/SlwtzUJ.png' />
+                  </div>
               </div>
             </div>
 
