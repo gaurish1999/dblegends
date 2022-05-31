@@ -3,6 +3,7 @@
     justify-content: center;
     background: rgb(98, 98, 98);
     transition-duration: 0.2s;
+
 }
 .tab-item:hover{
     /* background: rgb(81, 81, 81); */
@@ -42,7 +43,11 @@
     }
 }
 
-
+.tab-1-content{
+    /* margin-top: 0.5rem; */
+    display: flex;
+    justify-content: center;
+}
 
 .tab-content-item{
     margin: 0.1rem;
@@ -51,16 +56,23 @@
 }
 .tab-content-div{
     /* background: red; */
-    margin-top: 0.3rem;
+    width: 95%;
+    background-color: #E2E4D7;
+    overflow: hidden;
+    margin-top: 0.6rem;
+    margin-left: 1.1rem;
     font-size: 2rem;
-}
-
-.tab-content-item img{
-    width: 90%;
     transition-duration: 0.2s;
 }
 
-.tab-content-item img:hover{
+.tab-content-div:hover{
     transform: scale(1.05);
     cursor: pointer;
+}
+
+.tab-content-item img{
+    width: 100%;
+    margin-top: -5px;
+    margin-left: -120px;
+
 }
