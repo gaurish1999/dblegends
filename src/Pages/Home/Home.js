@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css';
 import gogeta from '../../Media/Voicelines/ss4-gogeta.mp3';
+import Level from '../../Component/Level/Level';
+import Energy from '../../Component/Energy/Energy';
+import CC from '../../Component/CC/CC';
 
 export default function Home() {
 
@@ -14,6 +17,12 @@ export default function Home() {
     <>
         {/* <h1>Home</h1> */}
         <div className='container'>
+
+        <div className='top-three'>
+            <Level />
+            <Energy />
+            <CC />
+          </div>
 
           <div className='sound-effect'>
               <audio id='audio'/>

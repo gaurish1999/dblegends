@@ -16,14 +16,16 @@ export default function Title() {
             />
           </div>
 
-          <img src='https://i.imgur.com/qdiYFlU.png' className='title-char' />
+          {/* <img src='https://i.imgur.com/qdiYFlU.png' className='title-char' /> */}
 
           <div className='bottom-pair'>
             <img src='https://i.imgur.com/4YDucoI.png'
             className='logo'
             /><br />
 
-            <Link to='/home' className='touch-screen'>Touch Screen</Link>
+            <Link to='/home' className='touch-screen'>
+              Touch Screen
+            </Link>
           </div>
         </div>
     </>

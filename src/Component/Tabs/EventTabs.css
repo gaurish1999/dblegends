@@ -36,7 +36,7 @@
 
 @media (max-width: 391px){
     .scroll-box{
-        height: 73vh;
+        height: 66vh;
         overflow-y: scroll;
     }
     .tabs .tab-container{

@@ -16,7 +16,7 @@
 }
 .logo{
     margin-top: 40vh;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .criware, .bne{
@@ -57,5 +57,9 @@
 }
 
 .bottom-pair{
-    margin-top: -480px;
+    /* margin-top: -480px; */
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    bottom: 80px;
 }

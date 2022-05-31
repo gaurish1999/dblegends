@@ -1,3 +1,11 @@
+.top-three{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 0.2rem;
+}
+
 .coop-banner{
     width: 100%;
     max-width: 800px;
