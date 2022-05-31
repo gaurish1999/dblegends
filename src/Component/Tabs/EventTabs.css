@@ -21,9 +21,10 @@
 }
 
 .tab-border{
-    border: 1px solid red;
-    background-color: brown;
-    font-weight: 700;
+    /* border: 1px solid #E09A1C; */
+    border-radius: 50% 0 0 0;
+    background-color: #E09A1C;
+    font-weight: 500;
 }
 
 
@@ -76,3 +77,50 @@
     margin-left: -120px;
 
 }
+
+.tab-content-div div{
+    background-color: #2C2825;
+    opacity: 0.8;
+}
+
+.tab-content-div div p {
+    font-size: medium;
+    white-space: nowrap;
+    color: #AEBCC5;
+    font-weight: 600;
+    margin-top: -1rem;
+    margin-bottom: 0rem;
+    /* -moz-animation: marquee 12s linear infinite;
+    -webkit-animation: marquee 12s linear infinite; */
+    animation: marquee 12s linear infinite;
+    /* text-transform: capitalize; */
+    
+  }
+  /* @-moz-keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @-webkit-keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  } */
+  @keyframes marquee {
+    0% {
+      /* -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%); */
+      transform: translateX(100%)
+    }
+    100% {
+      /* -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%); */
+      transform: translateX(-100%);
+    }
+  }

@@ -9,8 +9,12 @@ export default function Event() {
         {/* <h1>Events</h1> */}
         {/* <hr /> */}
         <div className='container'>
-          <Link to='/coop'><img src='https://i.imgur.com/E5UQioW.png' className='coop-banner'/></Link>
-          <hr />
+          <Link to='/coop'>
+            <div className='coop-div'>
+              <img src='https://i.imgur.com/FQZneiK.png' className='coop-banner'/>
+            </div>  
+          </Link><br/>
+          {/* <hr /> */}
           
           <EventIndex />
           

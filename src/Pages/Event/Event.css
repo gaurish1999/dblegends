@@ -1,13 +1,22 @@
 .coop-banner{
     width: 100%;
     max-width: 800px;
-    transition-duration: 0.2s;
+   
     /* border-radius: 200px 0 200px 0; */
 }
 
-.coop-banner:hover, .z:hover{
-    transform: scale(1.08);
+.coop-div{
+    background: #DCF4F8;
+    border-radius: 10px;
+    width: 98%;
+    transition-duration: 0.2s;
 }
+
+
+.coop-div:hover, .z:hover{
+    transform: scale(1.02);
+}
+
 
 .bottom-links{
     /* background-color: #1865D8; */
