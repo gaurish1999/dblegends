@@ -8,7 +8,7 @@
 
 .coop-banner{
     width: 100%;
-    max-width: 800px;
+    max-width: 400px;
    
     /* border-radius: 200px 0 200px 0; */
 }
@@ -29,7 +29,7 @@
 .bottom-links{
     /* background-color: #1865D8; */
     width: 100%;
-    max-width: 800px;
+    max-width: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
