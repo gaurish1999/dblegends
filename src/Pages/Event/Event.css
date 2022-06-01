@@ -1,6 +1,8 @@
 .top-three{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.1rem;
     justify-content: space-between;
     position: relative;
     padding-bottom: 0.2rem;
@@ -16,7 +18,7 @@
 .coop-div{
     background: #DCF4F8;
     border-radius: 10px;
-    width: 98%;
+    width: 100%;
     transition-duration: 0.2s;
 }
 

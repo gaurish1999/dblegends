@@ -1,3 +1,28 @@
 .cc-div{
-    background: blue;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cc-img{
+    width: 30%;
+    max-width: 53px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* position: fixed;
+    right: 0; */
+    /* background: white; */
+}
+
+.cc-plus{
+    width: 25px;
+    height: 25px;
+}
+
+.cc-div p{
+    background: #101114;
+    padding: 0.2rem;
+    color: bisque;
+    font-weight: 600;
 }

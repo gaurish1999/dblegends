@@ -1,3 +1,38 @@
 .lvl-div{
-    background: yellow;
+    /* background: #101114; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.lvl-div-1{
+    margin-left: -15px;
+    margin-top: -20px;
+    background: #101114;
+    padding: 7px;
+    /* width: 100%; */
+    transform: rotate(-5deg);
+}
+
+.lvl-div .lvl-div-1 span:first-child{
+    color: red;
+    font-weight: 800;
+}
+.lvl-div .lvl-div-1 span:last-child{
+    color: #626262;
+    font-weight: 800;
+    margin-left: 0.3rem;
+}
+.lvl-div .lvl-div-2 p{
+    color: #EDEDED;
+    font-weight: 700;
+    font-size: large;
+}
+
+.lvl-div .lvl-div-2 h2{
+    background: #101114;
+    padding: 7px;
+    width: 100%;
+    transform: rotate(-5deg);
 }
