@@ -1,0 +1,14 @@
+
+.back-link{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    padding: 10px; 
+    background: #1865D8;
+    text-decoration: none;
+    color: #DCF4F8;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    /* transform: rotate(-5deg); */
+}

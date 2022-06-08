@@ -1,0 +1,28 @@
+/* .menu-link{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px; 
+    background: #1865D8;
+    text-decoration: none;
+    color: #DCF4F8;
+    text-shadow: 1px 1px 2px black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transform: rotate(-5deg);
+} */
+
+.both-link{
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    max-width: inherit;
+}
+
+.common-links{
+    display: flex;
+    justify-content: space-around; 
+    padding: 10px;
+    margin-top: 20px;
+    /* background: green; */
+}

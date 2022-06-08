@@ -1,7 +1,7 @@
 import React from 'react';
 import {tabLabels} from "./Missionconstant";
 // import {Link} from "react-router-dom";
-import "./EventTabs.css";
+import "./MissionTabs.css";
 
 const MissionTabs = ({activeTabName, onClickTab}) => {
     const {DAILY, EVENTS, SPECIAL} = tabLabels;
@@ -21,7 +21,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
   return (
     <>
      <section className="tabs">
-      <div className="">
+      <div className="tab-container-mission">
           {renderTabTitle(
               DAILY, 
               activeTabName===DAILY,
@@ -52,7 +52,27 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
             activeTabName === DAILY && "show"
             }`}
             >
-              <h1>This is DAILY Tab</h1>
+              <div className='tab-content-div-mission'>
+
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Daily Mission 1</h5>
+
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+              </div>
           </div>
         </div>
 
@@ -69,7 +89,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
               activeTabName === EVENTS && "show"
                 }`}
                 >
-                  <h1>This is EVENTS Tab</h1>
+                  <h1>EVENTS Missions</h1>
               </div>
           </div>
 
@@ -86,7 +106,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
             activeTabName === SPECIAL && "show"
               }`}
             >
-              <h1>This is SPECIAL Tab</h1>
+              <h1>SPECIAL Missions</h1>
           </div>
         </div>
 
