@@ -42,7 +42,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
                 )}
       </div>
      </section>
-
+<div className='scroll-box'>
     {activeTabName === DAILY && (
       <section className="tab-content">
 
@@ -52,6 +52,176 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
             activeTabName === DAILY && "show"
             }`}
             >
+              <div className='tab-content-div-mission'>
+
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Clear Bonus Battle 1 time(s)</h5>
+
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+                </div>
+              <div className='tab-content-div-mission'>
+
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Embark on an Adventure 1 time(s)</h5>
+
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+                </div>
+
+              <div className='tab-content-div-mission'>
+
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Use 5 Energy</h5>
+
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div className='tab-content-div-mission'>
+
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Use 10 Energy</h5>
+
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div className='tab-content-div-mission'>
+
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Play PvP, Raids or Hyperdimensional Co-Op 1 time(s)</h5>
+
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div className='tab-content-div-mission'>
+
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Complete Daily Missions</h5>
+
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+          </div>
+        </div>
+
+      </section> 
+    )}
+
+    {activeTabName === EVENTS && (
+      <section className="tab-content">
+
+          <div className="">
+            <div
+              id="tab-2-content" 
+              className={`tab-content-item ${
+              activeTabName === EVENTS && "show"
+                }`}
+                >
+<div className='tab-content-div-mission'>
+
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Daily Mission 1</h5>
+
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+              </div>
+              
               <div className='tab-content-div-mission'>
 
                 <p className='mission-header'>Daily</p>
@@ -73,23 +243,72 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
                 </div>
 
               </div>
-          </div>
-        </div>
 
-      </section> 
-    )}
+              <div className='tab-content-div-mission'>
 
-    {activeTabName === EVENTS && (
-      <section className="tab-content">
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Daily Mission 1</h5>
 
-          <div className="">
-            <div
-              id="tab-2-content" 
-              className={`tab-content-item ${
-              activeTabName === EVENTS && "show"
-                }`}
-                >
-                  <h1>EVENTS Missions</h1>
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div className='tab-content-div-mission'>
+
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Daily Mission 1</h5>
+
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div className='tab-content-div-mission'>
+
+                <p className='mission-header'>Daily</p>
+                <h5 className='mission-objective'>Daily Mission 1</h5>
+
+                <div className='mission-detail'>
+
+                  <div className='mission-detail-img-details'>
+                    <img src='https://i.imgur.com/I86xMd8.png' />
+                    <p>x1,000</p>
+                  </div>
+
+                  
+                  <div className='progress-go-btn'>
+                    <div className='mission-progress'></div>
+                    <button>Challenge</button>
+                  </div>
+
+                </div>
+
+              </div>
               </div>
           </div>
 
@@ -112,6 +331,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
 
       </section>
     )}
+    </div>
     </>
   );
 };

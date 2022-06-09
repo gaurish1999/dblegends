@@ -180,7 +180,7 @@
   .mission-progress{
     height: 6px;
     width: inherit;
-    background-color: #006CFF;
+    background-color: rgb(19, 143, 19);
   }
 
 .progress-go-btn{
@@ -195,4 +195,10 @@
     border-radius: 5px;
     font-weight: 600;
     background-image: linear-gradient(#e8ede2,#CACEC4, #AAAE98);
+}
+
+.progress-go-btn button:hover{
+    transition-duration: 0.1s;
+    cursor: pointer;
+    transform: scale(1.1);
 }
