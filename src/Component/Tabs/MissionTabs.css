@@ -35,18 +35,6 @@
 
 }
 
-
-
-/* @media (max-width: 391px){
-    .scroll-box{
-        height: 66vh;
-        overflow-y: scroll;
-    }
-    .tabs .tab-container{
-        font-size: 0.8rem;
-    }
-} */
-
 .tab-1-content{
     /* margin-top: 0.5rem; */
     display: flex;
@@ -54,17 +42,18 @@
 }
 
 .tab-content-item{
-    margin: 0.1rem;
+    margin: 0.3rem;
     padding: 0.1rem;
     /* background-color: aqua; */
 }
 .tab-content-div-mission{
     /* background: red; */
     width: 100%;
-    background-color: #86B2D7;
+    background-color: #CFDDDE;
     overflow: hidden;
-    margin-top: 0.2rem;
+    margin-top: 0.7rem;
     padding: 0;
+    border-radius: 5px;
     /* margin-left: 1.1rem; */
     /* font-size: 2rem; */
     /* transition-duration: 0.2s; */
@@ -94,29 +83,35 @@
     font-weight: 600;
     margin-top: -1rem;
     margin-bottom: 0rem;
-    /* -moz-animation: marquee 12s linear infinite;
-    -webkit-animation: marquee 12s linear infinite; */
     animation: marquee 12s linear infinite;
-    /* text-transform: capitalize; */
     
   }
   @keyframes marquee {
     0% {
-      /* -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%); */
       transform: translateX(100%)
     }
     100% {
-      /* -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%); */
       transform: translateX(-100%);
     }
   }
 
-  .mission-header{
+  #tab-1-content .mission-header{
+      font-size: 0.8rem;
+      /* background: #C7D7E5; */
+      /* background-image: url('https://i.imgur.com/JB7MxPY.png'); */
+      background-color: #5D6DE6;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 35%;
+      color: white;
+      text-shadow: 0px 0px 10px black;
+      margin-top: 0rem;
+  }
+  #tab-2-content .mission-header{
       font-size: 0.8rem;
       /* background: #C7D7E5; */
       background-image: url('https://i.imgur.com/JB7MxPY.png');
+      /* background-color: #5D6DE6; */
       background-repeat: no-repeat;
       background-size: contain;
       width: 35%;
@@ -126,7 +121,7 @@
   }
 
   .mission-objective{
-      background: #C7D7E5;
+      background: #DDE3E7;
       margin-top: -0.7rem;
       text-align: left;
       padding-left: 0.5rem;
@@ -141,7 +136,7 @@
 }
 
 .mission-detail{
-    background-color: #86B2D7;
+    background-color: #CFDDDE;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -201,4 +196,38 @@
     transition-duration: 0.1s;
     cursor: pointer;
     transform: scale(1.1);
+}
+
+/* ------------------Events tab-------------------- */
+
+#tab-2-content .tab-content-div-mission, #tab-2-content .mission-detail{
+    background-color: #75A7CA;
+}
+
+#tab-2-content .banner-image{
+    /* width: 40%; */
+
+    margin-left: 9rem;
+    transform: scale(1.8);
+}
+#tab-2-content .banner-title{
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: -2.5rem;
+    margin-top: 1.4rem;
+    text-align: left;
+    /* background-color:red; */
+    font-weight: 700;
+    font-size: 0.9rem;
+
+}
+
+#tab-2-content .mission-detail{
+    margin-top: -1.8rem;
+    margin-bottom: -2.5rem;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    align-items: center;
 }

@@ -60,8 +60,20 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
                 <div className='mission-detail'>
 
                   <div className='mission-detail-img-details'>
-                    <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
+                    {/* <div className='rwd'> */}
+                      <img src='https://i.imgur.com/I86xMd8.png' />
+                      <p>x10</p>
+                    {/* </div> */}
+
+                    {/* <div className='rwd'>
+                      <img src='https://i.imgur.com/I86xMd8.png' />
+                      <p>x1,000</p>
+                    </div>
+
+                    <div className='rwd'>
+                      <img src='https://i.imgur.com/I86xMd8.png' />
+                      <p>x1,000</p>
+                    </div> */}
                   </div>
 
                   
@@ -82,7 +94,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
 
                   <div className='mission-detail-img-details'>
                     <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
+                    <p>x5</p>
                   </div>
 
                   
@@ -104,7 +116,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
 
                   <div className='mission-detail-img-details'>
                     <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
+                    <p>x5</p>
                   </div>
 
                   
@@ -126,7 +138,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
 
                   <div className='mission-detail-img-details'>
                     <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
+                    <p>x5</p>
                   </div>
 
                   
@@ -148,7 +160,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
 
                   <div className='mission-detail-img-details'>
                     <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
+                    <p>x10</p>
                   </div>
 
                   
@@ -170,7 +182,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
 
                   <div className='mission-detail-img-details'>
                     <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
+                    <p>x500</p>
                   </div>
 
                   
@@ -194,121 +206,105 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
       <section className="tab-content">
 
           <div className="">
-            <div
-              id="tab-2-content" 
+            <div id="tab-2-content" 
               className={`tab-content-item ${
               activeTabName === EVENTS && "show"
                 }`}
                 >
-<div className='tab-content-div-mission'>
-
-                <p className='mission-header'>Daily</p>
-                <h5 className='mission-objective'>Daily Mission 1</h5>
+              <div className='tab-content-div-mission'>
 
                 <div className='mission-detail'>
 
-                  <div className='mission-detail-img-details'>
-                    <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
+                  <div className='banner-image'>
+                    <img src='https://i.imgur.com/JD198ij.png' />
                   </div>
 
-                  
-                  <div className='progress-go-btn'>
-                    <div className='mission-progress'></div>
-                    <button>Challenge</button>
+                  <div className='banner-title'>
+                    <p>Thanks for 4 Years!<br/>
+                      Anniversary Special Missions
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+              <div className='tab-content-div-mission'>
+
+                <div className='mission-detail'>
+
+                  <div className='banner-image'>
+                    <img src='https://i.imgur.com/u1GIzyI.png' />
+                  </div>
+
+                  <div className='banner-title'>
+                    <p>Anniversary Special!!<br/>Hyperdimensional Co-Op</p>
+                  </div>
+
+                </div>
+
+              </div>
+              <div className='tab-content-div-mission'>
+
+                <div className='mission-detail'>
+
+                  <div className='banner-image'>
+                    <img src='https://i.imgur.com/7uk5hQX.png' />
+                  </div>
+
+                  <div className='banner-title'>
+                    <p>Monthly Missions</p>
+                  </div>
+
+                </div>
+
+              </div>
+              <div className='tab-content-div-mission'>
+
+                <div className='mission-detail'>
+
+                  <div className='banner-image'>
+                    <img src='https://i.imgur.com/O1pds4u.png' />
+                  </div>
+
+                  <div className='banner-title'>
+                    <p>Tornament of Power </p>
+                  </div>
+
+                </div>
+
+              </div>
+              <div className='tab-content-div-mission'>
+
+                <div className='mission-detail'>
+
+                  <div className='banner-image'>
+                    <img src='https://i.imgur.com/Szuur5d.png' />
+                  </div>
+
+                  <div className='banner-title'>
+                    <p>Who's the 4th Anniversary's Strongest Fighter?! Anniversay Super Space-Time Duel</p>
+                  </div>
+
+                </div>
+
+              </div>
+              <div className='tab-content-div-mission'>
+
+                <div className='mission-detail'>
+
+                  <div className='banner-image'>
+                    <img src='https://i.imgur.com/iTV0AOv.png' />
+                  </div>
+
+                  <div className='banner-title'>
+                    <p>[Super Saiyan God SS Vegito (DBL24-01S)] Awakening Z Power Missions</p>
                   </div>
 
                 </div>
 
               </div>
               
-              <div className='tab-content-div-mission'>
 
-                <p className='mission-header'>Daily</p>
-                <h5 className='mission-objective'>Daily Mission 1</h5>
-
-                <div className='mission-detail'>
-
-                  <div className='mission-detail-img-details'>
-                    <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
-                  </div>
-
-                  
-                  <div className='progress-go-btn'>
-                    <div className='mission-progress'></div>
-                    <button>Challenge</button>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div className='tab-content-div-mission'>
-
-                <p className='mission-header'>Daily</p>
-                <h5 className='mission-objective'>Daily Mission 1</h5>
-
-                <div className='mission-detail'>
-
-                  <div className='mission-detail-img-details'>
-                    <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
-                  </div>
-
-                  
-                  <div className='progress-go-btn'>
-                    <div className='mission-progress'></div>
-                    <button>Challenge</button>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div className='tab-content-div-mission'>
-
-                <p className='mission-header'>Daily</p>
-                <h5 className='mission-objective'>Daily Mission 1</h5>
-
-                <div className='mission-detail'>
-
-                  <div className='mission-detail-img-details'>
-                    <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
-                  </div>
-
-                  
-                  <div className='progress-go-btn'>
-                    <div className='mission-progress'></div>
-                    <button>Challenge</button>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div className='tab-content-div-mission'>
-
-                <p className='mission-header'>Daily</p>
-                <h5 className='mission-objective'>Daily Mission 1</h5>
-
-                <div className='mission-detail'>
-
-                  <div className='mission-detail-img-details'>
-                    <img src='https://i.imgur.com/I86xMd8.png' />
-                    <p>x1,000</p>
-                  </div>
-
-                  
-                  <div className='progress-go-btn'>
-                    <div className='mission-progress'></div>
-                    <button>Challenge</button>
-                  </div>
-
-                </div>
-
-              </div>
               </div>
           </div>
 
@@ -319,8 +315,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
       <section className="tab-content">
 
         <div className="">
-          <div
-            id="tab-4-content" 
+          <div id="tab-3-content" 
             className={`tab-content-item ${
             activeTabName === SPECIAL && "show"
               }`}
