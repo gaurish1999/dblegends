@@ -27,7 +27,7 @@ export default function Home() {
           <div className='sound-effect'>
               <audio id='audio'/>
               <img 
-              src='https://i.imgur.com/Bj2Ikdx.png' 
+              src='https://i.imgur.com/MDYuWS8.png' 
               alt='favorite-character' 
               className='fav-char'
               onClick={play}

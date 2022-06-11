@@ -211,6 +211,40 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
               activeTabName === EVENTS && "show"
                 }`}
                 >
+
+
+              <div className='tab-content-div-mission'>
+
+                <div className='mission-detail'>
+
+                  <div className='banner-image'>
+                    <img src='https://i.imgur.com/Szuur5d.png' />
+                  </div>
+
+                  <div className='banner-title'>
+                    <p>Who's the 4th Anniversary's Strongest Fighter?! Anniversay Super Space-Time Duel</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div className='tab-content-div-mission'>
+
+                <div className='mission-detail'>
+
+                  <div className='banner-image'>
+                    <img src='https://i.imgur.com/iTV0AOv.png' />
+                  </div>
+
+                  <div className='banner-title'>
+                    <p>[Super Saiyan God SS Vegito (DBL24-01S)] Awakening Z Power Missions</p>
+                  </div>
+
+                </div>
+
+              </div>
+
               <div className='tab-content-div-mission'>
 
                 <div className='mission-detail'>
@@ -228,6 +262,24 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
                 </div>
 
               </div>
+
+              <div className='tab-content-div-mission'>
+
+                <div className='mission-detail'>
+
+                  <div className='banner-image'>
+                    <img src='https://i.imgur.com/BvWlQnk.png' />
+                  </div>
+
+                  <div className='banner-title'>
+                    <p>Let's Go! Universe 7!
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
               <div className='tab-content-div-mission'>
 
                 <div className='mission-detail'>
@@ -243,6 +295,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
                 </div>
 
               </div>
+
               <div className='tab-content-div-mission'>
 
                 <div className='mission-detail'>
@@ -258,6 +311,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
                 </div>
 
               </div>
+
               <div className='tab-content-div-mission'>
 
                 <div className='mission-detail'>
@@ -272,38 +326,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
 
                 </div>
 
-              </div>
-              <div className='tab-content-div-mission'>
-
-                <div className='mission-detail'>
-
-                  <div className='banner-image'>
-                    <img src='https://i.imgur.com/Szuur5d.png' />
-                  </div>
-
-                  <div className='banner-title'>
-                    <p>Who's the 4th Anniversary's Strongest Fighter?! Anniversay Super Space-Time Duel</p>
-                  </div>
-
-                </div>
-
-              </div>
-              <div className='tab-content-div-mission'>
-
-                <div className='mission-detail'>
-
-                  <div className='banner-image'>
-                    <img src='https://i.imgur.com/iTV0AOv.png' />
-                  </div>
-
-                  <div className='banner-title'>
-                    <p>[Super Saiyan God SS Vegito (DBL24-01S)] Awakening Z Power Missions</p>
-                  </div>
-
-                </div>
-
-              </div>
-              
+              </div>              
 
               </div>
           </div>
