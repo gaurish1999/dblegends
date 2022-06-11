@@ -7,7 +7,7 @@ export default function CC() {
       <img src='https://pbs.twimg.com/media/Ec9tFq8UwAA6TcM.png' 
         className='cc-img'
       />
-      <p>4,037</p>
+      <p>9,963</p>
       <img src='https://iconsplace.com/wp-content/uploads/_icons/ffe500/256/png/plus-icon-19-256.png'
       className='cc-plus'
       />

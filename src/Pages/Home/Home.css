@@ -1,17 +1,17 @@
 .fav-char{
     /* margin-top: 20px; */
-    width: 65%;
+    width: 68%;
     max-width: 600px;
     cursor: pointer;
     transition-duration: 0.3s;
 }
 .fav-char:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 @media (max-width: 500px){
     .fav-char{
-        margin-top: 90px;
-        width: 65%;
+        margin-top: 130px;
+        width: 60%;
         transform: scale(1.5);
         /* max-width: 600px; */
         cursor: pointer;
@@ -33,6 +33,7 @@
 .both-link{
     position: absolute;
     bottom: 0;
+    margin-left: -0.3rem;
     width: inherit;
     max-width: inherit;
 }
@@ -60,7 +61,7 @@
     position: absolute;
     right: 10px;
     bottom: 10px;
-    padding: 10px; 
+    padding: 5px; 
     background: #1865D8;
     text-decoration: none;
     color: #DCF4F8;
@@ -75,7 +76,7 @@
     position: absolute;
     left: 10px;
     bottom: 10px;
-    padding: 10px; 
+    padding: 5px; 
     background: #1865D8;
     text-decoration: none;
     color: #DCF4F8;
@@ -99,6 +100,7 @@
 
 .story-link, .event-link, .top-link, .pvp-link{
     padding: 10px;   
+    margin-left: 0.3rem;
     display: flex;
     align-items: center;
     background: rgb(236, 235, 235);
@@ -108,16 +110,16 @@
     text-shadow: 1px 1px 2px black;
     font-size: 1.5rem;
     font-weight: bolder;
-    width: 13%;
+    width: 50px;
     max-width: 100%;
-    height: 90%;
+    height: 70%;
     max-height: 100%;
     display: flex;
     justify-content: center;
 }
 
 .link-hover:hover, .menu-link:hover, .titlescreen-link:hover{
-    transition-duration: 0.4s;
-    transform: scale(1.1);
+    transition-duration: 0.1s;
+    transform: scale(1.05);
     /* box-shadow: 5px 5px 5px grey; */
 }
