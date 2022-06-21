@@ -32,19 +32,19 @@
     /* background-color: #1865D8; */
     width: 100%;
     max-width: 400px;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
     justify-content: space-between;
     position: fixed;
-    bottom: 15px;
+    bottom: 0px;
     /* margin-top: 260px; */
 }
 
 .menu-link-btn{
-    /* position: absolute;
+    position: absolute;
     right: 10px;
-    bottom: 10px; */
-    padding: 10px; 
+    bottom: 10px;
+    padding: 5px; 
     background: #1865D8;
     text-decoration: none;
     color: #DCF4F8;
@@ -55,10 +55,10 @@
 }
 
 .home-link-btn{
-    /* position: absolute;
+    position: absolute;
     left: 10px;
-    bottom: 10px; */
-    padding: 10px; 
+    bottom: 10px;
+    padding: 5px; 
     background: #1865D8;
     text-decoration: none;
     color: #DCF4F8;
@@ -69,7 +69,10 @@
 }
 
 .mission-link-btn{
-    padding: 10px; 
+    position: absolute;
+    left: 35%;
+    bottom: 10px;
+    padding: 5px; 
     background: rgb(149, 98, 2);
     text-decoration: none;
     color: #DCF4F8;

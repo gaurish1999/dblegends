@@ -46,7 +46,7 @@ export default function Home() {
             </div>
 
             <div className='common-links'>
-              <Link to='/' className='titlescreen-link'>Go to Title Screen</Link>
+              <Link to='/' className='titlescreen-link'>Title</Link>
               <Link to='/menu' className='menu-link'>Menu</Link><br />
             </div>
           </div>

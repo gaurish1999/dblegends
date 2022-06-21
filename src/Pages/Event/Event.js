@@ -31,7 +31,7 @@ export default function Event() {
           <div className='bottom-links'>
             <Link to='/home' className='home-link-btn'>Home</Link> 
             <Link to='/mission' className='mission-link-btn'><span className='z'>Z</span> Mission</Link>
-            <Link to='/menu' className='menu-link-btn'>Menu</Link>
+            <Link to='/menu' className='menu-link'>Menu</Link>
           </div>
         </div>
     </>

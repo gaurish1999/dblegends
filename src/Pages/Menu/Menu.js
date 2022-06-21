@@ -6,6 +6,7 @@ export default function Menu() {
 
   return (
     <>
+      <div className='container'>
         <h1>This is Menu</h1>
 
         <Link to='/news'>News</Link><br />
@@ -29,6 +30,7 @@ export default function Menu() {
         <Link to='/characters'>Characters</Link><br />
         <Link to='/home'>Home</Link><br />
         <Back />
+      </div>
     </>
   )
 }

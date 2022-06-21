@@ -343,7 +343,7 @@ const MissionTabs = ({activeTabName, onClickTab}) => {
             activeTabName === SPECIAL && "show"
               }`}
             >
-              <h1>SPECIAL Missions</h1>
+              <h1>Coming Soon...</h1>
           </div>
         </div>
 
