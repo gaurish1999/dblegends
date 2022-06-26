@@ -22,6 +22,7 @@ import Scan from './Pages/Scan/Scan';
 import Shop from './Pages/Shop/Shop';
 import Summon from './Pages/Summon/Summon';
 import Train from './Pages/Train/Train';
+import HoiPoi from './Pages/HoiPoi/HoiPoi';
 
 
 
@@ -43,6 +44,7 @@ function App() {
           <Route path='/item' element={<Item />}></Route>
           <Route path='/friend' element={<Friend />}></Route>
           <Route path='/other' element={<Other />}></Route>
+          <Route path='/hoipoi' element={<HoiPoi />}></Route>
           <Route path='/exchangeshop' element={<ExchangeShop />}></Route>
           <Route path='/train' element={<Train />}></Route>
           <Route path='/coop' element={<Coop />}></Route>

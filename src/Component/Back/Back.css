@@ -1,4 +1,10 @@
-
+.back-link-flex{
+    position: absolute;
+    bottom: 0;
+    margin-left: -0.3rem;
+    width: inherit;
+    max-width: inherit;
+}
 .back-link{
     position: absolute;
     left: 10px;
