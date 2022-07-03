@@ -39,10 +39,22 @@ export default function Home() {
           <br />
           <div className='both-link'>
             <div className='links'>
-              <Link to='/story' className='story-link link-hover'>Story</Link>
+              {/* <Link to='/story' className='story-link link-hover'>Story</Link>
               <Link to='/event' className='event-link link-hover'>Events</Link>
               <Link to='/top' className='top-link link-hover'>TOP</Link>
-              <Link to='/pvp' className='pvp-link link-hover'>PvP</Link><br />
+              <Link to='/pvp' className='pvp-link link-hover'>PvP</Link> */}
+              <Link to='/story' className='story-link link-hover'>
+                <img src='https://i.imgur.com/eE5NYlz.png' alt='story' />
+              </Link>
+              <Link to='/event' className='event-link link-hover'>
+                <img src='https://i.imgur.com/H2XHBXk.png' alt='event' />
+              </Link>
+              <Link to='/top' className='top-link link-hover'>
+                <img src='https://i.imgur.com/oFkO9OL.png' alt='top' />
+              </Link>
+              <Link to='/pvp' className='pvp-link link-hover'>
+                <img src='https://i.imgur.com/LJ5x3ls.png' alt='pvp' />
+              </Link>
             </div>
 
             <div className='common-links'>
