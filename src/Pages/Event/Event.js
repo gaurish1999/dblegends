@@ -21,7 +21,7 @@ export default function Event() {
           {/* <hr/> */}
           <Link to='/coop'>
             <div className='coop-div'>
-              <img src='https://i.imgur.com/FQZneiK.png' className='coop-banner'/>
+              <img src='https://i.imgur.com/4VHVQey.png' className='coop-banner'/>
             </div>  
           </Link><br/>
           {/* <hr /> */}

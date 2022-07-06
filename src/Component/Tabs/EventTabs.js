@@ -306,24 +306,28 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                       <p>Goku The Legendary Super Saiyan</p>
                     </div>
                   </div>
+
                   <div className='tab-content-div'>
                     <img src='https://i.imgur.com/58Metb4.png' />
                     <div>
                       <p>Vegeta, Prince of All Saiyans - Rebellion Against Frieza! -</p>
                     </div>
                   </div>
+
                   <div className='tab-content-div'>
                     <img src='https://i.imgur.com/adxZ5H2.png' />
                     <div>
                       <p>Behold... One Body with the Power of Seven!</p>
                     </div>
                   </div>
+
                   <div className='tab-content-div'>
                     <img src='https://i.imgur.com/SlwtzUJ.png' />
                     <div>
                       <p>Eliminate the Earthlings</p>
                     </div>
                   </div>
+                  
               </div>
             </div>
 

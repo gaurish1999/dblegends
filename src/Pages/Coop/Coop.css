@@ -1,4 +1,159 @@
+.above-coop-banner, .below-coop-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+.time-rem-btn{
+    display: flex;
+    width: 95px;
+    margin-left: -0.4rem;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    padding: 0px; 
+    border-radius: 3px;
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.exchange-btn{
+    display: flex;
+    width: 110px;
+    margin-left: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#F2C12C, #D89521);
+    padding: 3px; 
+    text-decoration: none;
+    border-radius: 3px;
+    color: black;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.exchange-btn img{
+    width: 23%;
+}
+
+.popular-char-btn{
+    display: flex;
+    width: 110px;
+    margin-left: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#e8ede2,#CACEC4, #AAAE98);
+    padding: 4px; 
+    text-decoration: none;
+    border-radius: 3px;
+    color: black;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.info-btn{
+    display: flex;
+    width: 20px;
+    margin-left: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#F2C12C, #D89521);
+    padding: 4px; 
+    text-decoration: none;
+    border-radius: 3px;
+    color: black;
+    font-weight: 900;
+    font-size: 0.7rem;
+}
+
 .coop-banner{
-    width: 100%;
-    max-width: 700px;
+    width: 500px;
+    overflow: hidden;
+}
+
+.coop-banner img{
+    width: inherit;
+    margin-left: -2.7rem;    
+}
+
+.below-coop-banner{
+    margin-top: -0.5rem;
+    margin-left: 0rem;
+    padding-bottom: 0.5rem;
+    background-color: #2d2e39;
+}
+
+.below-coop-banner-icons{
+    width: 15%;
+    float: left;
+}
+
+.coop-medal-btn, .anni-medal-btn, .prem-coop-medal-btn{
+    background-color: #191A28;
+    margin-left: 0.5rem;
+    color: white;
+    width: 110px;
+    font-size: 0.9rem;
+    text-align: right;
+    border-radius: 10px;
+}
+
+.coop-medal-btn{
+    margin-left: -0.5rem;    
+}
+
+.banner{
+    height: 12vh;
+    width: 95%;
+    background-color: #E2E4D7;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0px black;
+    overflow: hidden;
+    margin-top: 0.6rem;
+    margin-left: 0.5rem;
+    transition-duration: 0.2s;
+}
+
+.banner:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.boss-img{
+    width: 70%;
+    margin-top: -1.6rem;
+    margin-left: -10rem;
+    margin-bottom: -3rem;
+}
+.banner-div{
+    background-color: #746c66;
+    opacity: 0.7;
+}
+.difficulty-label{
+    position: relative;
+    margin-top: -3.4rem;
+    margin-left: 1rem;
+    text-align: left;
+    font-size: medium;
+    white-space: nowrap;
+    color: white;
+    font-weight: 600;
+    /* z-index: 99; */
+    text-shadow: 1px 1px 2px black;
+}
+
+.join-with-frd{
+    position: absolute;
+    left: 30%;
+    bottom: 10px;
+    padding: 15px; 
+    width: 30%;
+    /* background: #F2C12C; */
+    background-image: linear-gradient(#F2C12C, #D89521);
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+    font-weight: 500;
 }
