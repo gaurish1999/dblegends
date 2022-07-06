@@ -77,7 +77,7 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                   </div>
 
                   <div className='tab-content-div'>
-                    <img src='https://i.imgur.com/SHpyvAX.png' />
+                    <img src='https://i.imgur.com/6nt9v94.png' />
                     <div>
                       <p>Extreme Battle! - Get Incredible Rewards By clearing One Stage Each Day!! -</p>
                     </div>
@@ -105,7 +105,7 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                   </div>
 
                   <div className='tab-content-div'>
-                    <img src='https://i.imgur.com/KiQ1muU.png' />
+                    <img src='https://i.imgur.com/nGrdQn8.png' />
                     <div>
                       <p>Fight your way to the end! Clear stages and get up to 700 Chrono Crystals!</p>
                     </div>
@@ -327,7 +327,7 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                       <p>Eliminate the Earthlings</p>
                     </div>
                   </div>
-                  
+
               </div>
             </div>
 
