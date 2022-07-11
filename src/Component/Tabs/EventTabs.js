@@ -54,7 +54,7 @@ const EventTabs = ({activeTabName, onClickTab}) => {
         {activeTabName === RECOMMENDED && (
           <section className="tab-content">
 
-            <div className="">
+            {/* <div className=""> */}
               <div id="tab-1-content" 
                 className={`tab-content-item ${
                 activeTabName === RECOMMENDED && "show"
@@ -111,16 +111,15 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                     </div>
                   </div>
               </div>
-            </div>
+            {/* </div> */}
 
           </section> 
         )}
 
         {activeTabName === ORIGINAL_SERIES && (
           <section className="tab-content">
-            <div className="">
-              <div
-                id="tab-3-content" 
+            {/* <div className=""> */}
+              <div id="tab-2-content" 
                 className={`tab-content-item ${
                 activeTabName === ORIGINAL_SERIES && "show"
                   }`}
@@ -168,16 +167,15 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                     </div>
                   </div>
               </div>
-            </div>
+            {/* </div> */}
           </section>
         )}
 
         {activeTabName === UPGRADE && (
           <section className="tab-content">
 
-              <div className="">
-                <div
-                  id="tab-2-content" 
+              {/* <div className=""> */}
+                <div id="tab-3-content" 
                   className={`tab-content-item ${
                   activeTabName === UPGRADE && "show"
                     }`}
@@ -224,7 +222,7 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                           <p>Get PUR boost materials!</p>
                         </div>
                       </div>
-                      <div className='tab-content-div'>
+                      {/* <div className='tab-content-div'>
                         <img src='https://i.imgur.com/chzkvfi.png' />
                         <div>
                           <p>Get GRN boost materials!</p>
@@ -241,19 +239,17 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                         <div>
                           <p>Get lots of Zenkai Souls!</p>
                         </div>
-                      </div>
-                  </div>
-              </div>
+                      </div> */}
+                </div>
+              {/* </div> */}
 
           </section>
         )}
         
         {activeTabName === SPECIAL && (
           <section className="tab-content">
-
-            <div className="">
-              <div
-                id="tab-4-content" 
+            
+              <div id="tab-4-content" 
                 className={`tab-content-item ${
                 activeTabName === SPECIAL && "show"
                   }`}
@@ -264,42 +260,49 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                       <p>Lets's go, Legends!</p>
                     </div>
                   </div>
+
                   <div className='tab-content-div'>
                     <img src='https://i.imgur.com/pRBYipr.png' />
                     <div>
                       <p>Fusion Reborn: Super Gogeta</p>
                     </div>
                   </div>
+
                   <div className='tab-content-div'>
                     <img src='https://i.imgur.com/Fiq6xBc.png' />
                     <div>
                       <p>Legends Road - Piccolo: Kami - </p>
                     </div>
                   </div>
+
                   <div className='tab-content-div'>
                     <img src='https://i.imgur.com/2URMLY1.png' />
                     <div>
                       <p>Legends Road - Goku (Youth) - </p>
                     </div>
                   </div>
+
                   <div className='tab-content-div'>
                     <img src='https://i.imgur.com/B2XjP7d.png' />
                     <div>
                       <p>Legends Road - Trunks (Youth) - </p>
                     </div>
                   </div>
+
                   <div className='tab-content-div'>
                     <img src='https://i.imgur.com/XOE6X0q.png' />
                     <div>
                       <p>Legends Road - Gotenks - </p>
                     </div>
                   </div>
+
                   <div className='tab-content-div'>
                     <img src='https://i.imgur.com/6uHzOVh.png' />
                     <div>
                       <p>LL Fierce Battle! Let's finish this! Family Kamehameha!!</p>
                     </div>
                   </div>
+
                   <div className='tab-content-div'>
                     <img src='https://i.imgur.com/fkwheM9.png' />
                     <div>
@@ -329,7 +332,6 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                   </div>
 
               </div>
-            </div>
 
           </section>
         )}
