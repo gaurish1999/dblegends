@@ -1,0 +1,16 @@
+.container h1{
+    color: white;
+}
+
+.loading-goku{
+    width: 50%;
+    margin-top: 5rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px black;
+}
+
+.loading-text{
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+}

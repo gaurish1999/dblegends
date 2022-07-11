@@ -17,14 +17,14 @@ export default function Menu() {
         <div className='six-btns'>
 
           <div className='six-btns-row1'>
-            <button><Link to='/news'>News</Link></button>
-            <button><Link to='/scan'>Scan</Link></button>
-            <button><Link to='/customize'>Customize</Link></button>
+            <Link to='/news'><button>News</button></Link>
+            <Link to='/scan'><button>Scan</button></Link>
+            <Link to='/customize'><button>Customize</button></Link>
           </div>
           <div className='six-btns-row2'>
-            <button><Link to='/item'>Item</Link></button>
-            <button><Link to='/friend'>Friend</Link></button>
-            <button><Link to='/other'>Other</Link></button>
+            <Link to='/item'><button>Item</button></Link>
+            <Link to='/friend'><button>Friend</button></Link>
+            <Link to='/other'><button>Other</button></Link>
           </div>
 
         </div>

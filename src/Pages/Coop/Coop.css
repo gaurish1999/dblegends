@@ -27,6 +27,7 @@
     justify-content: center;
     background-image: linear-gradient(#F2C12C, #D89521);
     padding: 3px; 
+    border: 2px solid black;
     text-decoration: none;
     border-radius: 3px;
     color: black;
@@ -46,6 +47,7 @@
     justify-content: center;
     background-image: linear-gradient(#e8ede2,#CACEC4, #AAAE98);
     padding: 4px; 
+    border: 2px solid black;
     text-decoration: none;
     border-radius: 3px;
     color: black;
@@ -61,6 +63,7 @@
     justify-content: center;
     background-image: linear-gradient(#F2C12C, #D89521);
     padding: 4px; 
+    border: 1px solid black;
     text-decoration: none;
     border-radius: 3px;
     color: black;

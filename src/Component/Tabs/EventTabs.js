@@ -222,7 +222,7 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                           <p>Get PUR boost materials!</p>
                         </div>
                       </div>
-                      {/* <div className='tab-content-div'>
+                      <div className='tab-content-div'>
                         <img src='https://i.imgur.com/chzkvfi.png' />
                         <div>
                           <p>Get GRN boost materials!</p>
@@ -239,7 +239,7 @@ const EventTabs = ({activeTabName, onClickTab}) => {
                         <div>
                           <p>Get lots of Zenkai Souls!</p>
                         </div>
-                      </div> */}
+                      </div>
                 </div>
               {/* </div> */}
 

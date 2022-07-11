@@ -30,8 +30,8 @@
 
 
 .scroll-box{
-    height: 55vh;
-    overflow-x: hidden;
+    height: 50vh;
+    /* overflow-x: hidden; */
     overflow-y: scroll;
     /* width: inherit; */
 

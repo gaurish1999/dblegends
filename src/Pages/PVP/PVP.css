@@ -1,0 +1,120 @@
+.info-btn{
+    float: right;
+}
+
+.season-desc span{
+    font-size: 0.5rem;
+    font-weight: 700;
+    color: rgb(134, 148,181);
+}
+
+.season-period span{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(145, 155,185);
+    background-color: rgb(21, 25, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 1px;
+    padding-bottom: 2px; */
+}
+.godtube-img{
+    width: 100%;
+}
+
+.season-boost-chars-flex{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* background-color: aqua; */
+    margin-top: -1.2rem;
+    margin-right: 0.5rem;
+    
+}
+.season-boost-chars{
+    font-weight: 700;
+}
+
+.season-ranking{
+    background-color: rgb(37, 40, 47, 0.85);
+    background-image: url('https://nah3ohdioj7ye3sh.dblgnds.channel.or.jp/information/en/img/item/season_rank4.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 6rem;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    width: 92%;
+    margin: auto;
+    margin-top: 0.3rem;
+    border-radius: 20px 0px 20px 0px;
+    border: 2px solid rgb(107, 112, 125);
+}
+
+.season-ranking-board-row{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.rank{
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px black;
+}
+
+.rank-heading, .rank-rp, .battle-rank, .ranking-rwd{
+    color:rgb(145, 155,185);
+    font-weight: 600;
+}
+
+.ranking-rwd{
+    font-size: 0.9rem;
+}
+
+.left-ranking-box {
+    width: 49%;
+}
+
+.right-ranking-box{
+    width: 49%;
+}
+
+hr{
+    margin: 0.1rem;
+    border-color: rgb(145, 155,185);;
+}
+
+/* .right-ranking-box{
+    float: right;
+} */
+
+.battle-rank-rewards{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.2rem;
+    background-color: rgb(17, 18, 22);
+    border-radius: 15px 0px 15px 0px;
+    border: 1px solid rgb(107, 112, 125);
+    height: 7vh;
+    /* margin: auto; */
+}
+
+.rwd-item{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+.rwd-item img{
+    transform: scale(0.5);
+    /* width: 10%; */
+}
+
+.rwd-item span{
+    color: rgb(220, 223, 221);
+    font-size: 0.6rem;
+    font-weight: 600;
+    position: absolute;
+    top: 19.2rem;
+}

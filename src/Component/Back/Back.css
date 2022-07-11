@@ -1,7 +1,7 @@
 .back-link-flex{
-    /* position: absolute; */
+    position: absolute;
     bottom: 0;
-    margin-left: -0.3rem;
+    /* margin-left: -0.3rem; */
     width: inherit;
     max-width: inherit;
 }

@@ -22,8 +22,9 @@
     width: 80px;
     margin-top: 0.8rem;
     padding: 0.1rem;
-    border-radius: 5px;
+    border-radius: 2px;
     font-weight: 600;
+    text-decoration: none;
     background-image: linear-gradient(#e8ede2,#CACEC4, #AAAE98);
 }
 
