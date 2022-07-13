@@ -164,7 +164,7 @@ hr{
     color: rgb(236, 251, 126);
     font-size: 0.95rem;
     font-weight: 600;
-    width: 17vw;
+    width: 100px;
     height: 3vh;
     border-radius: 0 10px 0 10px;
     border-left: 0.5rem solid rgb(186, 197, 187);
@@ -192,9 +192,4 @@ hr{
     display: flex;
     justify-content: space-evenly;
     transform: scale(1.2);
-}
-
-.z-mission-div .mission-link-btn{
-    margin-left: 2rem;
-    /* background-color: aqua; */
 }

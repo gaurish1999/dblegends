@@ -143,13 +143,6 @@ export default function PVP() {
             </Link>
           </div>
 
-          <div className='z-mission-div'>
-            <Link to='/mission' className='mission-link-btn'>
-              <span className='z'>Z</span> Mission
-            </Link>
-          </div>
-
-
           {/* <img src='https://i.imgur.com/KF077Ag.gif' 
           alt='coming soon' 
           className='loading-goku'
@@ -161,6 +154,9 @@ export default function PVP() {
           <div className='bottom-links'>
             {/* <Link to='/home' className='home-link-btn'>Home</Link>  */}
             <Back />
+            <Link to='/mission' className='mission-link-btn'>
+              <span className='z'>Z</span> Mission
+            </Link>
             {/* <Link to='' className='join-with-frd'>Join with a Code</Link> */}
             <Link to='/menu' className='menu-link'>Menu</Link>
           </div>
