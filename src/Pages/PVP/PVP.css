@@ -19,7 +19,7 @@
     /* padding-top: 1px;
     padding-bottom: 2px; */
 }
-.godtube-img{
+.godtube-img, .pvp-friendly-img{
     width: 100%;
 }
 
@@ -117,4 +117,84 @@ hr{
     font-weight: 600;
     position: absolute;
     top: 19.2rem;
+}
+
+.pvp-friendly{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-bottom: 28vh;
+    /* margin-left: 50%; */
+    /* background-color: bisque; */
+}
+
+.pvp-friendly-img{
+    width: 50%;
+}
+.pvp-friendly-img:hover{
+    transition-duration: 0.2s;
+    transform: scale(1.1);
+    /* border: 2px solid yellow; */
+    cursor: pointer;
+}
+
+.two-things{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    margin-left:1.2rem;
+    width: 50vh;
+    position: absolute;
+}
+
+.name-of-team{
+    color:rgb(145, 155,185);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.party-form{
+    margin-right: 0.5rem;
+}
+
+.scouter{
+    margin-right: 1rem;
+    color: rgb(236, 251, 126);
+    font-size: 0.95rem;
+    font-weight: 600;
+    width: 17vw;
+    height: 3vh;
+    border-radius: 0 10px 0 10px;
+    border-left: 0.5rem solid rgb(186, 197, 187);
+    border-right: 0.2rem solid rgb(186, 197, 187);
+    background-color: rgb(20, 56, 20);
+    /* transform: skewX(-20deg); */
+    background-image: linear-gradient(rgb(20, 56, 20), rgb(28, 59, 24), rgb(49, 89, 56));
+}
+
+/* .power-level{
+    transform: skewX(20deg);
+} */
+
+.icon-with-powerlevel{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.team-selector{
+    margin: auto;
+}
+
+.below-teams-btns{
+    display: flex;
+    justify-content: space-evenly;
+    transform: scale(1.2);
+}
+
+.z-mission-div .mission-link-btn{
+    margin-left: 2rem;
+    /* background-color: aqua; */
 }

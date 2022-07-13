@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Back from '../../Component/Back/Back'
+import Slider from '../../Component/Slider/Slider';
 import './PVP.css'
 
 export default function PVP() {
@@ -9,7 +10,7 @@ export default function PVP() {
         <div className='container'>
 
           <Link to='' className='info-btn'>
-              <span>i</span>
+              <span><i class="fa fa-info" aria-hidden="true"></i></span>
           </Link><br/><br/>
 
           <div className='season-desc'>
@@ -38,7 +39,7 @@ export default function PVP() {
                 <div className='rank-heading'>
                   <span>Ranking</span>
                   <Link to='' className='info-btn'>
-                    <span>i</span>
+                    <span><i class="fa fa-info" aria-hidden="true"></i></span>
                   </Link>
                 </div>
 
@@ -79,7 +80,7 @@ export default function PVP() {
                 </div>
 
                 <Link to='' className='info-btn'>
-                    <span>i</span>
+                    <span><i class="fa fa-info" aria-hidden="true"></i></span>
                   </Link>
               </div>
 
@@ -103,19 +104,49 @@ export default function PVP() {
           {/* <div className='dummy-layer'></div> */}
 
           <div className='pvp-friendly'>
-            
+            <img src='https://imgur.com/ogeWJrL.png' alt='' className='pvp-friendly-img'/>
           </div>
 
+{/* Multi image carousel */}
           <div className='team-selector'>
-            
+
+            <div className='two-things'>
+
+              <div className='name-of-team'>
+                <span>My Favorite</span>
+              </div>
+
+              <div className='icon-with-powerlevel'>
+
+                <Link to='' className='info-btn party-form'>
+                    <span><i class="fa fa-users" aria-hidden="true"></i></span>
+                </Link>
+
+                <div className='scouter'>
+                  <span className='power-level'>4,233,378</span>
+                </div>
+              </div>
+
+            </div>
+
+            <Slider />
+
           </div>
+{/* -------------------- */}
 
           <div className='below-teams-btns'>
-            
+            <Link to='' className='popular-char-btn season-boost-chars'>
+              <span>Battle History</span>
+            </Link>
+            <Link to='' className='popular-char-btn season-boost-chars'>
+              <span>Friend Battle</span>
+            </Link>
           </div>
 
           <div className='z-mission-div'>
-            
+            <Link to='/mission' className='mission-link-btn'>
+              <span className='z'>Z</span> Mission
+            </Link>
           </div>
 
 
