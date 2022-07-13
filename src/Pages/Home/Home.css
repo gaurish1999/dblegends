@@ -1,26 +1,29 @@
 .fav-char{
-    /* margin-top: 20px; */
-    width: 68%;
-    max-width: 600px;
+    /* background: #1865D8; */
+    width: 60%;
+    margin: auto;
+    margin-top: 150px;
+    max-width: 400px;
     cursor: pointer;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
+    transform: scale(1.5);
 }
 .fav-char:hover{
-    transform: scale(1.05);
+    transform: scale(1.55);
 }
-@media (max-width: 391px){
+/* @media (max-width: 391px){
     .fav-char{
         margin-top: 130px;
         width: 60%;
         transform: scale(1.5);
-        /* max-width: 600px; */
+        max-width: 600px;
         cursor: pointer;
         transition-duration: 0.3s;
     }
     .fav-char:hover{
         transform: scale(1.6);
     }
-}
+} */
 /* 
 .container{
     border: 2px solid black;

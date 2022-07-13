@@ -34,8 +34,12 @@
     transform: scale(1.1);
 }
 
+.all-rows{
+    margin-top: 60px;
+}
+
 .row img{
-    width: 25%;
+    width: 28%;
 }
 .row img:hover{
     transition-duration: 0.1s;

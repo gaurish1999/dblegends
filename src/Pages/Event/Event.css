@@ -28,12 +28,12 @@
 
 
 .bottom-links{
-    /* background-color: #1865D8; */
-    width: 100%;
+    background-color: #1865D8;
+    width:  inherit;
     max-width: 400px;
-    /* display: flex;
-    flex-direction: row; */
-    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     position: absolute;
     bottom: 0px;
     /* margin-top: 260px; */

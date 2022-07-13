@@ -153,14 +153,15 @@
 
 .join-with-frd{
     position: absolute;
-    left: 30%;
+    /* left: 30%; */
     bottom: 10px;
+    margin: auto;
     padding: 15px; 
-    width: 30%;
+    width: 40%;
     /* background: #F2C12C; */
-    background-image: linear-gradient(#F2C12C, #D89521);
+    background-image: linear-gradient(#F2C12C, #F2C12C, #b87a0f);
     text-decoration: none;
     border-radius: 10px;
     color: black;
-    font-weight: 500;
+    font-weight: 700;
 }

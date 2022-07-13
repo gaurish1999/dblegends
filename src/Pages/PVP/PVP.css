@@ -43,6 +43,7 @@
     background-size: contain;
     background-position: 6rem;
     background-blend-mode: overlay;
+    
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
@@ -119,17 +120,22 @@ hr{
     top: 19.2rem;
 }
 
-.pvp-friendly{
+/* .dummy-div{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    margin-bottom: 28vh;
-    /* margin-left: 50%; */
-    /* background-color: bisque; */
+    align-items: center;
+    background-color: blueviolet;
+} */
+
+.pvp-friendly{
+    /* padding: 0.5rem; */
+    width: 85%;
+    margin: auto;
+    /* background-color: aqua; */
 }
 
 .pvp-friendly-img{
-    width: 50%;
+    width: inherit;
 }
 .pvp-friendly-img:hover{
     transition-duration: 0.2s;
@@ -142,10 +148,6 @@ hr{
     /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
-    margin-top: 0.5rem;
-    margin-left:1.2rem;
-    width: 50vh;
-    position: absolute;
 }
 
 .name-of-team{
@@ -191,5 +193,6 @@ hr{
 .below-teams-btns{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 10px;
     transform: scale(1.2);
 }

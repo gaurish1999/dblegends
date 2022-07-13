@@ -10,7 +10,7 @@ export default function PVP() {
         <div className='container'>
 
           <Link to='' className='info-btn'>
-              <span><i class="fa fa-info" aria-hidden="true"></i></span>
+              <span><i className="fa fa-info" aria-hidden="true"></i></span>
           </Link><br/><br/>
 
           <div className='season-desc'>
@@ -39,7 +39,7 @@ export default function PVP() {
                 <div className='rank-heading'>
                   <span>Ranking</span>
                   <Link to='' className='info-btn'>
-                    <span><i class="fa fa-info" aria-hidden="true"></i></span>
+                    <span><i className="fa fa-info" aria-hidden="true"></i></span>
                   </Link>
                 </div>
 
@@ -80,7 +80,7 @@ export default function PVP() {
                 </div>
 
                 <Link to='' className='info-btn'>
-                    <span><i class="fa fa-info" aria-hidden="true"></i></span>
+                    <span><i className="fa fa-info" aria-hidden="true"></i></span>
                   </Link>
               </div>
 
@@ -101,7 +101,10 @@ export default function PVP() {
             </div>
 
           </div>
-          {/* <div className='dummy-layer'></div> */}
+
+          <div className='dummy-div'>
+            {/* asdsadas */}
+          </div>
 
           <div className='pvp-friendly'>
             <img src='https://imgur.com/ogeWJrL.png' alt='' className='pvp-friendly-img'/>
@@ -113,13 +116,13 @@ export default function PVP() {
             <div className='two-things'>
 
               <div className='name-of-team'>
-                <span>My Favorite</span>
+                <span>Unbeatable</span>
               </div>
 
               <div className='icon-with-powerlevel'>
 
                 <Link to='' className='info-btn party-form'>
-                    <span><i class="fa fa-users" aria-hidden="true"></i></span>
+                    <span><i className="fa fa-users" aria-hidden="true"></i></span>
                 </Link>
 
                 <div className='scouter'>
@@ -130,6 +133,10 @@ export default function PVP() {
             </div>
 
             <Slider />
+
+            <div className='dummy-div'>
+              {/* asdsadas */}
+            </div>
 
           </div>
 {/* -------------------- */}
@@ -152,12 +159,12 @@ export default function PVP() {
           </div> */}
 
           <div className='bottom-links'>
-            {/* <Link to='/home' className='home-link-btn'>Home</Link>  */}
             <Back />
+
             <Link to='/mission' className='mission-link-btn'>
               <span className='z'>Z</span> Mission
             </Link>
-            {/* <Link to='' className='join-with-frd'>Join with a Code</Link> */}
+
             <Link to='/menu' className='menu-link'>Menu</Link>
           </div>
           

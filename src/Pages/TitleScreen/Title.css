@@ -1,7 +1,7 @@
 
 .logos{
     position: relative;
-    right: 0;
+    right: 10px;
     /* background: #E7B208; */
     display: flex;
     justify-content: right;
@@ -15,11 +15,17 @@
 .criware, .bne{
     margin-left: 0.6rem;
     border-radius: 10px;
-    width: 25%;
+    /* width: 25%; */
+    height: 100px;
+    width: 100px;
     max-width: 110px;
     /* height: 150px; */
     /* position: relative; */
     /* margin-left: 220px; */
+}
+
+.bne{
+    transform: scale(1.4);
 }
 
 .title-char{
