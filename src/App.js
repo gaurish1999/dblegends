@@ -23,12 +23,29 @@ import Shop from './Pages/Shop/Shop';
 import Summon from './Pages/Summon/Summon';
 import Train from './Pages/Train/Train';
 import HoiPoi from './Pages/HoiPoi/HoiPoi';
+import { useEffect, useState } from 'react';
 
 
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <div className="App">
+      {loading ? (
+        <div className="loader">
+          <div className="spinner"></div>
+        </div>
+      ):(
+
+      
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<Title />}></Route>
@@ -60,6 +77,7 @@ function App() {
           <Route path='/characters' element={<Characters />}></Route>
         </Routes>
       </BrowserRouter>
+      )}
     </div>
   );
 }
