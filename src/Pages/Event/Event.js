@@ -28,7 +28,7 @@ export default function Event() {
           
           <EventIndex />
           
-          <div className='bottom-links'>
+          <div className='common-links'>
             <Link to='/home' className='home-link-btn'>Home</Link> 
             <Link to='/mission' className='mission-link-btn'><span className='z'>Z</span> Mission</Link>
             <Link to='/menu' className='menu-link'>Menu</Link>

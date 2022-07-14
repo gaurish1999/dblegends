@@ -108,7 +108,7 @@ export default function Coop() {
           </div>
 
           {/* <Menu /> */}
-          <div className='bottom-links'>
+          <div className='common-links'>
             {/* <Link to='/home' className='home-link-btn'>Home</Link>  */}
             <Back />
             <Link to='' className='join-with-frd'>Join with a Code</Link>

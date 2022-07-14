@@ -1,17 +1,27 @@
+.home-container{
+    align-items: center;
+    justify-content: space-between;
+}
+
 .fav-char{
     /* background: #1865D8; */
-    width: 60%;
-    margin: auto;
-    margin-top: 150px;
+    transform: scale(0.7);
+    /* width: 70%; */
+    /* margin: auto; */
+    /* margin-top: 20px; */
     max-width: 400px;
     cursor: pointer;
     transition-duration: 0.2s;
-    transform: scale(1.5);
+    /* display: none; */
 }
 .fav-char:hover{
-    transform: scale(1.55);
+    transform: scale(0.725);
 }
-@media only screen and (min-width: 390px){
+
+.sound-effect{
+    position: absolute;
+}
+/* @media only screen and (min-width: 390px){
     .fav-char{
         margin-top: 130px;
         width: 60%;
@@ -50,7 +60,7 @@
     .fav-char:hover{
         transform: scale(1.6);
     }
-}
+} */
 /* 
 .container{
     border: 2px solid black;
@@ -60,38 +70,49 @@
     margin: auto;
 } */
 
+/* .both-link{ */
+    /* position: absolute;
+    bottom: 100px; */
+    /* margin-left: -0.3rem; */
+    /* margin-bottom: 100px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* width: inherit;
+    max-width: inherit; */
+    /* background-color: red; */
+/* } */
+
 .both-link{
-    position: absolute;
-    bottom: 0;
-    margin-left: -0.3rem;
-    width: inherit;
-    max-width: inherit;
+    margin-bottom: 10px;
+    /* position: absolute; */
+    /* width: inherit; */
+    /* bottom: 10px; */
+
 }
 
 .links{
-    
+    /* flex: 50%; */
     display: flex;
-    justify-content: space-around;   
-    position: relative;
-    bottom: 30px;
-    left: 5px;
+    justify-content: space-around;
+    /* margin-top: 150%; */
+    /* position: relative; */
+    /* bottom: 30px; */
+    /* left: 5px; */
     /* background: rgb(213, 213, 213); */
-    height: 10vh;
+    /* height: 10vh; */
 }
 
 .common-links{
     display: flex;
-    justify-content: space-around; 
-    padding: 10px;
-    margin-top: 20px;
-    /* background: green; */
+    justify-content: space-between;
+    align-items: flex-end;
+    /* background-color: #DCF4F8; */
+    width: 95%;
+    margin: auto;
 }
 
 .menu-link{
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    padding: 5px; 
     background: #1865D8;
     text-decoration: none;
     color: #DCF4F8;
@@ -140,8 +161,8 @@
     max-height: 100%;
 }
 
-.link-hover:hover, .menu-link:hover, .titlescreen-link:hover{
+/* .link-hover:hover, .menu-link:hover, .titlescreen-link:hover{
     transition-duration: 0.1s;
-    transform: scale(1.05);
+    transform: scale(1.05); */
     /* box-shadow: 5px 5px 5px grey; */
-}
+/* } */

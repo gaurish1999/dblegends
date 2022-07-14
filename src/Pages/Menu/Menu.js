@@ -90,11 +90,11 @@ export default function Menu() {
 
         </div>
 
-        <div className='home-btn-flex'>
-          <Link to='/home' className='home-btn'>Home</Link>
-        </div>
+        <div className='common-links'>
+          {/* <div className='home-btn-flex'> */}
+            <Link to='/home' className='home-link-btn'>Home</Link>
+          {/* </div>        */}
         
-        <div>
           <Back />
         </div>
         

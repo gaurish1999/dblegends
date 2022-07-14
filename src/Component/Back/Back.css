@@ -1,15 +1,15 @@
 .back-link-flex{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
     /* margin-left: -0.3rem; */
-    width: inherit;
-    max-width: inherit;
+    /* width: inherit;
+    max-width: inherit; */
 }
 .back-link{
-    position: absolute;
+    /* position: absolute;
     left: 10px;
-    bottom: 10px;
-    padding: 5px;
+    bottom: 10px; */
+    /* padding: 5px; */
     /* width: 15%;  */
     background: #1865D8;
     text-decoration: none;

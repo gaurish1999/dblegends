@@ -35,7 +35,7 @@
 }
 
 .all-rows{
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .row img{
@@ -47,15 +47,15 @@
     transform: scale(1.1);
 }
 
-.home-btn-flex{
-    position: absolute;
+/* .home-btn-flex{ */
+    /* position: absolute;
     bottom: 0;
-    margin-left: -0.3rem;
-    width: inherit;
-    max-width: inherit;
-}
+    margin-left: -0.3rem; */
+    /* width: inherit;
+    max-width: inherit; */
+/* } */
 
-.home-btn{
+/* .home-btn{
     position: absolute;
     right: 0;
     bottom: 10px;
@@ -66,7 +66,7 @@
     text-shadow: 1px 1px 2px black;
     font-size: 1.5rem;
     font-weight: bolder;
-}
+} */
 
 div:nth-child(9){
     position: absolute;

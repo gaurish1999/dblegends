@@ -1,5 +1,7 @@
 .info-btn{
     float: right;
+    display: flex;
+    justify-content: right;
 }
 
 .season-desc span{
@@ -129,8 +131,9 @@ hr{
 
 .pvp-friendly{
     /* padding: 0.5rem; */
-    width: 85%;
+    width: 80%;
     margin: auto;
+    margin-top: 0;
     /* background-color: aqua; */
 }
 
@@ -188,6 +191,7 @@ hr{
 
 .team-selector{
     margin: auto;
+    width: 100%;
 }
 
 .below-teams-btns{

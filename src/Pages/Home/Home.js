@@ -17,9 +17,9 @@ export default function Home() {
   return (
     <>
         {/* <h1>Home</h1> */}
-        <div className='container'>
+        <div className='container home-container'>
 
-        <div className='top-three'>
+          <div className='top-three'>
             <Level />
             <Energy />
             <CC />
@@ -37,8 +37,8 @@ export default function Home() {
             
           </div>
 
-          <br />
           <div className='both-link'>
+
             <div className='links'>
               {/* <Link to='/story' className='story-link link-hover'>Story</Link>
               <Link to='/event' className='event-link link-hover'>Events</Link>
@@ -56,14 +56,16 @@ export default function Home() {
               <Link to='/pvp' className='pvp-link link-hover'>
                 <img src='https://i.imgur.com/LJ5x3ls.png' alt='pvp' />
               </Link>
-            </div>
+            </div> 
 
             <div className='common-links'>
-              {/* <Link to='/' className='titlescreen-link'>Title</Link> */}
-              <Back />
-              <Link to='/menu' className='menu-link'>Menu</Link><br />
+                {/* <Link to='/' className='titlescreen-link'>Title</Link> */}
+                <Back />
+                <Link to='/menu' className='menu-link'>Menu</Link>
             </div>
+
           </div>
+
         </div>
     </>
   )

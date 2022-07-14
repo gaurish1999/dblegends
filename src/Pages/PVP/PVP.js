@@ -9,9 +9,11 @@ export default function PVP() {
     <>
         <div className='container'>
 
-          <Link to='' className='info-btn'>
-              <span><i className="fa fa-info" aria-hidden="true"></i></span>
-          </Link><br/><br/>
+          <div>
+            <Link to='' className='info-btn'>
+                <span><i className="fa fa-info" aria-hidden="true"></i></span>
+            </Link>
+          </div><br/><br/>
 
           <div className='season-desc'>
             <span>Who's the 4th Anniversary's Strongest Fighter?! Anniversay Super Space-Time Duel Season 2</span>
@@ -134,9 +136,9 @@ export default function PVP() {
 
             <Slider />
 
-            <div className='dummy-div'>
+            {/* <div className='dummy-div'> */}
               {/* asdsadas */}
-            </div>
+            {/* </div> */}
 
           </div>
 {/* -------------------- */}
@@ -158,7 +160,7 @@ export default function PVP() {
             <span>Coming Soon...</span>
           </div> */}
 
-          <div className='bottom-links'>
+          <div className='common-links'>
             <Back />
 
             <Link to='/mission' className='mission-link-btn'>

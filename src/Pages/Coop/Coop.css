@@ -152,12 +152,12 @@
 }
 
 .join-with-frd{
-    position: absolute;
+    /* position: absolute; */
     /* left: 30%; */
-    bottom: 10px;
+    /* bottom: 10px; */
     margin: auto;
-    padding: 15px; 
-    width: 40%;
+    padding: 12px; 
+    /* width: 40%; */
     /* background: #F2C12C; */
     background-image: linear-gradient(#F2C12C, #F2C12C, #b87a0f);
     text-decoration: none;
