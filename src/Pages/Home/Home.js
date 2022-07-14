@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css';
+import Back from '../../Component/Back/Back'
 import gogeta from '../../Media/Voicelines/ss4-gogeta.mp3';
 import Level from '../../Component/Level/Level';
 import Energy from '../../Component/Energy/Energy';
@@ -58,7 +59,8 @@ export default function Home() {
             </div>
 
             <div className='common-links'>
-              <Link to='/' className='titlescreen-link'>Title</Link>
+              {/* <Link to='/' className='titlescreen-link'>Title</Link> */}
+              <Back />
               <Link to='/menu' className='menu-link'>Menu</Link><br />
             </div>
           </div>

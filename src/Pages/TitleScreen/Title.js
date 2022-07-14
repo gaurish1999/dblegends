@@ -54,7 +54,13 @@ export default function Title() {
                 <span>©️2018 BANDAI NAMCO Entertainment Inc.</span>
               </div>
               <div className='support-btn'>
-                <span>Support</span>
+                {/* <span>Support</span> */}
+                <span>
+                  <Link to='' className='support-btn-link'>
+                    <i className="fa fa-cogs" aria-hidden="true"></i>
+                    <span>Support</span>
+                  </Link>
+                </span>
               </div>
 
             </div>
