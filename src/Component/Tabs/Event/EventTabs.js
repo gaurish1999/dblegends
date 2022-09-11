@@ -31,21 +31,21 @@ const EventTabs = ({activeTabName, onClickTab}) => {
             {renderTabTitle(
           ORIGINAL_SERIES,
           activeTabName===ORIGINAL_SERIES,
-            "og-series", 
+            "", 
             "tab-2"
             )}
             {renderTabTitle(
           UPGRADE,
           activeTabName===UPGRADE,
             "", 
-            "tab-2"
+            "tab-3"
             )}
             
             {renderTabTitle(
           SPECIAL,
           activeTabName===SPECIAL,
             "", 
-            "tab-2"
+            "tab-4"
             )}
       </div>
      </section>

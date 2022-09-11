@@ -1,0 +1,100 @@
+.scroll-box-summon{
+    height: 70vh;
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
+    /* width: inherit; */
+    background-color: #13171acd;
+}
+
+.tab-content-div-summon{
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    /* margin-top: 0.6rem;
+    margin-left: auto; */
+    font-size: 2rem;
+}
+
+.tab-content-div-summon .banner-img img{
+    scale: 1.2;
+    margin: auto;
+}
+
+.tab-content-div-summon .banner-img{
+    color: #9ea3ab;
+    font-size: .6rem;   
+}
+
+.tab-content-div-summon .banner-img div{
+    position: relative;
+    /* top: 0;
+    right: 0; */
+    margin-top: -20px;
+    display: flex;
+    justify-content: right;
+    z-index:10;
+}
+
+.tab-content-div-summon .banner-duration{
+    color: #9ea3ab;
+    font-size: 1rem;
+    margin-top: 15px;
+    /* position: relative; */
+    background-color: #0B0907;
+    height:6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-content-div-summon .banner-img .banner-zpower, 
+.tab-content-div-summon .banner-img .banner-featured{
+ 
+    /* text-align: center; */
+    background-color: #1A1E21;
+    padding: 0.2rem;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.tab-content-div-summon .banner-img .banner-zpower{
+    border: 2px solid grey;
+}
+
+.tab-content-div-summon .banner-img .banner-featured{
+    border: 2px solid rgb(15, 196, 15);
+}
+
+.tab-content-div-summon .banner-summon{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+.tab-content-div-summon .banner-summon .banner-single,
+.tab-content-div-summon .banner-summon .banner-multi{
+    /* background-color: #C09332; */
+    background-image: linear-gradient(#F2C12C, #D89521);
+    border-radius: 4px;
+    color: black;
+    font-weight: 600;
+    width: 40%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.tab-content-div-summon .banner-summon .banner-single div:first-child{
+    margin-top: 5px;
+}
+
+.tab-content-div-summon .banner-summon .banner-multi div:first-child{
+    /* margin-top: 5px; */
+    padding: 1.9px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}

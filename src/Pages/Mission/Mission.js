@@ -4,7 +4,7 @@ import Back from '../../Component/Back/Back'
 import CC from '../../Component/CC/CC'
 import Energy from '../../Component/Energy/Energy'
 import Level from '../../Component/Level/Level'
-import MissionIndex from '../../Component/Tabs/Missionindex'
+import MissionIndex from '../../Component/Tabs/Mission/Missionindex'
 
 export default function Mission() {
   return (

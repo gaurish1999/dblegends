@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import CC from '../../Component/CC/CC';
 import Energy from '../../Component/Energy/Energy';
 import Level from '../../Component/Level/Level';
-import EventIndex from '../../Component/Tabs/Eventindex'
+import EventIndex from '../../Component/Tabs/Event/Eventindex'
 import './Event.css';
 
 export default function Event() {
