@@ -6,6 +6,11 @@
     background-color: #13171acd;
 }
 
+.cc-img-summon{
+    width: 30%;
+    max-width: 25px;
+}
+
 .tab-content-div-summon{
     margin-top: 8vh;
     display: flex;
@@ -96,5 +101,18 @@
     /* margin-top: 5px; */
     padding: 1.9px;
     margin-top: 5px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+
+.tab-content-div-summon .banner-summon .banner-single div:nth-child(2){
+    margin-bottom: 2px;
+}
+
+.tab-content-div-summon .banner-summon .banner-single div:nth-child(2), 
+.tab-content-div-summon .banner-summon .banner-multi div:nth-child(2){
+    color: #FFFFFF;
+    background-color: #2D2C2A;
+    width:95%;
+    margin-left: 4px;
+    border-radius: 5px;
 }

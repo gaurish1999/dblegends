@@ -81,12 +81,15 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
 
                             <div className='banner-single'>
                                 <div>Single Summon</div>
-                                <div>CC</div>
+                                <div>100</div>
                             </div>
 
                             <div className='banner-multi'>
                                 <div>Consecutive Summon</div>
-                                <div>CC</div>
+                                <div>
+                                    {/* <img src='https://pbs.twimg.com/media/Ec9tFq8UwAA6TcM.png' className='cc-img-summon'/> */}
+                                    <span>1,000</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -108,12 +111,12 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
 
                             <div className='banner-single'>
                                 <div>Single Summon</div>
-                                <div>CC</div>
+                                <div>100</div>
                             </div>
 
                             <div className='banner-multi'>
                                 <div>Consecutive Summon</div>
-                                <div>CC</div>
+                                <div>1,000</div>
                             </div>
                         </div>
                     </div>
@@ -135,12 +138,12 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
 
                             <div className='banner-single'>
                                 <div>Single Summon</div>
-                                <div>CC</div>
+                                <div>100</div>
                             </div>
 
                             <div className='banner-multi'>
                                 <div>Consecutive Summon</div>
-                                <div>CC</div>
+                                <div>1,000</div>
                             </div>
                         </div>
                     </div>
@@ -148,7 +151,7 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
                     <div className='tab-content-div-summon'>
 
                         <div className='banner-img'>
-                            <img src='https://i.imgur.com/NCcT0Vd.png' />
+                            <img src='https://i.imgur.com/N100T0Vd.png' />
 
                             <div>
                                 <div className='banner-zpower'>Z Power <br/>List</div>
@@ -162,12 +165,12 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
 
                             <div className='banner-single'>
                                 <div>Single Summon</div>
-                                <div>CC</div>
+                                <div>100</div>
                             </div>
 
                             <div className='banner-multi'>
                                 <div>Consecutive Summon</div>
-                                <div>CC</div>
+                                <div>1,000</div>
                             </div>
                         </div>
                     </div>
