@@ -66,6 +66,60 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
                 >
                     <div className='tab-content-div-summon'>
 
+                      <div className='banner-img'>
+                          <img src='https://i.imgur.com/tWBq5Gk.png' />
+
+                          <div>
+                              <div className='banner-zpower'>Z Power <br/>List</div>
+                              <div className='banner-featured'>Featured <br/>Characters</div>
+                          </div>
+                      </div>
+
+                      <div className='banner-duration'>End Time: 09/15/2022 11:30 (IST)</div>
+
+                      <div className='banner-summon'>
+
+                          <div className='banner-single'>
+                              <div>Single Summon</div>
+                              <div>100</div>
+                          </div>
+
+                          <div className='banner-multi'>
+                              <div>Consecutive Summon</div>
+                              <div>1,000</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div className='tab-content-div-summon'>
+
+                      <div className='banner-img'>
+                          <img src='https://i.imgur.com/TbP44kr.png' />
+
+                          <div>
+                              <div className='banner-zpower'>Z Power <br/>List</div>
+                              <div className='banner-featured'>Featured <br/>Characters</div>
+                          </div>
+                      </div>
+
+                      <div className='banner-duration'>End Time: 09/15/2022 11:30 (IST)</div>
+
+                      <div className='banner-summon'>
+
+                          <div className='banner-single'>
+                              <div>Single Summon</div>
+                              <div>100</div>
+                          </div>
+
+                          <div className='banner-multi'>
+                              <div>Consecutive Summon</div>
+                              <div>1,000</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div className='tab-content-div-summon'>
+
                         <div className='banner-img'>
                             <img src='https://i.imgur.com/CeLiarF.png' />
 
@@ -121,7 +175,7 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
                         </div>
                     </div>
 
-                    <div className='tab-content-div-summon'>
+                    {/* <div className='tab-content-div-summon'>
 
                         <div className='banner-img'>
                             <img src='https://i.imgur.com/Xt0OIsz.png' />
@@ -146,12 +200,12 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
                                 <div>1,000</div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className='tab-content-div-summon'>
 
                         <div className='banner-img'>
-                            <img src='https://i.imgur.com/N100T0Vd.png' />
+                            <img src='https://i.imgur.com/VU7qfNF.png' />
 
                             <div>
                                 <div className='banner-zpower'>Z Power <br/>List</div>
@@ -175,6 +229,86 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
                         </div>
                     </div>
 
+                    <div className='tab-content-div-summon'>
+
+                        <div className='banner-img'>
+                            <img src='https://i.imgur.com/NLidvCT.png' />
+
+                            <div>
+                                <div className='banner-zpower'>Z Power <br/>List</div>
+                                <div className='banner-featured'>Featured <br/>Characters</div>
+                            </div>
+                        </div>
+
+                        <div className='banner-duration'>End Time: 09/15/2022 11:30 (IST)</div>
+
+                        <div className='banner-summon'>
+
+                            <div className='banner-single'>
+                                <div>Single Summon</div>
+                                <div>100</div>
+                            </div>
+
+                            <div className='banner-multi'>
+                                <div>Consecutive Summon</div>
+                                <div>1,000</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='tab-content-div-summon'>
+
+                        <div className='banner-img'>
+                            <img src='https://i.imgur.com/63zAadb.png' />
+
+                            <div>
+                                <div className='banner-zpower'>Z Power <br/>List</div>
+                                <div className='banner-featured'>Featured <br/>Characters</div>
+                            </div>
+                        </div>
+
+                        <div className='banner-duration'>End Time: 09/15/2022 11:30 (IST)</div>
+
+                        <div className='banner-summon'>
+
+                            <div className='banner-single'>
+                                <div>Single Summon</div>
+                                <div>100</div>
+                            </div>
+
+                            <div className='banner-multi'>
+                                <div>Consecutive Summon</div>
+                                <div>1,000</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='tab-content-div-summon'>
+
+                        <div className='banner-img'>
+                            <img src='https://i.imgur.com/Mc3TwrG.png' />
+
+                            <div>
+                                <div className='banner-zpower'>Z Power <br/>List</div>
+                                <div className='banner-featured'>Featured <br/>Characters</div>
+                            </div>
+                        </div>
+
+                        <div className='banner-duration'>End Time: 12/31/2029 11:30 (IST)</div>
+
+                        <div className='banner-summon'>
+
+                            <div className='banner-single'>
+                                <div>Single Summon</div>
+                                <div>100</div>
+                            </div>
+
+                            <div className='banner-multi'>
+                                <div>Consecutive Summon</div>
+                                <div>1,000</div>
+                            </div>
+                        </div>
+                    </div>
 
               </div>
 
@@ -191,7 +325,143 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
                 }`}
                 >
                   
+                  <div className='tab-content-div-summon'>
 
+                    <div className='banner-img'>
+                        <img src='https://i.imgur.com/tWBq5Gk.png' />
+
+                        <div>
+                            <div className='banner-zpower'>Z Power <br/>List</div>
+                            <div className='banner-featured'>Featured <br/>Characters</div>
+                        </div>
+                    </div>
+
+                    <div className='banner-duration'>End Time: 09/15/2022 11:30 (IST)</div>
+
+                    <div className='banner-summon'>
+
+                        <div className='banner-single'>
+                            <div>Single Summon</div>
+                            <div>100</div>
+                        </div>
+
+                        <div className='banner-multi'>
+                            <div>Consecutive Summon</div>
+                            <div>1,000</div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div className='tab-content-div-summon'>
+
+                    <div className='banner-img'>
+                        <img src='https://i.imgur.com/TbP44kr.png' />
+
+                        <div>
+                            <div className='banner-zpower'>Z Power <br/>List</div>
+                            <div className='banner-featured'>Featured <br/>Characters</div>
+                        </div>
+                    </div>
+
+                    <div className='banner-duration'>End Time: 09/15/2022 11:30 (IST)</div>
+
+                    <div className='banner-summon'>
+
+                        <div className='banner-single'>
+                            <div>Single Summon</div>
+                            <div>100</div>
+                        </div>
+
+                        <div className='banner-multi'>
+                            <div>Consecutive Summon</div>
+                            <div>1,000</div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div className='tab-content-div-summon'>
+
+                      <div className='banner-img'>
+                          <img src='https://i.imgur.com/CeLiarF.png' />
+
+                          <div>
+                              <div className='banner-zpower'>Z Power <br/>List</div>
+                              <div className='banner-featured'>Featured <br/>Characters</div>
+                          </div>
+                      </div>
+
+                      <div className='banner-duration'>End Time: 31/11/2022 11:30 (IST)</div>
+
+                      <div className='banner-summon'>
+
+                          <div className='banner-single'>
+                              <div>Single Summon</div>
+                              <div>100</div>
+                          </div>
+
+                          <div className='banner-multi'>
+                              <div>Consecutive Summon</div>
+                              <div>
+                                  {/* <img src='https://pbs.twimg.com/media/Ec9tFq8UwAA6TcM.png' className='cc-img-summon'/> */}
+                                  <span>1,000</span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div className='tab-content-div-summon'>
+
+                      <div className='banner-img'>
+                          <img src='https://i.imgur.com/wW1tKOg.png' />
+
+                          <div>
+                              <div className='banner-zpower'>Z Power <br/>List</div>
+                              <div className='banner-featured'>Featured <br/>Characters</div>
+                          </div>
+                      </div>
+
+                      <div className='banner-duration'>End Time: 09/20/2022 11:30 (IST)</div>
+
+                      <div className='banner-summon'>
+
+                          <div className='banner-single'>
+                              <div>Single Summon</div>
+                              <div>100</div>
+                          </div>
+
+                          <div className='banner-multi'>
+                              <div>Consecutive Summon</div>
+                              <div>1,000</div>
+                          </div>
+                      </div>
+                    </div>
+
+                    {/* <div className='tab-content-div-summon'>
+
+                      <div className='banner-img'>
+                          <img src='https://i.imgur.com/Xt0OIsz.png' />
+
+                          <div>
+                              <div className='banner-zpower'>Z Power <br/>List</div>
+                              <div className='banner-featured'>Featured <br/>Characters</div>
+                          </div>
+                      </div>
+
+                      <div className='banner-duration'>End Time: 09/15/2022 11:30 (IST)</div>
+
+                      <div className='banner-summon'>
+
+                          <div className='banner-single'>
+                              <div>Single Summon</div>
+                              <div>100</div>
+                          </div>
+
+                          <div className='banner-multi'>
+                              <div>Consecutive Summon</div>
+                              <div>1,000</div>
+                          </div>
+                      </div>
+                    </div> */}
                  
               </div>
             {/* </div> */}
@@ -208,6 +478,87 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
                   }`}
                 >
                   
+                  <div className='tab-content-div-summon'>
+
+                    <div className='banner-img'>
+                        <img src='https://i.imgur.com/VU7qfNF.png' />
+
+                        <div>
+                            <div className='banner-zpower'>Z Power <br/>List</div>
+                            <div className='banner-featured'>Featured <br/>Characters</div>
+                        </div>
+                    </div>
+
+                    <div className='banner-duration'>End Time: 09/15/2022 11:30 (IST)</div>
+
+                    <div className='banner-summon'>
+
+                        <div className='banner-single'>
+                            <div>Single Summon</div>
+                            <div>100</div>
+                        </div>
+
+                        <div className='banner-multi'>
+                            <div>Consecutive Summon</div>
+                            <div>1,000</div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div className='tab-content-div-summon'>
+
+                    <div className='banner-img'>
+                        <img src='https://i.imgur.com/NLidvCT.png' />
+
+                        <div>
+                            <div className='banner-zpower'>Z Power <br/>List</div>
+                            <div className='banner-featured'>Featured <br/>Characters</div>
+                        </div>
+                    </div>
+
+                    <div className='banner-duration'>End Time: 09/15/2022 11:30 (IST)</div>
+
+                    <div className='banner-summon'>
+
+                        <div className='banner-single'>
+                            <div>Single Summon</div>
+                            <div>100</div>
+                        </div>
+
+                        <div className='banner-multi'>
+                            <div>Consecutive Summon</div>
+                            <div>1,000</div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div className='tab-content-div-summon'>
+
+                    <div className='banner-img'>
+                        <img src='https://i.imgur.com/63zAadb.png' />
+
+                        <div>
+                            <div className='banner-zpower'>Z Power <br/>List</div>
+                            <div className='banner-featured'>Featured <br/>Characters</div>
+                        </div>
+                    </div>
+
+                    <div className='banner-duration'>End Time: 09/15/2022 11:30 (IST)</div>
+
+                    <div className='banner-summon'>
+
+                        <div className='banner-single'>
+                            <div>Single Summon</div>
+                            <div>100</div>
+                        </div>
+
+                        <div className='banner-multi'>
+                            <div>Consecutive Summon</div>
+                            <div>1,000</div>
+                        </div>
+                    </div>
+                    </div>
+
               </div>
             {/* </div> */}
           </section>
@@ -223,6 +574,33 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
                     }`}
                     >
                      
+                     <div className='tab-content-div-summon'>
+
+                        <div className='banner-img'>
+                            <img src='https://i.imgur.com/Mc3TwrG.png' />
+
+                            <div>
+                                <div className='banner-zpower'>Z Power <br/>List</div>
+                                <div className='banner-featured'>Featured <br/>Characters</div>
+                            </div>
+                        </div>
+
+                        <div className='banner-duration'>End Time: 12/31/2029 11:30 (IST)</div>
+
+                        <div className='banner-summon'>
+
+                            <div className='banner-single'>
+                                <div>Single Summon</div>
+                                <div>100</div>
+                            </div>
+
+                            <div className='banner-multi'>
+                                <div>Consecutive Summon</div>
+                                <div>1,000</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
               {/* </div> */}
 
