@@ -4,6 +4,8 @@
     /* margin-left: -0.3rem; */
     /* width: inherit;
     max-width: inherit; */
+    z-index: 99;
+
 }
 .back-link{
     /* position: absolute;

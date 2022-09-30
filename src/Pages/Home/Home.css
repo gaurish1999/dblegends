@@ -119,6 +119,7 @@
     text-shadow: 1px 1px 2px black;
     font-size: 1.5rem;
     font-weight: bolder;
+    z-index: 99;
     /* transform: rotate(-5deg); */
 }
 

@@ -11,10 +11,12 @@
 .coop-banner{
     width: 100%;
     max-width: 400px;
+    transform: scale(1.2);
 }
 
 .coop-div{
     background: #DCF4F8;
+    overflow: hidden;
     border-radius: 10px;
     width: 97%;
     margin: auto;
