@@ -57,6 +57,36 @@ export default function Characters() {
             
           </div>
 
+          <div className='characters'>
+            <div className='main-char'>
+              {/* <video>
+                <source src='https://imgur.com/I5HrE8V' type="video/mp4"></source>
+              </video> */}
+              <img src='https://i.imgur.com/hpWYV2A.png' />
+            </div>
+            <div className='team-char'>
+              <div>Character 1</div>
+              <div>Character 1</div>
+              <div>Character 1</div>
+              <div>Character 1</div>
+              <div>Character 1</div>
+              <div>Character 1</div>
+            </div>
+          </div>
+
+          <div className='btns-below-chars'>
+            {/* <img src='https://i.imgur.com/hgmFwDP.png'/> */}
+            <div className='first-line-btns'>
+              <img src='https://i.imgur.com/rdbH0CZ.png' />
+              <img src='https://i.imgur.com/YNRKHGx.png' />
+              <img src='https://i.imgur.com/bGr0kGw.png' />  
+            </div>
+            <div className='second-line-btns'>
+              <img src='https://i.imgur.com/fjuPwD5.png' />  
+            </div>
+            
+          </div>
+
 
           <div className='common-links'>
             <Link to='/home' className='home-link-btn'>Home</Link> 

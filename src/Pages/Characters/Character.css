@@ -61,3 +61,80 @@
     color: #CAB069;
     font-weight: 700;
 }
+
+.power-level-title span{
+    margin-left: -200px;
+}
+
+.ability-bonus-value span{
+    margin-right: -150px;
+}
+
+.characters{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 550px;
+}
+.main-char img{
+    background-color: #8BA3AB;
+    /* height: 100%; */
+    width: 100%;
+    /* margin-left:-150px; */
+}
+.team-char{
+    background-color: aqua;
+}
+
+/* .first-line-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #AAAE98;
+} */
+
+/* .btns-below-chars{
+    background-color: #8BA3AB;
+    position: absolute;
+    margin-left: 196px;
+} */
+
+.first-line-btns img:first-child{
+    position: fixed;
+    margin-left: -335px;
+    bottom: -15px;
+}
+
+.first-line-btns img:nth-child(2){
+    position: fixed;
+    margin-left: -199px;
+    bottom: -15px;
+}
+
+.first-line-btns img:last-child{
+    position: fixed;
+    margin-left: -85px;
+    bottom: -12px;
+}
+.first-line-btns img, .second-line-btns img{
+    transform: scale(0.35);
+}
+
+.second-line-btns{
+    position: fixed;
+    /* margin-left: -85px; */
+    bottom: -50px;
+    left: 5px;
+}
+/* .btns-below-chars img{
+    width: 100%;
+    position:  absolute;
+    bottom: 10px;
+    margin-left: -196px;
+} */
+
+.btns-below-chars{
+    margin-bottom: 80px;
+}
