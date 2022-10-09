@@ -24,7 +24,7 @@ export default function Home() {
             <Energy />
             <CC />
           </div>
-
+          
           <div className='sound-effect'>
               <audio id='audio'/>
               <img 

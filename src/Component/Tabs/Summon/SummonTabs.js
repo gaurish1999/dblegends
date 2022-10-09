@@ -7,7 +7,13 @@ import "./SummonTabs.css";
 const SummonTabs = ({activeTabName, onClickTab}) => {
     const {ALL, RECOMMENDED, ZENKAI, TICKET} = summonLabels;
 
-    const [cc, setCc] = useState(9000);
+    const [cc, setCc] = useState();
+    // useEffect(() => {
+    //     const items = JSON.parse(localStorage.getItem('Chrono Crystals'));
+    //     if (cc) {
+    //      setCc(cc);
+    //     }
+    //   }, []);
 
     const [modal, setModal] = useState(false);
     const [res, setRes] = useState([]);
@@ -35,7 +41,10 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
     }
 
     const single_summon = () =>{
-        // console.log(cc)
+
+        let cc = JSON.parse(localStorage.getItem('Chrono Crystals'));
+        cc -= 100;
+        console.log(cc);
         openModal();
 
         const character_list= [
@@ -108,10 +117,15 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
         setRes(
             arr.map((arr) => character_list[arr] + "\n")
         )
+
+        setCc(localStorage.setItem('Chrono Crystals', JSON.stringify(cc)))
     }
 
     const multi_summon = () =>{
         
+        let cc = JSON.parse(localStorage.getItem('Chrono Crystals'));
+        cc -= 1000;
+        console.log(cc);
         openModal();
         // setCc(cc-1000);
         // console.log(cc)
@@ -184,6 +198,8 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
         setRes(
             arr.map((arr) => character_list[arr] + " | ")
         )
+        setCc(localStorage.setItem('Chrono Crystals', JSON.stringify(cc)))
+
     }
 
     const bg_overlay = {

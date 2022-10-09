@@ -25,6 +25,9 @@ import Train from './Pages/Train/Train';
 import HoiPoi from './Pages/HoiPoi/HoiPoi';
 import { useEffect, useState } from 'react';
 import SummonResults from './Pages/SummonResults/SummonResults';
+import SummonTabs from './Component/Tabs/Summon/SummonTabs';
+import CC from './Component/CC/CC';
+import CCAmount from './Component/CC/CCAmount';
 
 
 
@@ -37,9 +40,11 @@ function App() {
       setLoading(false);
     }, 1000);
   }, []);
+  
 
   return (
     <div className="App">
+      
       {loading ? (
         <div className="loader">
           <div className="spinner"></div>
@@ -50,6 +55,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path='/' element={<Title />}></Route>
+          <Route path='/cc' element={<CC />}></Route>
+          <Route path='/ccamount' element={<CCAmount />}></Route>
           <Route path='/home' element={<Home />}></Route>
           <Route path='/story' element={<Story />}></Route>
           <Route path='/event' element={<Event />}></Route>
@@ -75,6 +82,7 @@ function App() {
           <Route path='/top' element={<Menu />}></Route>
           <Route path='/shop' element={<Shop />}></Route>
           <Route path='/summon' element={<Summon />}></Route>
+          <Route path='/summontabs' element={<SummonTabs />}></Route>
           <Route path='/summonresults' element={<SummonResults />}></Route>
           <Route path='/characters' element={<Characters />}></Route>
         </Routes>
