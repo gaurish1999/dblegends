@@ -101,6 +101,7 @@
     margin-left: 196px;
 } */
 
+
 .first-line-btns img:first-child{
     position: fixed;
     margin-left: -335px;
@@ -122,11 +123,23 @@
     transform: scale(0.35);
 }
 
+.first-line-btns img{
+    transition-duration: 0.1s;
+}
+
+
+
 .second-line-btns{
     position: fixed;
     /* margin-left: -85px; */
     bottom: -50px;
     left: 5px;
+}
+
+.first-line-btns img:hover, .second-line-btns img:hover{
+    /* transition-duration: 0.1s; */
+    transform: scale(0.5);
+    cursor: pointer;
 }
 /* .btns-below-chars img{
     width: 100%;

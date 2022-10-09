@@ -18,6 +18,153 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
       </div>
     )
 
+        const single_summon = () =>{
+
+            const character_list= [
+                "PUR UL Legendary Super Saiyan Broly",
+                "RED SP LL Fusion Zamasu (Corrupted)",
+                "BLU SP LL Buu:Kid",
+                "PUR SP LL Super Saiyan Gohan (Youth)",
+                "PUR SP LL Super Saiyan Goten (Kid)",
+                "BLU SP God of Destruction Beerus",
+                "GRN SP Gohan (Kid): Piccolo (Assist)",
+                "YEL SP Super Saiyan 2 Caulifla: Kale (Assist)",
+                "GRN SP God of Destruction Toppo",
+                "YEL SP Majuub",
+                "BLU SP Super Saiyan 3 Goku",
+                "RED SP Super Saiyan 2 Kefla",
+                "PUR SP Super Saiyan God SS Vegito",
+                "YEL SP Android #17",
+                "BLU SP Android #18",
+                "BLU SP Super Saiyan God SS Goku",
+                "RED SP Trunks: Mai (Assist)",
+                "YEL SP Vegeta",
+                "RED SP Final Form Frieza",
+                "GRN SP Metal Cooler",
+                "PUR SP Super Saiyan Vegeta",
+                "GRN SP Goku Black",
+                "RED SP Great Saiyaman 1 & 2 (Assist)",
+                "RED SP Perfect Form Cell",
+                "GRN SP Trunks (Kid)",
+                "YEL SP Goten (Kid)",
+                "RED SP Dyspo",
+                "BLU SP Toppo",
+                "GRN SP Jiren",
+                "GRN SP Super Saiyan Goku",
+                "BLU EX Final Form Cooler",
+                "RED EX Turles",
+                "GRN EX Dyspo",
+                "YEL EX Toppo",
+                "BLU EX Fasha",
+                "GRN EX Tora",
+                "RED EX Mai",
+                "GRN EX Final Form Frieza",
+                "BLU EX Super Saiyan 2 Gohan (Youth)",
+                "PUR EX Yajirobe",
+                "YEL HE Mercenary Tao",
+                "GRN HE Nail",
+                "BLU HE World Champion Hercule",
+                "RED HE Videl",
+                "BLU HE 2nd Form Cell",
+                "BLU HE Krillin",
+                "PUR HE Super Saiyan Goku",
+                "BLU HE Turles",
+                "GRN HE Cell Jr.",
+                "RED HE Thouser"
+            ];
+
+            var summon_value = 1, max = 49, min = 0;
+            var arr = [];
+
+            let i = 0;
+            while(summon_value-- > 0){
+
+                let diff = max - min;
+                let random_number = Math.random();
+                random_number = Math.floor(random_number * diff);
+
+                random_number += min;
+                arr[i++] = random_number;
+            }
+
+            alert(
+                arr.map((arr) => character_list[arr] + "\n")
+            )
+        }
+
+        const multi_summon = () =>{
+            
+            const character_list= [
+                "PUR UL Legendary Super Saiyan Broly",
+                "RED SP LL Fusion Zamasu (Corrupted)",
+                "BLU SP LL Buu:Kid",
+                "PUR SP LL Super Saiyan Gohan (Youth)",
+                "PUR SP LL Super Saiyan Goten (Kid)",
+                "BLU SP God of Destruction Beerus",
+                "GRN SP Gohan (Kid): Piccolo (Assist)",
+                "YEL SP Super Saiyan 2 Caulifla: Kale (Assist)",
+                "GRN SP God of Destruction Toppo",
+                "YEL SP Majuub",
+                "BLU SP Super Saiyan 3 Goku",
+                "RED SP Super Saiyan 2 Kefla",
+                "PUR SP Super Saiyan God SS Vegito",
+                "YEL SP Android #17",
+                "BLU SP Android #18",
+                "BLU SP Super Saiyan God SS Goku",
+                "RED SP Trunks: Mai (Assist)",
+                "YEL SP Vegeta",
+                "RED SP Final Form Frieza",
+                "GRN SP Metal Cooler",
+                "PUR SP Super Saiyan Vegeta",
+                "GRN SP Goku Black",
+                "RED SP Great Saiyaman 1 & 2 (Assist)",
+                "RED SP Perfect Form Cell",
+                "GRN SP Trunks (Kid)",
+                "YEL SP Goten (Kid)",
+                "RED SP Dyspo",
+                "BLU SP Toppo",
+                "GRN SP Jiren",
+                "GRN SP Super Saiyan Goku",
+                "BLU EX Final Form Cooler",
+                "RED EX Turles",
+                "GRN EX Dyspo",
+                "YEL EX Toppo",
+                "BLU EX Fasha",
+                "GRN EX Tora",
+                "RED EX Mai",
+                "GRN EX Final Form Frieza",
+                "BLU EX Super Saiyan 2 Gohan (Youth)",
+                "PUR EX Yajirobe",
+                "YEL HE Mercenary Tao",
+                "GRN HE Nail",
+                "BLU HE World Champion Hercule",
+                "RED HE Videl",
+                "BLU HE 2nd Form Cell",
+                "BLU HE Krillin",
+                "PUR HE Super Saiyan Goku",
+                "BLU HE Turles",
+                "GRN HE Cell Jr.",
+                "RED HE Thouser"
+            ];
+            var summon_value = 10, max = 49, min = 0;
+            var arr = [];
+
+            let i = 0;
+            while(summon_value-- > 0){
+
+                let diff = max - min;
+                let random_number = Math.random();
+                random_number = Math.floor(random_number * diff);
+
+                random_number += min;                
+                arr[i++] = random_number;
+            }
+// alert(arr)
+            alert(
+                arr.map((arr) => character_list[arr] + "\n")
+            )
+        }
+
   return (
     <>
      <section className="tabs">
@@ -79,12 +226,12 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
 
                       <div className='banner-summon'>
 
-                          <div className='banner-single'>
+                          <div className='banner-single' onClick={single_summon}>
                               <div>Single Summon</div>
                               <div>100</div>
                           </div>
 
-                          <div className='banner-multi'>
+                          <div className='banner-multi' onClick={multi_summon}>
                               <div>Consecutive Summon</div>
                               <div>1,000</div>
                           </div>

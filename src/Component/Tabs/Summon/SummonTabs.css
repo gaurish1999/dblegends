@@ -11,12 +11,16 @@
     max-width: 25px;
 }
 
+.banner-img{
+    overflow: hidden;
+}
+
 .tab-content-div-summon{
-    margin-top: 8vh;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* margin-top: 0.6rem;
     margin-left: auto; */
     font-size: 2rem;
@@ -105,7 +109,7 @@
 }
 
 .tab-content-div-summon .banner-summon .banner-single div:nth-child(2){
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 
 .tab-content-div-summon .banner-summon .banner-single div:nth-child(2), 
@@ -115,4 +119,10 @@
     width:95%;
     margin-left: 4px;
     border-radius: 5px;
+}
+
+.banner-single:hover, .banner-multi:hover{
+    transition-duration: 0.1s;
+    cursor: pointer;
+    transform: scale(1.1);
 }
