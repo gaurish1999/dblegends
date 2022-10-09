@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ReactModal from 'react-modal';
+import CC from '../../CC/CC';
 import {summonLabels} from "./Summonconstant";
-import {Link} from "react-router-dom";
 import "./SummonTabs.css";
 
 const SummonTabs = ({activeTabName, onClickTab}) => {
     const {ALL, RECOMMENDED, ZENKAI, TICKET} = summonLabels;
+
+    const [cc, setCc] = useState(9000);
+
+    const [modal, setModal] = useState(false);
+    const [res, setRes] = useState([]);
     
     const renderTabTitle = (tabTitle, isActive, icon, id) => (
 
@@ -18,155 +24,198 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
       </div>
     )
 
-        const single_summon = () =>{
+    const openModal = () => {
+        setModal(true);
+    }
+    const afterOpenModal = () => {
 
-            const character_list= [
-                "PUR UL Legendary Super Saiyan Broly",
-                "RED SP LL Fusion Zamasu (Corrupted)",
-                "BLU SP LL Buu:Kid",
-                "PUR SP LL Super Saiyan Gohan (Youth)",
-                "PUR SP LL Super Saiyan Goten (Kid)",
-                "BLU SP God of Destruction Beerus",
-                "GRN SP Gohan (Kid): Piccolo (Assist)",
-                "YEL SP Super Saiyan 2 Caulifla: Kale (Assist)",
-                "GRN SP God of Destruction Toppo",
-                "YEL SP Majuub",
-                "BLU SP Super Saiyan 3 Goku",
-                "RED SP Super Saiyan 2 Kefla",
-                "PUR SP Super Saiyan God SS Vegito",
-                "YEL SP Android #17",
-                "BLU SP Android #18",
-                "BLU SP Super Saiyan God SS Goku",
-                "RED SP Trunks: Mai (Assist)",
-                "YEL SP Vegeta",
-                "RED SP Final Form Frieza",
-                "GRN SP Metal Cooler",
-                "PUR SP Super Saiyan Vegeta",
-                "GRN SP Goku Black",
-                "RED SP Great Saiyaman 1 & 2 (Assist)",
-                "RED SP Perfect Form Cell",
-                "GRN SP Trunks (Kid)",
-                "YEL SP Goten (Kid)",
-                "RED SP Dyspo",
-                "BLU SP Toppo",
-                "GRN SP Jiren",
-                "GRN SP Super Saiyan Goku",
-                "BLU EX Final Form Cooler",
-                "RED EX Turles",
-                "GRN EX Dyspo",
-                "YEL EX Toppo",
-                "BLU EX Fasha",
-                "GRN EX Tora",
-                "RED EX Mai",
-                "GRN EX Final Form Frieza",
-                "BLU EX Super Saiyan 2 Gohan (Youth)",
-                "PUR EX Yajirobe",
-                "YEL HE Mercenary Tao",
-                "GRN HE Nail",
-                "BLU HE World Champion Hercule",
-                "RED HE Videl",
-                "BLU HE 2nd Form Cell",
-                "BLU HE Krillin",
-                "PUR HE Super Saiyan Goku",
-                "BLU HE Turles",
-                "GRN HE Cell Jr.",
-                "RED HE Thouser"
-            ];
+    }
+    const closeModal = () => {
+        setModal(false);
+    }
 
-            var summon_value = 1, max = 49, min = 0;
-            var arr = [];
+    const single_summon = () =>{
+        // console.log(cc)
+        openModal();
 
-            let i = 0;
-            while(summon_value-- > 0){
+        const character_list= [
+            "PUR UL Legendary Super Saiyan Broly",
+            "RED SP LL Fusion Zamasu (Corrupted)",
+            "BLU SP LL Buu:Kid",
+            "PUR SP LL Super Saiyan Gohan (Youth)",
+            "PUR SP LL Super Saiyan Goten (Kid)",
+            "BLU SP God of Destruction Beerus",
+            "GRN SP Gohan (Kid): Piccolo (Assist)",
+            "YEL SP Super Saiyan 2 Caulifla: Kale (Assist)",
+            "GRN SP God of Destruction Toppo",
+            "YEL SP Majuub",
+            "BLU SP Super Saiyan 3 Goku",
+            "RED SP Super Saiyan 2 Kefla",
+            "PUR SP Super Saiyan God SS Vegito",
+            "YEL SP Android #17",
+            "BLU SP Android #18",
+            "BLU SP Super Saiyan God SS Goku",
+            "RED SP Trunks: Mai (Assist)",
+            "YEL SP Vegeta",
+            "RED SP Final Form Frieza",
+            "GRN SP Metal Cooler",
+            "PUR SP Super Saiyan Vegeta",
+            "GRN SP Goku Black",
+            "RED SP Great Saiyaman 1 & 2 (Assist)",
+            "RED SP Perfect Form Cell",
+            "GRN SP Trunks (Kid)",
+            "YEL SP Goten (Kid)",
+            "RED SP Dyspo",
+            "BLU SP Toppo",
+            "GRN SP Jiren",
+            "GRN SP Super Saiyan Goku",
+            "BLU EX Final Form Cooler",
+            "RED EX Turles",
+            "GRN EX Dyspo",
+            "YEL EX Toppo",
+            "BLU EX Fasha",
+            "GRN EX Tora",
+            "RED EX Mai",
+            "GRN EX Final Form Frieza",
+            "BLU EX Super Saiyan 2 Gohan (Youth)",
+            "PUR EX Yajirobe",
+            "YEL HE Mercenary Tao",
+            "GRN HE Nail",
+            "BLU HE World Champion Hercule",
+            "RED HE Videl",
+            "BLU HE 2nd Form Cell",
+            "BLU HE Krillin",
+            "PUR HE Super Saiyan Goku",
+            "BLU HE Turles",
+            "GRN HE Cell Jr.",
+            "RED HE Thouser"
+        ];
 
-                let diff = max - min;
-                let random_number = Math.random();
-                random_number = Math.floor(random_number * diff);
+        var summon_value = 1, max = 49, min = 0, res;
+        var arr = [];
 
-                random_number += min;
-                arr[i++] = random_number;
-            }
+        let i = 0;
+        while(summon_value-- > 0){
 
-            alert(
-                arr.map((arr) => character_list[arr] + "\n")
-            )
+            let diff = max - min;
+            let random_number = Math.random();
+            random_number = Math.floor(random_number * diff);
+
+            random_number += min;
+            arr[i++] = random_number;
         }
 
-        const multi_summon = () =>{
-            
-            const character_list= [
-                "PUR UL Legendary Super Saiyan Broly",
-                "RED SP LL Fusion Zamasu (Corrupted)",
-                "BLU SP LL Buu:Kid",
-                "PUR SP LL Super Saiyan Gohan (Youth)",
-                "PUR SP LL Super Saiyan Goten (Kid)",
-                "BLU SP God of Destruction Beerus",
-                "GRN SP Gohan (Kid): Piccolo (Assist)",
-                "YEL SP Super Saiyan 2 Caulifla: Kale (Assist)",
-                "GRN SP God of Destruction Toppo",
-                "YEL SP Majuub",
-                "BLU SP Super Saiyan 3 Goku",
-                "RED SP Super Saiyan 2 Kefla",
-                "PUR SP Super Saiyan God SS Vegito",
-                "YEL SP Android #17",
-                "BLU SP Android #18",
-                "BLU SP Super Saiyan God SS Goku",
-                "RED SP Trunks: Mai (Assist)",
-                "YEL SP Vegeta",
-                "RED SP Final Form Frieza",
-                "GRN SP Metal Cooler",
-                "PUR SP Super Saiyan Vegeta",
-                "GRN SP Goku Black",
-                "RED SP Great Saiyaman 1 & 2 (Assist)",
-                "RED SP Perfect Form Cell",
-                "GRN SP Trunks (Kid)",
-                "YEL SP Goten (Kid)",
-                "RED SP Dyspo",
-                "BLU SP Toppo",
-                "GRN SP Jiren",
-                "GRN SP Super Saiyan Goku",
-                "BLU EX Final Form Cooler",
-                "RED EX Turles",
-                "GRN EX Dyspo",
-                "YEL EX Toppo",
-                "BLU EX Fasha",
-                "GRN EX Tora",
-                "RED EX Mai",
-                "GRN EX Final Form Frieza",
-                "BLU EX Super Saiyan 2 Gohan (Youth)",
-                "PUR EX Yajirobe",
-                "YEL HE Mercenary Tao",
-                "GRN HE Nail",
-                "BLU HE World Champion Hercule",
-                "RED HE Videl",
-                "BLU HE 2nd Form Cell",
-                "BLU HE Krillin",
-                "PUR HE Super Saiyan Goku",
-                "BLU HE Turles",
-                "GRN HE Cell Jr.",
-                "RED HE Thouser"
-            ];
-            var summon_value = 10, max = 49, min = 0;
-            var arr = [];
+        setRes(
+            arr.map((arr) => character_list[arr] + "\n")
+        )
+    }
 
-            let i = 0;
-            while(summon_value-- > 0){
+    const multi_summon = () =>{
+        
+        openModal();
+        // setCc(cc-1000);
+        // console.log(cc)
+        const character_list= [
+            "PUR UL Legendary Super Saiyan Broly",
+            "RED SP LL Fusion Zamasu (Corrupted)",
+            "BLU SP LL Buu:Kid",
+            "PUR SP LL Super Saiyan Gohan (Youth)",
+            "PUR SP LL Super Saiyan Goten (Kid)",
+            "BLU SP God of Destruction Beerus",
+            "GRN SP Gohan (Kid): Piccolo (Assist)",
+            "YEL SP Super Saiyan 2 Caulifla: Kale (Assist)",
+            "GRN SP God of Destruction Toppo",
+            "YEL SP Majuub",
+            "BLU SP Super Saiyan 3 Goku",
+            "RED SP Super Saiyan 2 Kefla",
+            "PUR SP Super Saiyan God SS Vegito",
+            "YEL SP Android #17",
+            "BLU SP Android #18",
+            "BLU SP Super Saiyan God SS Goku",
+            "RED SP Trunks: Mai (Assist)",
+            "YEL SP Vegeta",
+            "RED SP Final Form Frieza",
+            "GRN SP Metal Cooler",
+            "PUR SP Super Saiyan Vegeta",
+            "GRN SP Goku Black",
+            "RED SP Great Saiyaman 1 & 2 (Assist)",
+            "RED SP Perfect Form Cell",
+            "GRN SP Trunks (Kid)",
+            "YEL SP Goten (Kid)",
+            "RED SP Dyspo",
+            "BLU SP Toppo",
+            "GRN SP Jiren",
+            "GRN SP Super Saiyan Goku",
+            "BLU EX Final Form Cooler",
+            "RED EX Turles",
+            "GRN EX Dyspo",
+            "YEL EX Toppo",
+            "BLU EX Fasha",
+            "GRN EX Tora",
+            "RED EX Mai",
+            "GRN EX Final Form Frieza",
+            "BLU EX Super Saiyan 2 Gohan (Youth)",
+            "PUR EX Yajirobe",
+            "YEL HE Mercenary Tao",
+            "GRN HE Nail",
+            "BLU HE World Champion Hercule",
+            "RED HE Videl",
+            "BLU HE 2nd Form Cell",
+            "BLU HE Krillin",
+            "PUR HE Super Saiyan Goku",
+            "BLU HE Turles",
+            "GRN HE Cell Jr.",
+            "RED HE Thouser"
+        ];
+        var summon_value = 10, max = 49, min = 0;
+        var arr = [];
 
-                let diff = max - min;
-                let random_number = Math.random();
-                random_number = Math.floor(random_number * diff);
+        let i = 0;
+        while(summon_value-- > 0){
 
-                random_number += min;                
-                arr[i++] = random_number;
-            }
+            let diff = max - min;
+            let random_number = Math.random();
+            random_number = Math.floor(random_number * diff);
+
+            random_number += min;                
+            arr[i++] = random_number;
+        }
 // alert(arr)
-            alert(
-                arr.map((arr) => character_list[arr] + "\n")
-            )
+        setRes(
+            arr.map((arr) => character_list[arr] + " | ")
+        )
+    }
+
+    const bg_overlay = {
+        overlay: {
+            background: '#13171acd'
         }
+    };
 
   return (
     <>
+        <ReactModal
+            isOpen={modal}
+            ariaHideApp={false}
+            onAfterOpen={afterOpenModal}
+            onRequestClose={closeModal}
+            contentLabel="Summon Results"
+            id='summon-modal'
+            style={bg_overlay}
+            >
+                <div className='summon-modal-bg'>
+
+                    <div className='summon-modal-topline'>
+                        <p>Summon Results</p>
+                        <button id='close-modal' onClick={closeModal}>×</button>
+                    </div>
+
+                    {/* <hr/> */}
+
+                    <div className='summon-modal-res'>{res}</div>
+                </div>
+        </ReactModal>
+
      <section className="tabs">
       <div className="tab-container">
 

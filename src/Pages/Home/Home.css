@@ -110,7 +110,7 @@
     /* background-color: #DCF4F8; */
     width: 95%;
     margin: auto;
-    z-index: 99;
+    z-index: 0;
 }
 
 .menu-link{

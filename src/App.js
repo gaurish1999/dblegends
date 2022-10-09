@@ -24,6 +24,7 @@ import Summon from './Pages/Summon/Summon';
 import Train from './Pages/Train/Train';
 import HoiPoi from './Pages/HoiPoi/HoiPoi';
 import { useEffect, useState } from 'react';
+import SummonResults from './Pages/SummonResults/SummonResults';
 
 
 
@@ -74,6 +75,7 @@ function App() {
           <Route path='/top' element={<Menu />}></Route>
           <Route path='/shop' element={<Shop />}></Route>
           <Route path='/summon' element={<Summon />}></Route>
+          <Route path='/summonresults' element={<SummonResults />}></Route>
           <Route path='/characters' element={<Characters />}></Route>
         </Routes>
       </BrowserRouter>
