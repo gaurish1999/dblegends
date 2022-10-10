@@ -59,10 +59,10 @@ export default function Characters() {
 
           <div className='characters'>
             <div className='main-char bigger'>
-              {/* <video>
-                <source src='https://imgur.com/I5HrE8V' type="video/mp4"></source>
-              </video> */}
-              <img src='https://i.imgur.com/hpWYV2A.png' />
+              <video autoPlay muted loop>
+                <source src='https://i.imgur.com/I5HrE8V.mp4' type="video/mp4"></source>
+              </video>
+              {/* <img src='https://i.imgur.com/hpWYV2A.png' /> */}
             </div>
             <div className='team-char smaller'>
               <div><img src='https://i.imgur.com/vubdFfD.png'></img><img src='https://i.imgur.com/JZiJCtc.png'></img></div>

@@ -82,7 +82,10 @@
     /* justify-content: space-around; */
     overflow: hidden;
     height: 550px;
+    border: 2px solid goldenrod;
+    background-color: #13171a98;
 }
+
 .main-char img{
     /* background-color: #8BA3AB; */
     /* height: 100%; */
@@ -91,6 +94,15 @@
 
     /* margin-left:-150px; */
 }
+.main-char video{
+    width: 300px;
+}
+.main-char img:hover{
+    transition-duration: 0.2s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .team-char{
     /* background-color: aqua; */
     flex-grow: 1;
@@ -107,6 +119,7 @@
 }
 .smaller{
     width: 250px;
+    margin-left: -30px;
 }
 .team-char div{
     width: 160px;
