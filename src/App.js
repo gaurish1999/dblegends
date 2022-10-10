@@ -56,7 +56,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Title />}></Route>
           <Route path='/cc' element={<CC />}></Route>
-          <Route path='/ccamount' element={<CCAmount />}></Route>
+          {/* <Route path='/ccamount' element={<CCAmount />}></Route> */}
           <Route path='/home' element={<Home />}></Route>
           <Route path='/story' element={<Story />}></Route>
           <Route path='/event' element={<Event />}></Route>
@@ -83,7 +83,7 @@ function App() {
           <Route path='/shop' element={<Shop />}></Route>
           <Route path='/summon' element={<Summon />}></Route>
           <Route path='/summontabs' element={<SummonTabs />}></Route>
-          <Route path='/summonresults' element={<SummonResults />}></Route>
+          {/* <Route path='/summonresults' element={<SummonResults />}></Route> */}
           <Route path='/characters' element={<Characters />}></Route>
         </Routes>
       </BrowserRouter>
