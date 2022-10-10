@@ -3,8 +3,8 @@ import './CC.css';
 
 export default function CC() {
 
-const [cc, setCc] = useState(JSON.parse(localStorage.getItem('Chrono Crystals')));
-// const [cc, setCc] = useState(9999);
+// const [cc, setCc] = useState(JSON.parse(localStorage.getItem('Chrono Crystals')));
+const [cc, setCc] = useState(9999);
 
 
 

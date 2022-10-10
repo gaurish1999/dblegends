@@ -12,7 +12,57 @@
     transform: rotate(-5deg);
 } */
 
-.both-link{
+.plan_rally{
+    margin-top: -15px;
+    margin-bottom: -30px;
+}
+.plan_rally img{
+    width: 100%;
+    max-width: inherit;
+    height: 80%;
+}
+
+.stamp_rally{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13171acd;
+    width: 95%;
+    padding: 8px;
+    /* margin-top: 5px; */
+    margin: auto;
+    border-radius: 5px;
+    color: #A5A9AD;
+    font-weight: 700;
+    font-size: 15px;
+}
+.stamp_rally_right{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.stamp_rally_sheets{
+    /* display: flex; */
+    width: 50px;
+    margin-left: 0.5rem;
+    /* align-items: center;
+    justify-content: center; */
+    background-image: linear-gradient(#e8ede2,#CACEC4, #AAAE98);
+    padding: 5px; 
+    border: 2px solid black;
+    text-decoration: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: 700;
+    font-size: 0.5rem;
+}
+.stamp_rally_sheets:hover{
+    transition-duration: 0.1s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/* .both-link{
     position: absolute;
     bottom: 0;
     width: inherit;
@@ -24,5 +74,5 @@
     justify-content: space-around; 
     padding: 10px;
     margin-top: 20px;
-    /* background: green; */
-}
+    background: green;
+} */
