@@ -73,10 +73,14 @@
 }
 
 .mission-link-btn{
-    /* position: absolute;
-    left: 35%;
-    bottom: 10px;
-    padding: 5px;  */
+    position: absolute;
+    width: 150px;
+    left: 0;
+    right: 0px;
+    bottom: 65px;
+    /* padding: 5px;  */
+    margin-left: auto;
+    margin-right: auto;
     background: rgb(149, 98, 2);
     text-decoration: none;
     color: #DCF4F8;

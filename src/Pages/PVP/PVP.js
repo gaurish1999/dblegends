@@ -1,10 +1,79 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Back from '../../Component/Back/Back'
 import Slider from '../../Component/Slider/Slider';
 import './PVP.css'
 
 export default function PVP() {
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+  useEffect(() => {
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+    var present_date =  new Date();
+  
+    var present_day = present_date.getDate();
+    var present_month = present_date.getMonth();
+    var present_year = present_date.getFullYear();
+    // var present_time_hours = present_date.getHours();
+    // var present_time_mins = present_date.getMinutes();
+  
+    // var ending_day = present_date.getDate();
+    // var ending_month = present_date.getMonth();
+    // var ending_year = present_date.getFullYear();
+    // var ending_time = present_date.getTime();
+    // alert(present_date.get)
+    // alert(present_day+"/" +present_month+ "/" +present_year + " | " + present_time_hours + ":" + present_time_mins);
+  
+   
+  
+    if(present_date.getDay() == 3){
+
+      setStartdd(present_day);
+      setStartmm(months[present_month]);
+      setStartyyy(present_year);
+      setSstd(sstd + 1);
+
+      present_date.setDate(present_date.getDate() + 14);
+      var reset_date = (present_date.toDateString());
+      // alert(reset_date);
+      
+
+      // console.log(reset_date.substring(4, 7));
+      // console.log(reset_date.substring(8, 11));
+      // console.log(reset_date.substring(11, 16));
+
+      setEnddd(reset_date.substring(4, 7))
+      setEndmm(reset_date.substring(8, 10))
+      setEndyyy(reset_date.substring(11, 16))
+
+
+      
+    }
+    else{
+      
+      console.log("Today is not reset day")
+      
+    }
+  
+   
+  }, [])
+
+  const [sstd, setSstd] = useState(83);
+  
+  // const [today, setToday] = useState(present_date);
+
+  const [startdd, setStartdd]= useState(5);
+  const [startmm, setStartmm]= useState(months[9]);
+  const [startyyyy, setStartyyy]= useState(2022);
+  // const [starthours, setStarthours]= useState(present_time_hours);
+  // const [startmins, setStartmins]= useState(present_time_mins);
+ 
+  const [enddd, setEnddd]= useState(19);
+  const [endmm, setEndmm]= useState(months[9]);
+  const [endyyyy, setEndyyy]= useState(2022);
+  // const [endtime, setEndtime]= useState();
+
   return (
     <>
         <div className='container'>
@@ -14,14 +83,14 @@ export default function PVP() {
           </div><br/><br/>
 
           <div className='season-desc'>
-            <span>Super Space-Time Duel #83</span>
+            <span>Super Space-Time Duel #{sstd}</span>
             <Link to='' className='info-btn'>
                 <span><i className="fa fa-info" aria-hidden="true"></i></span>
             </Link>
           </div>
 
           <div className='season-period'>
-            <span>6/29/2022 15:30(IST)-7/20/2022 7:30(IST)</span>
+            <span>{startmm} {startdd}, {startyyyy} - {enddd} {endmm}, {endyyyy}</span>
           </div>
 
           <div className='godtube'>
