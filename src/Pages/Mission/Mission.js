@@ -28,7 +28,7 @@ export default function Mission() {
           <div>Daliy Stamp Rally</div>
 
           <div className='stamp_rally_right'>
-            <div className='stamp_rally_icon'>❤️</div>
+            <div className='stamp_rally_icon'>🔴</div>
             <div className='stamp_rally_number'>13/14</div>
             <div className='stamp_rally_sheets'>Check Sheets</div>
           </div>

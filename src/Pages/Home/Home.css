@@ -3,10 +3,21 @@
     justify-content: space-between;
 }
 
+.top-caraousel{
+    position: absolute;
+    left: 10px;
+    top: 85px;
+    width: 52%;
+    height: 50px;
+    background-color: #1865D8;
+    border-radius: 2px;
+    color: #DCF4F8;
+}
+
 .extra-icons{
     z-index: 10;
     position: absolute;
-    top: 65px;
+    top: 85px;
     right: -80px;
     /* background-color: aqua; */
     display: flex;
@@ -119,11 +130,11 @@
     /* background-color: red; */
 /* } */
 
-.both-link{
-    margin-bottom: 10px;
-    /* position: absolute; */
+.menu-link{
+    /* margin-bottom: 10px; */
+    position: absolute;
     /* width: inherit; */
-    /* bottom: 10px; */
+    right: 0px;
 
 }
 

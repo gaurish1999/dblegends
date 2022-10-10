@@ -196,7 +196,7 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
         }
 // alert(arr)
         setRes(
-            arr.map((arr) => character_list[arr] + " | ")
+            arr.map((arr) => (character_list[arr] + " | "))
         )
         setCc(localStorage.setItem('Chrono Crystals', JSON.stringify(cc)))
 

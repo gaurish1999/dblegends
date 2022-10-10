@@ -25,6 +25,10 @@ export default function Home() {
             <CC />
           </div>
 
+          <div className='top-caraousel'>
+            <span>This is Top Right caraousel</span>
+          </div>
+
           <div className='extra-icons'>
 
             <Link to='' className='extra-icons-present extra-icon-list'>
@@ -84,7 +88,7 @@ export default function Home() {
 
             <div className='common-links'>
                 {/* <Link to='/' className='titlescreen-link'>Title</Link> */}
-                <Back />
+                {/* <Back /> */}
                 <Link to='/menu' className='menu-link'>Menu</Link>
             </div>
 
