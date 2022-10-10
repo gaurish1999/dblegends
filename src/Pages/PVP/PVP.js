@@ -10,13 +10,14 @@ export default function PVP() {
         <div className='container'>
 
           <div>
-            <Link to='' className='info-btn'>
-                <span><i className="fa fa-info" aria-hidden="true"></i></span>
-            </Link>
+           
           </div><br/><br/>
 
           <div className='season-desc'>
-            <span>Who's the 4th Anniversary's Strongest Fighter?! Anniversay Super Space-Time Duel Season 2</span>
+            <span>Super Space-Time Duel #83</span>
+            <Link to='' className='info-btn'>
+                <span><i className="fa fa-info" aria-hidden="true"></i></span>
+            </Link>
           </div>
 
           <div className='season-period'>
@@ -40,12 +41,19 @@ export default function PVP() {
               <div className='season-ranking-board-row'>
                 <div className='rank-heading'>
                   <span>Ranking</span>
+                  
                   <Link to='' className='info-btn'>
                     <span><i className="fa fa-info" aria-hidden="true"></i></span>
                   </Link>
                 </div>
+              </div>
+              
+              <div className='season-ranking-board-row'>
+                <div className='rank-heading'>                 
+                  <span>Top World</span>
+                </div>
 
-                <div className='rank'>
+                <div className='rank'>                  
                   <span>No rank</span>
                 </div>
               </div>
@@ -53,6 +61,18 @@ export default function PVP() {
               <hr/>
 
               <div className='season-ranking-board-row'>
+                <div className='rank-rp'>
+                  <span>Group A</span>
+                </div>
+                <div className='rank'>
+                  <span>4</span>
+                </div>
+              </div>
+
+              <hr/>
+              
+              <div className='season-ranking-board-row'>
+                
                 <div className='rank-rp'>
                   <span>RP</span>
                 </div>
@@ -86,12 +106,27 @@ export default function PVP() {
                   </Link>
               </div>
 
+              <div className='ranking-rwd-world'>
+                <span>Top World</span>
+              </div>
               <div className='battle-rank-rewards'>
 
                 <div className='rwd-item'>
                   <img src='https://i.imgur.com/oT8dU15.png' alt='rare-medal'/>
                   <span>x500</span>
                 </div>
+
+                <div className='rwd-item'>
+                  <img src='https://pbs.twimg.com/media/Ec9tFq8UwAA6TcM.png' alt='chrono-crystal' />
+                  <span>x600</span>
+                </div>
+
+              </div>
+
+              <div className='ranking-rwd-world'>
+                <span>Group</span>
+              </div>
+              <div className='battle-rank-rewards'>
 
                 <div className='rwd-item'>
                   <img src='https://pbs.twimg.com/media/Ec9tFq8UwAA6TcM.png' alt='chrono-crystal' />
@@ -123,7 +158,7 @@ export default function PVP() {
 
               <div className='icon-with-powerlevel'>
 
-                <Link to='' className='info-btn party-form'>
+                <Link to='/characters' className='info-btn party-form'>
                     <span><i className="fa fa-users" aria-hidden="true"></i></span>
                 </Link>
 
@@ -152,20 +187,12 @@ export default function PVP() {
             </Link>
           </div>
 
-          {/* <img src='https://i.imgur.com/KF077Ag.gif' 
-          alt='coming soon' 
-          className='loading-goku'
-          />
-          <div className='loading-text'>
-            <span>Coming Soon...</span>
-          </div> */}
+          <Link to='/mission' className='mission-link-btn'>
+              <span className='z'>Z</span> Mission
+          </Link>
 
           <div className='common-links'>
-            <Back />
-
-            <Link to='/mission' className='mission-link-btn'>
-              <span className='z'>Z</span> Mission
-            </Link>
+            <Back />            
 
             <Link to='/menu' className='menu-link'>Menu</Link>
           </div>
