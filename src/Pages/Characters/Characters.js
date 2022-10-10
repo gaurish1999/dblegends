@@ -58,19 +58,19 @@ export default function Characters() {
           </div>
 
           <div className='characters'>
-            <div className='main-char'>
+            <div className='main-char bigger'>
               {/* <video>
                 <source src='https://imgur.com/I5HrE8V' type="video/mp4"></source>
               </video> */}
               <img src='https://i.imgur.com/hpWYV2A.png' />
             </div>
-            <div className='team-char'>
-              <div>Character 1</div>
-              <div>Character 1</div>
-              <div>Character 1</div>
-              <div>Character 1</div>
-              <div>Character 1</div>
-              <div>Character 1</div>
+            <div className='team-char smaller'>
+              <div><img src='https://i.imgur.com/vubdFfD.png'></img><img src='https://i.imgur.com/JZiJCtc.png'></img></div>
+              <div><img src='https://i.imgur.com/xHLbkw2.png'></img></div>
+              <div><img src='https://i.imgur.com/NFhSG5c.png'></img></div>
+              <div><img src='https://i.imgur.com/hICURNV.png'></img></div>
+              <div><img src='https://i.imgur.com/3OBVdj7.png'></img><img src='https://i.imgur.com/mmVctfP.png'></img></div>
+              <div><img src='https://i.imgur.com/3OBVdj7.png'></img><img src='https://i.imgur.com/cfxIcjn.png'></img></div>
             </div>
           </div>
 
