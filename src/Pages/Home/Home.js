@@ -24,6 +24,30 @@ export default function Home() {
             <Energy />
             <CC />
           </div>
+
+          <div className='extra-icons'>
+
+            <Link to='' className='extra-icons-present extra-icon-list'>
+              <img src='https://i.imgur.com/7xvw5Ba.png'></img>
+            </Link>
+
+            <Link to='/mission' className='extra-icons-mission extra-icon-list'>
+              <img src='https://i.imgur.com/RiYRK1r.png'></img>
+            </Link>
+
+            <Link to='guild' className='extra-icons-guild extra-icon-list'>
+              <img src='https://i.imgur.com/tJGizKR.png'></img>
+            </Link>
+            
+            <Link to='shop' className='extra-icons-shop extra-icon-list'>
+              <img src='https://i.imgur.com/7aJZD56.png'></img>
+            </Link>
+
+          </div>
+
+          <div className='torn-bg'>
+            <img src='https://i.imgur.com/F4Yb2XC.png'></img>
+          </div>
           
           <div className='sound-effect'>
               <audio id='audio'/>

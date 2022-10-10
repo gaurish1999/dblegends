@@ -160,7 +160,7 @@ hr{
 
 .pvp-friendly-img{
     width: 50%;
-    
+    filter: drop-shadow(0px 2px 2px black);
 }
 .pvp-friendly-img:hover{
     transition-duration: 0.1s;
