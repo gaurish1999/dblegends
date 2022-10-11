@@ -9,9 +9,10 @@
     top: 85px;
     width: 52%;
     height: 50px;
-    background-color: #1865D8;
+    background-color: #13171acd;
     border-radius: 2px;
     color: #DCF4F8;
+    z-index: 20;
 }
 
 .extra-icons{

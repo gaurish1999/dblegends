@@ -1,13 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css';
-import Back from '../../Component/Back/Back'
 import gogeta from '../../Media/Voicelines/ss4-gogeta.mp3';
 import Level from '../../Component/Level/Level';
 import Energy from '../../Component/Energy/Energy';
 import CC from '../../Component/CC/CC';
+import Carousel from "react-elastic-carousel";
+import Item from "./Item";
 
 export default function Home() {
+
+  const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+  ];
 
   function play() {
     const voice = new Audio(gogeta);
@@ -26,12 +34,23 @@ export default function Home() {
           </div>
 
           <div className='top-caraousel'>
-            <span>This is top left caraousel</span>
+            <span>
+              <Carousel breakPoints={breakPoints}>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+              </Carousel>
+            </span>
           </div>
 
           <div className='extra-icons'>
 
-            <Link to='/characterlist' className='extra-icons-present extra-icon-list'>
+            <Link to='' className='extra-icons-present extra-icon-list'>
               <img src='https://i.imgur.com/7xvw5Ba.png'></img>
             </Link>
 
