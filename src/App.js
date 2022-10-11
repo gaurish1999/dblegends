@@ -27,6 +27,7 @@ import { useEffect, useState } from 'react';
 import SummonResults from './Pages/SummonResults/SummonResults';
 import SummonTabs from './Component/Tabs/Summon/SummonTabs';
 import CC from './Component/CC/CC';
+import CharacterList from './Pages/CharacterList/CharacterList'
 import CCAmount from './Component/CC/CCAmount';
 
 
@@ -85,6 +86,7 @@ function App() {
           <Route path='/summontabs' element={<SummonTabs />}></Route>
           {/* <Route path='/summonresults' element={<SummonResults />}></Route> */}
           <Route path='/characters' element={<Characters />}></Route>
+          <Route path='/characterlist' element={<CharacterList />}></Route>
         </Routes>
       </BrowserRouter>
       )}

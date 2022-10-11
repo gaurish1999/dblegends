@@ -138,6 +138,7 @@
     height: 75px;
     overflow: hidden;
     border-radius: 6px;
+    position: relative;
     box-shadow: 0px 2px 2px black;
 }
 .team-char div:hover{
@@ -160,6 +161,7 @@
     position: absolute;
     bottom: 0px;
 }
+
 .team-char div:nth-child(2){
     background-image: linear-gradient( rgba(248, 248, 248, 0.001), #D7C20C, #D7C20C);
 }
@@ -173,6 +175,7 @@
     background-image: linear-gradient( rgba(248, 248, 248, 0.001), #CB1D1D, #CB1D1D);
     position: relative;
 }
+
 .team-char div:nth-child(5) img:first-child, 
 .team-char div:nth-child(6) img:first-child{
     position: absolute;
@@ -183,6 +186,33 @@
 .team-char div:nth-child(6){
     background-image: linear-gradient( rgba(248, 248, 248, 0.001), #1CC620, #1CC620);
     position: relative;
+}
+.team-char div .eq-1{
+    position: absolute;
+    right: 70px;
+    bottom: 0px;
+    height: 20px;
+    width: 20px;
+    /* background-color: #2D2C2A; */
+    background-image: linear-gradient(#22262B, #22262B);
+}
+.team-char div .eq-2{
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+    height: 20px;
+    width: 20px;
+    /* background-color: #2D2C2A; */
+    background-image: linear-gradient(#22262B, #22262B);
+}
+.team-char div .eq-3{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    height: 20px;
+    width: 20px;
+    /* background-color: #2D2C2A; */
+    background-image: linear-gradient(#22262B, #22262B);
 }
 
 .btns-below-chars{

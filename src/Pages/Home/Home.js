@@ -26,12 +26,12 @@ export default function Home() {
           </div>
 
           <div className='top-caraousel'>
-            <span>This is Top Right caraousel</span>
+            <span>This is top left caraousel</span>
           </div>
 
           <div className='extra-icons'>
 
-            <Link to='' className='extra-icons-present extra-icon-list'>
+            <Link to='/characterlist' className='extra-icons-present extra-icon-list'>
               <img src='https://i.imgur.com/7xvw5Ba.png'></img>
             </Link>
 
