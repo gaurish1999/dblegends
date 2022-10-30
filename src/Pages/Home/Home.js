@@ -5,17 +5,17 @@ import gogeta from '../../Media/Voicelines/ss4-gogeta.mp3';
 import Level from '../../Component/Level/Level';
 import Energy from '../../Component/Energy/Energy';
 import CC from '../../Component/CC/CC';
-import Carousel from "react-elastic-carousel";
-import Item from "./Item";
+// import Carousel from "react-elastic-carousel";
+// import Item from "./Item";
 
 export default function Home() {
 
-  const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 1200, itemsToShow: 4 },
-  ];
+  // const breakPoints = [
+  //   { width: 1, itemsToShow: 1 },
+  //   { width: 550, itemsToShow: 2 },
+  //   { width: 768, itemsToShow: 3 },
+  //   { width: 1200, itemsToShow: 4 },
+  // ];
 
   function play() {
     const voice = new Audio(gogeta);
@@ -33,7 +33,7 @@ export default function Home() {
             <CC />
           </div>
 
-          <div className='top-caraousel'>
+          {/* <div className='top-caraousel'>
             <span>
               <Carousel breakPoints={breakPoints}>
                 <Item></Item>
@@ -46,30 +46,30 @@ export default function Home() {
                 <Item></Item>
               </Carousel>
             </span>
-          </div>
+          </div> */}
 
           <div className='extra-icons'>
 
-            <Link to='' className='extra-icons-present extra-icon-list'>
-              <img src='https://i.imgur.com/7xvw5Ba.png'></img>
+            <Link to='#' className='extra-icons-present extra-icon-list'>
+              <img alt='' src='https://i.imgur.com/7xvw5Ba.png'></img>
             </Link>
 
             <Link to='/mission' className='extra-icons-mission extra-icon-list'>
-              <img src='https://i.imgur.com/RiYRK1r.png'></img>
+              <img alt='' src='https://i.imgur.com/RiYRK1r.png'></img>
             </Link>
 
             <Link to='guild' className='extra-icons-guild extra-icon-list'>
-              <img src='https://i.imgur.com/tJGizKR.png'></img>
+              <img alt='' src='https://i.imgur.com/tJGizKR.png'></img>
             </Link>
             
             <Link to='shop' className='extra-icons-shop extra-icon-list'>
-              <img src='https://i.imgur.com/7aJZD56.png'></img>
+              <img alt='' src='https://i.imgur.com/7aJZD56.png'></img>
             </Link>
 
           </div>
 
           <div className='torn-bg'>
-            <img src='https://i.imgur.com/F4Yb2XC.png'></img>
+            <img alt='' src='https://i.imgur.com/F4Yb2XC.png'></img>
           </div>
           
           <div className='sound-effect'>

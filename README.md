@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 
+    <!-- "react-elastic-carousel": "^0.11.5", -->
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
