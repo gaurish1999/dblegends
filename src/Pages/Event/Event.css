@@ -22,6 +22,9 @@
     margin: auto;
     transition-duration: 0.2s;
 }
+.coop-div img{
+    transform: scale(1.45);
+}
 
 
 .coop-div:hover, .z:hover{
