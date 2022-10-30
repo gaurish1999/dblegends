@@ -12,13 +12,13 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: scroll;
     gap: 5px;
 }
 
 .addCC{
     height: 45%;
-    width: 120px;
+    width: 115px;
     max-width: 120px;
     /* background-color: red; */
     background-image: linear-gradient(rgb(178, 241, 243), rgb(70, 237, 220), rgb(206, 227, 236), rgb(244, 221, 179));
