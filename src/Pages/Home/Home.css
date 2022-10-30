@@ -45,16 +45,19 @@
 }
 
 .sound-effect{
-    position: relative;
-    left: 0;
+    position: absolute;
+    
 }
 .fav-char{
     /* background: #1865D8; */
-    transform: scale(0.8);
+    /* transform: ; */
     margin-top: 80px;
     /* width: 70%; */
     /* margin: auto; */
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(0.8) translate(-62% , 0% );
     /* left: 0px; */
     /* margin-bottom: 0px; */
     max-width: 400px;
@@ -63,7 +66,7 @@
     /* display: none; */
 }
 .fav-char:hover{
-    transform: scale(0.85);
+    transform: scale(0.85) translate(-58% , 0% );
 }
 
 .sound-effect{
