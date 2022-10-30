@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import ReactModal from 'react-modal';
+import ChronoContext from '../../../Context/chrono/ChronoContext';
 import CC from '../../CC/CC';
+import { useCC, useCCUpdate } from '../../CC/CCAmount';
 import {summonLabels} from "./Summonconstant";
 import "./SummonTabs.css";
 
@@ -8,15 +10,17 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
     const {ALL, RECOMMENDED, ZENKAI, TICKET} = summonLabels;
 
     const [cc, setCc] = useState();
-    // useEffect(() => {
-    //     const items = JSON.parse(localStorage.getItem('Chrono Crystals'));
-    //     if (cc) {
-    //      setCc(cc);
-    //     }
-    //   }, []);
 
     const [modal, setModal] = useState(false);
     const [res, setRes] = useState([]);
+    const [initCC, setInitCC] = useContext(ChronoContext);
+
+    const run100 = () => {
+        setInitCC(initCC - 100)
+    }
+    const run1000 = () => {
+        setInitCC(initCC - 1000)
+    }
     
     const renderTabTitle = (tabTitle, isActive, icon, id) => (
 
@@ -42,9 +46,7 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
 
     const single_summon = () =>{
 
-        let cc = JSON.parse(localStorage.getItem('Chrono Crystals'));
-        cc -= 100;
-        console.log(cc);
+        run100();
         openModal();
 
         const character_list= [
@@ -120,15 +122,10 @@ const SummonTabs = ({activeTabName, onClickTab}) => {
 
         setCc(localStorage.setItem('Chrono Crystals', JSON.stringify(cc)))
     }
-
     const multi_summon = () =>{
         
-        let cc = JSON.parse(localStorage.getItem('Chrono Crystals'));
-        cc -= 1000;
-        console.log(cc);
+        run1000();
         openModal();
-        // setCc(cc-1000);
-        // console.log(cc)
         const character_list= [
             "PUR UL Legendary Super Saiyan Broly",
             "RED SP LL Fusion Zamasu (Corrupted)",

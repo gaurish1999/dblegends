@@ -29,6 +29,7 @@ import SummonTabs from './Component/Tabs/Summon/SummonTabs';
 import CC from './Component/CC/CC';
 import CharacterList from './Pages/CharacterList/CharacterList'
 import CCAmount from './Component/CC/CCAmount';
+import ChronoContext from './Context/chrono/ChronoContext';
 
 
 
@@ -42,8 +43,12 @@ function App() {
     }, 1000);
   }, []);
   
+  const cc_number = 9999;
+  const [initCC, setInitCC] = useState(cc_number)
+  const { Provider } = ChronoContext;
 
   return (
+    <Provider value={[initCC, setInitCC]}>
     <div className="App">
       
       {loading ? (
@@ -52,45 +57,49 @@ function App() {
         </div>
       ):(
 
+      // <ChronoContext>
       
-      <BrowserRouter>
-        <Routes>
-          <Route exact path='/' element={<Title />}></Route>
-          <Route path='/cc' element={<CC />}></Route>
-          {/* <Route path='/ccamount' element={<CCAmount />}></Route> */}
-          <Route path='/home' element={<Home />}></Route>
-          <Route path='/story' element={<Story />}></Route>
-          <Route path='/event' element={<Event />}></Route>
-          <Route path='/top' element={<TOP />}></Route>
-          <Route path='/pvp' element={<PVP />}></Route>
-          <Route path='/menu' element={<Menu />}></Route>
-          <Route path='/news' element={<News />}></Route>
-          <Route path='/scan' element={<Scan />}></Route>
-          <Route path='/customize' element={<Customize />}></Route>
-          <Route path='/item' element={<Item />}></Route>
-          <Route path='/friend' element={<Friend />}></Route>
-          <Route path='/other' element={<Other />}></Route>
-          <Route path='/hoipoi' element={<HoiPoi />}></Route>
-          <Route path='/exchangeshop' element={<ExchangeShop />}></Route>
-          <Route path='/train' element={<Train />}></Route>
-          <Route path='/coop' element={<Coop />}></Route>
-          <Route path='/guild' element={<Guild />}></Route>
-          <Route path='/adventure' element={<Adventure />}></Route>
-          <Route path='/event' element={<Menu />}></Route>
-          <Route path='/pvp' element={<Menu />}></Route>
-          <Route path='/story' element={<Menu />}></Route>
-          <Route path='/mission' element={<Mission />}></Route>
-          <Route path='/top' element={<Menu />}></Route>
-          <Route path='/shop' element={<Shop />}></Route>
-          <Route path='/summon' element={<Summon />}></Route>
-          <Route path='/summontabs' element={<SummonTabs />}></Route>
-          {/* <Route path='/summonresults' element={<SummonResults />}></Route> */}
-          <Route path='/characters' element={<Characters />}></Route>
-          <Route path='/characterlist' element={<CharacterList />}></Route>
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/cc' element={<CC />}></Route>
+            <Route exact path='/' element={<Title />}></Route>
+            
+            {/* <Route path='/ccamount' element={<CCAmount />}></Route> */}
+            <Route path='/home' element={<Home />}></Route>
+            <Route path='/story' element={<Story />}></Route>
+            <Route path='/event' element={<Event />}></Route>
+            <Route path='/top' element={<TOP />}></Route>
+            <Route path='/pvp' element={<PVP />}></Route>
+            <Route path='/menu' element={<Menu />}></Route>
+            <Route path='/news' element={<News />}></Route>
+            <Route path='/scan' element={<Scan />}></Route>
+            <Route path='/customize' element={<Customize />}></Route>
+            <Route path='/item' element={<Item />}></Route>
+            <Route path='/friend' element={<Friend />}></Route>
+            <Route path='/other' element={<Other />}></Route>
+            <Route path='/hoipoi' element={<HoiPoi />}></Route>
+            <Route path='/exchangeshop' element={<ExchangeShop />}></Route>
+            <Route path='/train' element={<Train />}></Route>
+            <Route path='/coop' element={<Coop />}></Route>
+            <Route path='/guild' element={<Guild />}></Route>
+            <Route path='/adventure' element={<Adventure />}></Route>
+            <Route path='/event' element={<Menu />}></Route>
+            <Route path='/pvp' element={<Menu />}></Route>
+            <Route path='/story' element={<Menu />}></Route>
+            <Route path='/mission' element={<Mission />}></Route>
+            <Route path='/top' element={<Menu />}></Route>
+            <Route path='/shop' element={<Shop />}></Route>
+            <Route path='/summon' element={<Summon />}></Route>
+            <Route path='/summontabs' element={<SummonTabs />}></Route>
+            {/* <Route path='/summonresults' element={<SummonResults />}></Route> */}
+            <Route path='/characters' element={<Characters />}></Route>
+            <Route path='/characterlist' element={<CharacterList />}></Route>
+          </Routes>
+        </BrowserRouter>
+      // </ChronoContext>
       )}
     </div>
+    </Provider>
   );
 }
 

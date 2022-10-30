@@ -1,13 +1,28 @@
-import React, { useState } from 'react'
+// import React, { useContext, useState } from 'react'
 
-export const Context = React.createContext();
-export default function CCAmount({children}) {
+// export const Context = React.createContext();
+// export const ContextUpdate = React.createContext();
 
-    const [items, setItems] = useState(9000);
+// export function useCC() {
+//   return useContext(Context)
+// }
+// export function useCCUpdate() {
+//   return useContext(ContextUpdate)
+// }
+
+// export default function CCAmount({ children }) {
+
+//     const [items, setItems] = useState(9000);
+
+//     function setCC() {
+//       setItems(items+1000)
+//     }
     
-  return (
-    <Context.Provider value = { { items, setItems} }>
-        {children}
-    </Context.Provider>
-  )
-}
+//   return (
+//     <Context.Provider value = { { items } }>
+//       <ContextUpdate.Provider value = {setCC}>
+//         {children}
+//       </ContextUpdate.Provider>
+//     </Context.Provider>
+//   )
+// }
