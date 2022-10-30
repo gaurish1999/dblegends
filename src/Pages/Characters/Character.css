@@ -126,12 +126,12 @@
     position: relative;
 }
 .bigger{
-    width: 400px;
-    margin-left: -40px;
+    width: 60vw;
+    /* margin-left: -40px; */
 }
 .smaller{
-    width: 250px;
-    margin-left: -30px;
+    width: 40vw;
+    /* margin-left: -30px; */
 }
 .team-char div{
     width: 160px;
