@@ -30,6 +30,7 @@ import CC from './Component/CC/CC';
 import CharacterList from './Pages/CharacterList/CharacterList'
 import CCAmount from './Component/CC/CCAmount';
 import ChronoContext from './Context/chrono/ChronoContext';
+import SwiperSlider from './Component/Swiper/SwiperSlider';
 
 
 
@@ -94,6 +95,7 @@ function App() {
             {/* <Route path='/summonresults' element={<SummonResults />}></Route> */}
             <Route path='/characters' element={<Characters />}></Route>
             <Route path='/characterlist' element={<CharacterList />}></Route>
+            <Route path='/swiperslider' element={<SwiperSlider />}></Route>
           </Routes>
         </BrowserRouter>
       // </ChronoContext>

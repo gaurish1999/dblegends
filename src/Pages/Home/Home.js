@@ -5,6 +5,7 @@ import gogeta from '../../Media/Voicelines/ss4-gogeta.mp3';
 import Level from '../../Component/Level/Level';
 import Energy from '../../Component/Energy/Energy';
 import CC from '../../Component/CC/CC';
+import SwiperSlider from '../../Component/Swiper/SwiperSlider';
 // import Carousel from "react-elastic-carousel";
 // import Item from "./Item";
 
@@ -44,13 +45,16 @@ export default function Home() {
                 <Item></Item>
                 <Item></Item>
                 <Item></Item>
-              </Carousel>
+              </Carousel>\mission
             </span>
           </div> */}
+          <div className='top-caraousel'>
+            <SwiperSlider />
+          </div>
 
           <div className='extra-icons'>
 
-            <Link to='#' className='extra-icons-present extra-icon-list'>
+            <Link to='/swiperslider' className='extra-icons-present extra-icon-list'>
               <img alt='' src='https://i.imgur.com/7xvw5Ba.png'></img>
             </Link>
 
