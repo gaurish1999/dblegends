@@ -33,21 +33,7 @@ export default function Home() {
             <Energy />
             <CC />
           </div>
-
-          {/* <div className='top-caraousel'>
-            <span>
-              <Carousel breakPoints={breakPoints}>
-                <Item></Item>
-                <Item></Item>
-                <Item></Item>
-                <Item></Item>
-                <Item></Item>
-                <Item></Item>
-                <Item></Item>
-                <Item></Item>
-              </Carousel>\mission
-            </span>
-          </div> */}
+          
           <div className='top-caraousel'>
             <SwiperSlider />
           </div>

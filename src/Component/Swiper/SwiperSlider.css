@@ -1,8 +1,8 @@
 .swiper {
     width: 100%;
-    height: 6.5vh;
-    margin-left: auto;
-    margin-right: auto;
+    height: 17vh;
+    /* margin-left: auto;
+    margin-right: auto; */
     
     background-color: #13171a98;
     border-radius: 5px;
@@ -20,5 +20,5 @@
   
   .slider-img{
     width: 100%;
-    height: 50px;
+    height: 100%;
   }
