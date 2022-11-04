@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Back from '../../Component/Back/Back'
 import Slider from '../../Component/Slider/Slider';
+import PvpSlider from '../../Component/Swiper/PvpSlider';
 import './PVP.css'
 
 export default function PVP() {
@@ -238,11 +239,8 @@ export default function PVP() {
 
             </div>
 
-            <Slider />
-
-            {/* <div className='dummy-div'> */}
-              {/* asdsadas */}
-            {/* </div> */}
+            {/* <Slider /> */}
+            <PvpSlider />
 
           </div>
 {/* -------------------- */}

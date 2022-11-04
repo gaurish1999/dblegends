@@ -31,6 +31,7 @@ import CharacterList from './Pages/CharacterList/CharacterList'
 import CCAmount from './Component/CC/CCAmount';
 import ChronoContext from './Context/chrono/ChronoContext';
 import SwiperSlider from './Component/Swiper/SwiperSlider';
+import PvpSlider from './Component/Swiper/PvpSlider';
 
 
 
@@ -96,6 +97,7 @@ function App() {
             <Route path='/characters' element={<Characters />}></Route>
             <Route path='/characterlist' element={<CharacterList />}></Route>
             <Route path='/swiperslider' element={<SwiperSlider />}></Route>
+            <Route path='/pvpslider' element={<PvpSlider />}></Route>
           </Routes>
         </BrowserRouter>
       // </ChronoContext>
