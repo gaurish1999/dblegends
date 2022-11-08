@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import CC from '../../Component/CC/CC'
 import Energy from '../../Component/Energy/Energy'
 import Level from '../../Component/Level/Level'
+import CharacterSlider from '../../Component/Swiper/CharacterSlider'
 import './Character.css'
 
 export default function Characters() {
@@ -59,59 +60,7 @@ export default function Characters() {
 
           <div className='characters'>
 
-            <div className='main-char bigger'>
-              <video autoPlay muted loop>
-                <source src='https://i.imgur.com/I5HrE8V.mp4' type="video/mp4"></source>
-              </video>
-              {/* <img src='https://i.imgur.com/hpWYV2A.png' /> */}
-            </div>
-
-            <div className='team-char smaller'>
-              <div>
-                <img src='https://i.imgur.com/vubdFfD.png'></img>
-                <img src='https://i.imgur.com/JZiJCtc.png'></img>
-                <div className='eq-1'></div>
-                <div className='eq-2'></div>
-                <div className='eq-3'></div>
-              </div>
-
-              <div>
-                <img src='https://i.imgur.com/xHLbkw2.png'></img>
-                <div className='eq-1'></div>
-                <div className='eq-2'></div>
-                <div className='eq-3'></div>
-              </div>
-
-              <div>
-                <img src='https://i.imgur.com/NFhSG5c.png'></img>
-                <div className='eq-1'></div>
-                <div className='eq-2'></div>
-                <div className='eq-3'></div>
-              </div>
-
-              <div>
-                <img src='https://i.imgur.com/hICURNV.png'></img>
-                <div className='eq-1'></div>
-                <div className='eq-2'></div>
-                <div className='eq-3'></div>
-              </div>
-
-              <div>
-                <img src='https://i.imgur.com/3OBVdj7.png'></img>
-                <img src='https://i.imgur.com/mmVctfP.png'></img>
-                <div className='eq-1'></div>
-                <div className='eq-2'></div>
-                <div className='eq-3'></div>
-              </div>
-
-              <div>
-                <img src='https://i.imgur.com/3OBVdj7.png'></img>
-                <img src='https://i.imgur.com/cfxIcjn.png'></img>
-                <div className='eq-1'></div>
-                <div className='eq-2'></div>
-                <div className='eq-3'></div>
-              </div>
-            </div>
+          <CharacterSlider />
             
           </div>
 

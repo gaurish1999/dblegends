@@ -12,10 +12,16 @@ export default function PVP() {
     const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
     var present_date =  new Date();
+    var initial_date = new Date('10-05-2022');
+    // console.log(initial_date)
   
     var present_day = present_date.getDate();
     var present_month = present_date.getMonth();
     var present_year = present_date.getFullYear();
+
+    var oneDay = 24 * 60 * 60 * 1000 // To get ms in 1 day
+    var diffDays = (Math.abs(initial_date.getTime() - present_date.getTime() / oneDay));
+
     // var present_time_hours = present_date.getHours();
     // var present_time_mins = present_date.getMinutes();
   
@@ -28,7 +34,8 @@ export default function PVP() {
   
    
   
-    if(present_date.getDay() == 3){
+    if((present_date.getDay() == 3) && (Math.ceil(diffDays) % 14 == 0)){
+    // if((present_date.getDay() == 3)){
 
       setStartdd(present_day);
       setStartmm(months[present_month]);
