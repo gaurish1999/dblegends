@@ -40,7 +40,7 @@ export default function Home() {
 
           <div className='extra-icons'>
 
-            <Link to='/pvpslider' className='extra-icons-present extra-icon-list'>
+            <Link to='/chartemp' className='extra-icons-present extra-icon-list'>
               <img alt='' src='https://i.imgur.com/7xvw5Ba.png'></img>
             </Link>
 

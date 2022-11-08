@@ -1,0 +1,114 @@
+.char-template{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 35px;
+}
+.left-box{
+    background-color: rgba(240, 248, 255, 0.149);
+    height: 100%;
+    width: 50%;
+}
+video{
+    width: 100%;
+    transform: scale(1.5);
+    transition-duration: 0.2s;
+}
+video:hover{
+    transform: scale(1.6);
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+/* ---------------------------------- */
+
+.right-box{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+}
+.right-box div{
+    width: 160px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0px 2px 2px black;
+    background-image: linear-gradient( rgba(248, 248, 248, 0.001),#efefef, #ffffff30);
+}
+.right-box div:hover{
+    transition-duration: 0.1s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.right-box img{
+    width: 160px;
+    margin-top: -40px;
+}
+.right-box div:first-child{
+    /* background-image: linear-gradient( rgba(248, 248, 248, 0.001),#2C79CE, #2C79CE); */
+    position: relative;
+}
+.right-box div:first-child img:first-child{
+    width: 50px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.right-box div:nth-child(2){
+    /* background-image: linear-gradient( rgba(248, 248, 248, 0.001), #D7C20C, #D7C20C); */
+}
+.right-box div:nth-child(3){
+    /* background-image: linear-gradient( rgba(248, 248, 248, 0.001), #D7C20C, #D7C20C); */
+}
+.right-box div:nth-child(4){
+    /* background-image: linear-gradient( rgba(248, 248, 248, 0.001), #8B14E0, #8B14E0); */
+}
+.right-box div:nth-child(5){
+    /* background-image: linear-gradient( rgba(248, 248, 248, 0.001), #CB1D1D, #CB1D1D); */
+    position: relative;
+}
+
+.right-box div:nth-child(5) img:first-child, 
+.right-box div:nth-child(6) img:first-child{
+    position: absolute;
+    top: 42px;
+    left: 40px;
+    transform: scale(1.5);
+}
+.right-box div:nth-child(6){
+    /* background-image: linear-gradient( rgba(248, 248, 248, 0.001), #1CC620, #1CC620); */
+    position: relative;
+}
+.right-box div .eq-1{
+    position: absolute;
+    right: 70px;
+    bottom: 0px;
+    height: 20px;
+    width: 20px;
+    background-image: linear-gradient(#22262B, #22262B);
+}
+.right-box div .eq-2{
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+    height: 20px;
+    width: 20px;
+    background-image: linear-gradient(#22262B, #22262B);
+}
+.right-box div .eq-3{
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    height: 20px;
+    width: 20px;
+    background-image: linear-gradient(#22262B, #22262B);
+}
+/* ---------------------------------- */

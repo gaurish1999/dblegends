@@ -33,6 +33,7 @@ import ChronoContext from './Context/chrono/ChronoContext';
 import SwiperSlider from './Component/Swiper/SwiperSlider';
 import PvpSlider from './Component/Swiper/PvpSlider';
 import CharacterSlider from './Component/Swiper/CharacterSlider';
+import CharTemp from './Component/Swiper/Template/CharTemp';
 
 
 
@@ -100,6 +101,7 @@ function App() {
             <Route path='/swiperslider' element={<SwiperSlider />}></Route>
             <Route path='/pvpslider' element={<PvpSlider />}></Route>
             <Route path='/charslider' element={<CharacterSlider />}></Route>
+            <Route path='/chartemp' element={<CharTemp />}></Route>
           </Routes>
         </BrowserRouter>
       // </ChronoContext>
