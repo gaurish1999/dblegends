@@ -35,8 +35,6 @@ import PvpSlider from './Component/Swiper/PvpSlider';
 import CharacterSlider from './Component/Swiper/CharacterSlider';
 import CharTemp from './Component/Swiper/Template/CharTemp';
 
-
-
 function App() {
   const [loading, setLoading] = useState(false);
   
